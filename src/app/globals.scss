@@ -1,0 +1,59 @@
+:root {
+  --all_color: #210030bc;
+  /* --btn-gradient-border: conic-gradient(from 0 at 50% 50%, rgb(227 227 227 / 100%) 0deg, rgb(227 227 227 / 0%) 60deg, rgb(227 227 227 / 0%) 310deg, rgb(227 227 227) 360deg); */
+  --btn-gradient-border-hover: conic-gradient(
+    from 0 at 50% 50%,
+    rgba(255, 255, 255, 1) 0deg,
+    rgba(255, 255, 255, 0) 60deg,
+    rgba(255, 255, 255, 0) 310deg,
+    rgba(255, 255, 255, 1) 360deg
+  );
+  --btn-gradient-bg: conic-gradient(
+    from 0 at 50% 50%,
+    rgba(255, 255, 255, 0.3) 0deg,
+    rgba(255, 255, 255, 0) 60deg,
+    rgba(255, 255, 255, 0.3) 280deg,
+    rgba(255, 255, 255, 0.3) 180deg
+  );
+  --btn-gradient-border-size: 1.5px solid;
+  --btn-gradient-border-color: #333333;
+  --btn-gradient-border-color-hover: #595959;
+  --btn-gradient-bg-opacity: 0;
+  --btn-gradient-bg-opacity-hover: 0.4;
+  --btn-gradient-border-radius: 100px;
+}
+
+body {
+  font-family: "Circle", Arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+html {
+  color-scheme: dark;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}

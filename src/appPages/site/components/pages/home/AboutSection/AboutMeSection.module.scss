@@ -1,0 +1,224 @@
+.about_me {
+  padding: 70px 0;
+  position: relative;
+  height: 76vh;
+  width: 100%;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .aboutMeText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 0em 0em 0.45em 0em;
+    }
+
+    p {
+      color: #ffffff;
+      padding: 26px 0;
+      font-size: 18px;
+      line-height: 1.55;
+      font-weight: 300;
+      opacity: 0.65;
+      background-position: center;
+      border-color: transparent;
+      border-style: solid;
+      text-align: center;
+    }
+
+    span {
+      text-align: center;
+      color: #00ffea;
+      opacity: 1.2;
+    }
+  }
+
+  .stages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    .stage_1 {
+      border: 1px solid rgb(57, 53, 53);
+      border-radius: 30px;
+      padding: 36px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 18px;
+      background-image: url("../../../../../../assets/images/etab_1.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 540px;
+      background-size: cover;
+      width: 400px;
+      object-fit: contain;
+
+      button {
+        color: white;
+        background-color: transparent;
+        border: 0.6px solid rgb(150, 140, 140);
+        padding: 8px 20px;
+        border-radius: 16px;
+      }
+
+      ul {
+        li {
+          color: #ffffff;
+          font-size: 20px;
+          font-family: "Circle", Arial, sans-serif;
+          line-height: 1.2;
+          font-weight: 300;
+        }
+      }
+
+      p {
+        color: #ffffff;
+        font-size: 14px;
+        font-family: "Circle", Arial, sans-serif;
+        line-height: 1.3;
+        font-weight: 300;
+        opacity: 0.45;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+
+      h3 {
+        color: #0ed0a2;
+        font-size: 16px;
+        font-family: "Arial", Arial, sans-serif;
+        line-height: 1.3;
+        font-weight: 300;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+    }
+
+    .stage_2 {
+      border: 1px solid rgb(57, 53, 53);
+      border-radius: 30px;
+      padding: 36px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 18px;
+      background-image: url("../../../../../../assets/images/etab_2.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 540px;
+      background-size: cover;
+      width: 400px;
+      object-fit: contain;
+
+      button {
+        color: white;
+        background-color: transparent;
+        border: 0.6px solid rgb(150, 140, 140);
+        padding: 8px 20px;
+        border-radius: 16px;
+      }
+
+      ul {
+        li {
+          color: #ffffff;
+          font-size: 20px;
+          font-family: "Circle", Arial, sans-serif;
+          line-height: 1.2;
+          font-weight: 300;
+        }
+      }
+
+      p {
+        color: #ffffff;
+        font-size: 14px;
+        font-family: "Circle", Arial, sans-serif;
+        line-height: 1.3;
+        font-weight: 300;
+        opacity: 0.45;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+
+      h3 {
+        color: #0ed0a2;
+        font-size: 16px;
+        font-family: "Arial", Arial, sans-serif;
+        line-height: 1.3;
+        font-weight: 300;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+    }
+
+    .stage_3 {
+      border: 1px solid rgb(57, 53, 53);
+      border-radius: 30px;
+      padding: 36px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 18px;
+      background-image: url("../../../../../../assets/images/etab3.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 540px;
+      background-size: cover;
+      width: 400px;
+      object-fit: contain;
+
+      button {
+        color: white;
+        background-color: transparent;
+        border: 0.6px solid rgb(150, 140, 140);
+        padding: 8px 20px;
+        border-radius: 16px;
+      }
+
+      ul {
+        li {
+          color: #ffffff;
+          font-size: 20px;
+          font-family: "Circle", Arial, sans-serif;
+          line-height: 1.2;
+          font-weight: 300;
+        }
+      }
+
+      p {
+        color: #ffffff;
+        font-size: 14px;
+        font-family: "Circle", Arial, sans-serif;
+        line-height: 1.3;
+        font-weight: 300;
+        opacity: 0.45;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+
+      h3 {
+        color: #0ed0a2;
+        font-size: 16px;
+        font-family: "Arial", Arial, sans-serif;
+        line-height: 1.3;
+        font-weight: 300;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+      }
+    }
+  }
+}
