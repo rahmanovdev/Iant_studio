@@ -1,4 +1,5 @@
 import AboutMeSection from "./home/AboutSection/AboutMeSection";
+import Decides from "./home/DecidesSection/Decides";
 import HeroContent from "./home/HeroContent/HeroContent";
 import scss from "./HomePage.module.scss";
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div className={scss.content}>
       <HeroContent />
       <AboutMeSection />
+      <Decides />
     </div>
   );
 };

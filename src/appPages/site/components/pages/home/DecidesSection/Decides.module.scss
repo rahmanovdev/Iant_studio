@@ -1,0 +1,42 @@
+.decides {
+  margin-top: 150px;
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      text-shadow: 5px 5px 10px gray;
+    }
+    .blocks {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      .block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 60px;
+        background: black;
+        border-radius: 50px;
+        border: 1px solid gray;
+        cursor: pointer;
+        &:hover {
+          transition: 0.8s;
+          box-shadow: 5px 5px 10px gray;
+        }
+        ul {
+          width: 80%;
+          li {
+            width: 100%;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
