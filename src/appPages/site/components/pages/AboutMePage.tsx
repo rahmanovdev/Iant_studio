@@ -1,11 +1,11 @@
-import AboutMe from "./about_me/AboutMe";
+import MainAbout from "./about_me/MainAbout";
 import scss from "./AboutMePage.module.scss";
 
 const AboutMePage = () => {
   return (
     <>
       <div className={scss.content}>
-        <AboutMe />
+        <MainAbout/>
       </div>
       ;
     </>

@@ -1,0 +1,95 @@
+.Main {
+    .content {
+        margin-top: 130px;
+        margin-bottom: 168px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h5 {
+            font-size: 18px;
+            font-weight: 200;
+            color: rgba(255, 255, 255, 0.688);
+            margin-bottom: 20px;
+            user-select: none;
+            text-shadow: 5px 5px 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-family: 300;
+            margin-bottom: 35px;
+
+            span {
+                color: blueviolet;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 29px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.732);
+            margin-bottom: 30px;
+        }
+
+
+        .button_block {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .button1 {
+                button {
+                    width: 200px;
+                    height: 50px;
+                    border: none;
+                    background: blueviolet;
+                    color: white;
+                    border-radius: 37px;
+
+                    &:hover {
+                        transition: 0.8s;
+                        box-shadow: 5px 5px 10px blueviolet;
+                    }
+                }
+            }
+
+            .button2 {
+                button {
+                    width: 200px;
+                    height: 50px;
+                    border: none;
+                    background: transparent;
+                    color: white;
+                    border-radius: 37px;
+                    border: 1px solid white;
+
+                    &:hover {
+                        transition: 0.8s;
+                        box-shadow: 5px 5px 10px gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 500px) {
+    .Main {
+        .content {
+            .button_block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+    }
+}

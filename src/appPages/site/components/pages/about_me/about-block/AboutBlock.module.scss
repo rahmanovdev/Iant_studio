@@ -1,0 +1,55 @@
+.Main {
+    width: 100%;
+    // background: rgb(255, 255, 255);
+    padding: 50px 0;
+
+    .content {
+
+        .about_block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .about_text {
+                h5 {
+                    color: rgba(255, 255, 255, 0.618);
+                    font-size: 18px;
+                    font-weight: 200;
+                    margin-bottom: 10px;
+                }
+                h1 {
+                    color: white;
+                    font-size: 46px;
+                    font-weight: 300;
+                    margin-bottom: 50px;
+
+                    span {
+                        color: blueviolet;
+                    }
+                }
+                h4 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-bottom: 40px;
+                    line-height: 30px;
+                }
+                p {
+                    font-size: 17px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.689);
+                    line-height: 27px;
+                }
+            }
+            .about_img {
+                background-image: url('/assets/iant-about-img.jfif');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 590px;
+                height: 390px;
+                border-radius: 10px;
+            }
+        }
+
+
+    }
+}
