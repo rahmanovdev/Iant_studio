@@ -1,0 +1,150 @@
+.Main {
+    .content {
+        padding-bottom: 100px;
+        .team_head {
+            margin-bottom: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .left {
+                h5 {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.459);
+                    margin-bottom: 6px;
+                }
+
+                h1 {
+                    color: white;
+                    font-size: 40px;
+                    font-weight: 300;
+                    margin-bottom: 40px;
+
+                    span {
+                        color: blueviolet;
+                    }
+                }
+
+                p {
+                    font-size: 17px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.689);
+                    line-height: 27px;
+                }
+            }
+
+
+            .right {
+                display: flex;
+                align-items: center;
+                gap: 37px;
+
+                .line {
+                    width: 2px;
+                    height: 120px;
+                    background: blueviolet;
+                }
+
+                .block {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    svg {
+                        color: blueviolet;
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    p {
+                        font-size: 17px;
+                        font-weight: 300;
+                        color: rgba(255, 255, 255, 0.689);
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+        // TEAM IMG BLOCK 
+        .team_images {
+            display: flex;
+            gap: 20px;
+        }
+
+        .image_block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 45px;
+        }
+
+        .profile {
+            position: relative;
+            width: 250px;
+            height: 370px;
+            overflow: hidden;
+        }
+
+        .profile_image {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .info {
+            position: absolute;
+            bottom: -40px;
+            left: 10px;
+            color: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease, bottom 0.5s ease;
+        }
+
+        .name {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .position {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .profile:hover .profile_image {
+            opacity: 0.5;
+        }
+
+        .profile:hover .info {
+            visibility: visible;
+            opacity: 1;
+            left: 30px;
+            bottom: 35px;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 300;
+            }
+       }
+        // TEAM IMG BLOCK
+
+
+    }
+}
