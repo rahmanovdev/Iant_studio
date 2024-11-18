@@ -1,0 +1,53 @@
+.Form {
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        height: 420px;
+        padding: 30px 36px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.059);
+
+        h5 {
+            font-size: 17px;
+            font-weight: 300;
+        }
+
+
+        form {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                height: 60px;
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.578);
+                outline: none;
+                font-size: 16px;
+            }
+
+            button {
+                margin: 24px 0;
+                width: 180px;
+                height: 45px;
+                border-radius: 10px;
+                font-size: 16px;
+                font-weight: 300;
+                color: white;
+                background: blueviolet;
+            }
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 13px;
+            font-weight: 300;
+
+            span {
+                color: blueviolet;
+            }
+        }
+    }
+}

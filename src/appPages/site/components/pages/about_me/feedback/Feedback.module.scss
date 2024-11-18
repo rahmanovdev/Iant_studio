@@ -1,0 +1,86 @@
+.Main {
+    padding: 100px 0;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .left {
+            h5 {
+                font-size: 15px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.7);
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 40px;
+                font-weight: 300;
+                margin-bottom: 30px;
+
+                span {
+                    color: blueviolet;
+                }
+            }
+            p {
+                font-size: 17px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.732);
+                line-height: 27px;
+            }
+
+            .number_info_block {
+                display: flex;
+                align-items: center;
+                margin: 55px 0;
+                gap: 20px;
+                p {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: white;
+                }
+
+                .line {
+                    width: 2px;
+                    height: 26px;
+                    background: rgba(255, 255, 255, 0.71);
+                }
+
+                span {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.593);
+                }
+            }
+
+            .addres_info_block {
+                margin-bottom: 30px;
+
+                span {
+                    color: rgba(255, 255, 255, 0.716);
+                }
+
+                p {
+                    color: white;
+                }
+            }
+
+
+            .social_block {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    background: rgba(255, 255, 255, 0.577);
+                    padding: 7px 7px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+
+    }
+}

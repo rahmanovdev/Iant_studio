@@ -3,6 +3,8 @@ import MissionBlock from "./mission-block/MissionBlock";
 import AboutBlock from "./about-block/AboutBlock";
 import scss from "./MainAbout.module.scss";
 import TeamBlock from "./team-block/TeamBlock";
+import CliComments from "./cli-comments/CliComments";
+import Feedback from "./feedback/Feedback";
 
 const MainAbout = () => {
   return (
@@ -11,6 +13,8 @@ const MainAbout = () => {
         <MissionBlock />
         <AboutBlock />
         <TeamBlock/>
+        <CliComments/>
+        <Feedback/>
       </div>
     </>
   );
