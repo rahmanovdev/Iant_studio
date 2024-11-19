@@ -1,5 +1,5 @@
-import AboutMe from "@/appPages/site/components/pages/about_me/AboutMe";
+import MainAbout from "@/appPages/site/components/pages/about_me/MainAbout";
 
-const page = () => <AboutMe />;
+const page = () => <MainAbout/>;
 
 export default page;
