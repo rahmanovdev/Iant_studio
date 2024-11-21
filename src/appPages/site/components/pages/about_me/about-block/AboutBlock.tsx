@@ -6,7 +6,6 @@ return (
   <section className={scss.Main}>
     <div className="container">
       <div className={scss.content}>
-
         <div className={scss.about_block}>
           <div className={scss.about_text}>
             <h5>О КОМПАНИИ</h5>
@@ -32,7 +31,7 @@ return (
         <div className={scss.digital_block}>
           <div className={scss.block1}>
             <h6>
-              Компания iCORP в цифрах: <br />
+              Компания I<span>ANT</span> Studio в цифрах: <br />
               <span>комплексная автоматизация</span> <br /> управления бизнесом
             </h6>
 

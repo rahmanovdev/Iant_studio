@@ -1,0 +1,82 @@
+.Main {
+    width: 100%;
+    padding: 70px 0;
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur(50px);
+    .content {
+        .head_block {
+            h5 {
+                font-size: 16px;
+                font-weight: 200;
+                color: rgba(255, 255, 255, 0.622);
+
+                span {
+                    color: blueviolet;
+                }
+            }
+
+            h1 {
+                font-size: 40px;
+                font-weight: 300;
+                
+                span {
+                    color: blueviolet;
+                }
+            }
+        }
+
+
+        .com_block {
+            margin-top: 100px;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            overflow-x: auto;
+            .block {
+                flex-shrink: 0;
+                width: 420px;
+                height: 400px;
+                padding: 30px 30px;
+                background: rgba(255, 255, 255, 0.074);
+                border-radius: 8px;
+                .img_block {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    img {
+                        width: 56px;
+                        height: 56px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+
+                    .text_block {
+                        h5 {
+                            font-size: 18px;
+                            font-weight: 300;
+                            margin-bottom: 5px;
+                        }
+                        h6 {
+                            font-size: 12px;
+                            font-family: 200;
+                            color: rgba(255, 255, 255, 0.607);
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 37px;
+                    font-size: 14px;
+                    font-weight: 200;
+                    color: rgba(255, 255, 255, 0.705);
+                }
+            }
+        }
+        .com_block::-webkit-scrollbar {
+            display: none; 
+        }
+
+
+    }
+}
