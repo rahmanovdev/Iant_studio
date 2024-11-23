@@ -1,11 +1,11 @@
-import BackgroundThird from "../background2/BackgroundThird";
+import BackgroundSecond from "../background2/BackgroundSecond";
 import scss from "./AboutMeSection.module.scss";
 
 const AboutMeSection = () => {
   return (
     <>
       <div className={scss.about_me}>
-        <BackgroundThird />
+        <BackgroundSecond />
         <div className="container">
           <div className={scss.content}>
             <div className={scss.aboutMeText}>

@@ -1,199 +1,193 @@
 .Main {
-    width: 100%;
-    // background: rgb(255, 255, 255);
-    padding: 50px 0;
+  width: 100%;
+  // background: rgb(255, 255, 255);
+  padding: 50px 0;
 
-    .content {
+  .content {
+    margin-top: 160px;
 
-// ABOUT BLOCK 
-        .about_block {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .about_text {
-                h5 {
-                    color: rgba(255, 255, 255, 0.618);
-                    font-size: 18px;
-                    font-weight: 200;
-                    margin-bottom: 10px;
-                }
-                h1 {
-                    color: white;
-                    font-size: 46px;
-                    font-weight: 300;
-                    margin-bottom: 50px;
-
-                    span {
-                        color: blueviolet;
-                    }
-                }
-                h4 {
-                    font-size: 20px;
-                    font-weight: 400;
-                    margin-bottom: 40px;
-                    line-height: 30px;
-                }
-                p {
-                    font-size: 17px;
-                    font-weight: 300;
-                    color: rgba(255, 255, 255, 0.689);
-                    line-height: 27px;
-                }
-            }
-            .about_img {
-                background-image: url('/assets/iant-about-img.jfif');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                width: 590px;
-                height: 350px;
-                border-radius: 10px;
-            }
+    // ABOUT BLOCK
+    .about_block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .about_text {
+        h5 {
+          color: rgba(255, 255, 255, 0.618);
+          font-size: 18px;
+          font-weight: 200;
+          margin-bottom: 10px;
         }
+        h1 {
+          color: white;
+          font-size: 46px;
+          font-weight: 300;
+          margin-bottom: 50px;
 
+          span {
+            color: blueviolet;
+          }
+        }
+        h4 {
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 40px;
+          line-height: 30px;
+        }
+        p {
+          font-size: 17px;
+          font-weight: 300;
+          color: rgba(255, 255, 255, 0.689);
+          line-height: 27px;
+        }
+      }
+      .about_img {
+        background-image: url("/assets/iant-about-img.jfif");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 590px;
+        height: 350px;
+        border-radius: 10px;
+      }
+    }
 
-// DIGITAL INFORMATION
-.digital_block {
-    margin: 100px 0;
-    width: 100%;
-    padding: 30px 20px;
-    background: rgba(255, 255, 255, 0.059);
-    backdrop-filter: blur(50px);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // DIGITAL INFORMATION
+    .digital_block {
+      margin: 100px 0;
+      width: 100%;
+      padding: 30px 20px;
+      background: rgba(255, 255, 255, 0.059);
+      backdrop-filter: blur(50px);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-    .block1 {
+      .block1 {
         display: flex;
         flex-direction: column;
         gap: 80px;
 
         h6 {
-            font-size: 19.5px;
-            font-weight: 300;
-            line-height: 27px;
+          font-size: 19.5px;
+          font-weight: 300;
+          line-height: 27px;
 
-            span {
-                color: blueviolet;
-            }
+          span {
+            color: blueviolet;
+          }
         }
 
         .under_block {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
 
-            .year_block {
-                p {
-                    font-size: 15px;
-                    font-weight: 300;
-                    color: rgba(255, 255, 255, 0.852);
-                    margin-bottom: 3px;
-                }
-
-                h5 {
-                    font-size: 40px;
-                    font-weight: 300;
-                    color: blueviolet;
-                }
-            }
-
-            .underline {
-                height: 57px;
-                width: 3px;
-                background: rgba(255, 255, 255, 0.574);
-            }
-
+          .year_block {
             p {
-                font-size: 15px;
-                font-weight: 300;
-                line-height: 23px;
-                color: rgba(255, 255, 255, 0.852);
+              font-size: 15px;
+              font-weight: 300;
+              color: rgba(255, 255, 255, 0.852);
+              margin-bottom: 3px;
             }
+
+            h5 {
+              font-size: 40px;
+              font-weight: 300;
+              color: blueviolet;
+            }
+          }
+
+          .underline {
+            height: 57px;
+            width: 3px;
+            background: rgba(255, 255, 255, 0.574);
+          }
+
+          p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 23px;
+            color: rgba(255, 255, 255, 0.852);
+          }
         }
+      }
 
-
-
-    }
-
-    .main_dig_block {
+      .main_dig_block {
         display: flex;
         align-items: center;
         gap: 14px;
 
         .block2 {
-            display: flex;
-            flex-direction: column;
-            gap: 83px;
-            width: 270px;
-            height: 250px;
-            background: rgba(255, 255, 255, 0.074);
-            border-radius: 5px;
-            padding: 26px 18px;
+          display: flex;
+          flex-direction: column;
+          gap: 83px;
+          width: 270px;
+          height: 250px;
+          background: rgba(255, 255, 255, 0.074);
+          border-radius: 5px;
+          padding: 26px 18px;
 
-            h4 {
-                font-size: 25px;
-                font-weight: 300;
-            }
+          h4 {
+            font-size: 25px;
+            font-weight: 300;
+          }
 
-            p {
-                font-size: 15px;
-                font-weight: 300;
-                color: rgba(255, 255, 255, 0.814);
-                line-height: 22px;
-            }
-
+          p {
+            font-size: 15px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.814);
+            line-height: 22px;
+          }
         }
 
         .block3 {
-            display: flex;
-            flex-direction: column;
-            gap: 82px;
-            width: 270px;
-            height: 250px;
-            background: rgba(255, 255, 255, 0.074);
-            border-radius: 5px;
-            padding: 26px 18px;
+          display: flex;
+          flex-direction: column;
+          gap: 82px;
+          width: 270px;
+          height: 250px;
+          background: rgba(255, 255, 255, 0.074);
+          border-radius: 5px;
+          padding: 26px 18px;
 
-            h4 {
-                font-size: 25px;
-                font-weight: 300;
-            }
+          h4 {
+            font-size: 25px;
+            font-weight: 300;
+          }
 
-            p {
-                font-size: 15px;
-                font-weight: 300;
-                color: rgba(255, 255, 255, 0.814);
-                line-height: 22px;
-            }
-
+          p {
+            font-size: 15px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.814);
+            line-height: 22px;
+          }
         }
 
         .block4 {
-            display: flex;
-            flex-direction: column;
-            gap: 80px;
-            width: 270px;
-            height: 250px;
-            background: rgba(255, 255, 255, 0.074);
-            border-radius: 5px;
-            padding: 26px 18px;
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
+          width: 270px;
+          height: 250px;
+          background: rgba(255, 255, 255, 0.074);
+          border-radius: 5px;
+          padding: 26px 18px;
 
-            h4 {
-                font-size: 25px;
-                font-weight: 300;
-            }
+          h4 {
+            font-size: 25px;
+            font-weight: 300;
+          }
 
-            p {
-                font-size: 15px;
-                font-weight: 300;
-                color: rgba(255, 255, 255, 0.814);
-                line-height: 22px;
-            }
-
+          p {
+            font-size: 15px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.814);
+            line-height: 22px;
+          }
         }
+      }
     }
-}
-    }
+  }
 }
