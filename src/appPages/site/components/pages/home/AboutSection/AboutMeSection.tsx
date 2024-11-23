@@ -57,6 +57,7 @@ const AboutMeSection = () => {
                 <h3>[ 3 ]</h3>
               </div>
             </div>
+            <hr />
           </div>
         </div>
       </div>

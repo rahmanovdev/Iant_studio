@@ -51,9 +51,13 @@ html {
   color-scheme: dark;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   max-width: 1240px;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 40px;
   margin: 0 auto;
 }

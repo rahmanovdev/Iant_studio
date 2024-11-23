@@ -10,6 +10,8 @@ import { GoPaperAirplane } from "react-icons/go";
 import { FaRegCopyright } from "react-icons/fa6";
 import { SubmitHandler, useForm } from "react-hook-form";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface IContact {
   email: string;
@@ -45,6 +47,17 @@ const Footer = () => {
         Client email/phone: ${contact.email}
       `,
     };
+
+    toast.success("Сообщение отправлено дождитесь ответа!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
 
     axios.post(api_key, newProduct);
     reset();
@@ -120,6 +133,7 @@ const Footer = () => {
         <h6>
           <FaRegCopyright /> iANT 2024. Все права защищены
         </h6>
+        <ToastContainer />
       </div>
     </footer>
   );
