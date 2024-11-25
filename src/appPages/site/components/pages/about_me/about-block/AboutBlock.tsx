@@ -28,6 +28,7 @@ return (
           <div className={scss.about_img}></div>
         </div>
 
+        {/* DIGITAL BLOCK  */}
         <div className={scss.digital_block}>
           <div className={scss.block1}>
             <h6>
@@ -72,6 +73,7 @@ return (
             </div>
           </div>
         </div>
+        {/* DIGITAL BLOCK  */}
       </div>
     </div>
   </section>
