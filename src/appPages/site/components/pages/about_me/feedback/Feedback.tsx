@@ -13,7 +13,6 @@ const Feedback = () => {
     <section className={scss.Main}>
         <div className="container">
             <div className={scss.content}>
-
                 <div className={scss.left}>
                     <h5>КОНТАКТЫ</h5>
                     <h1>Консультация <span>по проекту</span></h1>
