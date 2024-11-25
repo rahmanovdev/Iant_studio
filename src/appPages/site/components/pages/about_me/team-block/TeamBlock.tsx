@@ -12,7 +12,7 @@ const TeamBlock = () => {
     <section className={scss.Main}>
       <div className="container">
         <div className={scss.content}>
-          <div className={scss.team_head}>
+          <div className={scss.team_head}> 
             <div className={scss.left}>
               <h5>НАША КОМАНДА</h5>
               <h1>
@@ -153,6 +153,7 @@ const TeamBlock = () => {
               </div>
 
             </div>
+            </div>
           </div>
           {/* TEAM IMG  */}
 
@@ -161,7 +162,6 @@ const TeamBlock = () => {
 
 
         </div>
-      </div>
     </section>
   );
 };

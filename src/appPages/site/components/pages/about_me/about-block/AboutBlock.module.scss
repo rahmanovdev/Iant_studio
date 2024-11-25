@@ -1,7 +1,7 @@
 .Main {
-  width: 100%;
-  // background: rgb(255, 255, 255);
-  padding: 50px 0;
+    width: 100%;
+    // background: rgb(255, 255, 255);
+    padding: 50px 0;
 
   .content {
     margin-top: 160px;
@@ -24,33 +24,33 @@
           font-weight: 300;
           margin-bottom: 50px;
 
-          span {
-            color: blueviolet;
-          }
+                    span {
+                        color: blueviolet;
+                    }
+                }
+                h4 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-bottom: 40px;
+                    line-height: 30px;
+                }
+                p {
+                    font-size: 17px;
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.689);
+                    line-height: 27px;
+                }
+            }
+            .about_img {
+                background-image: url('/assets/iant-about-img.jfif');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 590px;
+                height: 350px;
+                border-radius: 10px;
+            }
         }
-        h4 {
-          font-size: 20px;
-          font-weight: 400;
-          margin-bottom: 40px;
-          line-height: 30px;
-        }
-        p {
-          font-size: 17px;
-          font-weight: 300;
-          color: rgba(255, 255, 255, 0.689);
-          line-height: 27px;
-        }
-      }
-      .about_img {
-        background-image: url("/assets/iant-about-img.jfif");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 590px;
-        height: 350px;
-        border-radius: 10px;
-      }
-    }
 
     // DIGITAL INFORMATION
     .digital_block {
@@ -180,14 +180,15 @@
             font-weight: 300;
           }
 
-          p {
-            font-size: 15px;
-            font-weight: 300;
-            color: rgba(255, 255, 255, 0.814);
-            line-height: 22px;
-          }
+            p {
+                font-size: 15px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.814);
+                line-height: 22px;
+            }
+
         }
-      }
     }
-  }
+}
+    }
 }

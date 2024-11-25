@@ -20,16 +20,17 @@ const MissionBlock = () => {
               эффективность
             </p>
 
-            <div className={scss.button_block}>
-              <div className={scss.button1}>
-                <button>СТАНЬ КЛИЕНТОМ</button>
-              </div>
-              <div className={scss.button2}>
-                <button>НАШИ КЕЙСЫ</button>
-              </div>
+
+                <div className={scss.button_block}>
+                    <div className={scss.button1}>
+                        <button>СТАНЬ КЛИЕНТОМ</button>
+                    </div>
+                    <div className={scss.button2}>
+                        <button>НАШИ КЕЙСЫ</button> 
+                    </div>
+                </div>
             </div>
           </div>
-        </div>
       </section>
     </>
   );
