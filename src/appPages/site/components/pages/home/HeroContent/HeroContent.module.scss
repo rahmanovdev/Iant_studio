@@ -139,34 +139,6 @@
       }
     }
   }
-
-  // .heshtags {
-  //   width: 100%;
-  //   position: absolute;
-  //   bottom: 20px;
-  //   overflow: hidden;
-
-  //   .scroll_left,
-  //   .scroll_right {
-  //     display: inline-block;
-  //     white-space: nowrap;
-  //     animation-duration: 20s;
-  //     animation-timing-function: linear;
-  //     animation-iteration-count: infinite;
-  //     color: rgba(255, 255, 255, 0.5);
-  //     font-size: 14px;
-  //   }
-
-  //   .scroll_left {
-  //     animation-name: scrollLeft;
-  //     padding-right: 50px;
-  //   }
-
-  //   .scroll_right {
-  //     animation-name: scrollRight;
-  //     padding-left: 50px;
-  //   }
-  // }
 }
 
 @keyframes steam {
@@ -196,5 +168,110 @@
   }
   100% {
     transform: translateX(100%);
+  }
+}
+
+@media (max-width: 992px) {
+  .HeroContent {
+    .content {
+      h1 {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .HeroContent {
+    .content {
+      gap: clamp(16px, 2vw, 25px);
+      h4 {
+        font-size: clamp(18px, 1.5vw, 20px);
+      }
+
+      h1 {
+        font-size: 48px;
+        // font-size: clamp(28px, 5vw, 52px);
+      }
+
+      p {
+        font-size: 18px;
+        // font-size: clamp(12px, 2vw, 16px);
+      }
+
+      .project {
+        width: clamp(140px, 10vw, 175px);
+        height: clamp(40px, 4vw, 42px);
+        font-size: clamp(10px, 1vw, 12px);
+        font-weight: 600;
+      }
+
+      .button {
+        width: clamp(140px, 10vw, 175px);
+        height: clamp(40px, 4vw, 42px);
+        font-size: clamp(14px, 1.5vw, 16px);
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .HeroContent {
+    .content {
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .project {
+        width: 110px;
+        height: 36px;
+        font-size: 8px;
+        padding: 0px 8px;
+      }
+
+      .button {
+        width: 110px;
+        height: 36px;
+        font-size: 12px;
+        padding: 0px 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .HeroContent {
+    .content {
+      h4 {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+
+      .project {
+        width: 100px;
+        height: 30px;
+        font-size: 8px;
+        font-weight: 600;
+      }
+
+      .button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        padding: 0px 10px;
+      }
+    }
   }
 }
