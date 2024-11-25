@@ -72,8 +72,6 @@ return (
             </div>
           </div>
         </div>
-
-        <div className={scss.group_img}></div>
       </div>
     </div>
   </section>

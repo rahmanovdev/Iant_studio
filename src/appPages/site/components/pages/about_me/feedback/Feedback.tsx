@@ -37,7 +37,7 @@ const Feedback = () => {
                     </div>
                 </div>
 
-                <div className={scss.right}>
+                <div className={scss.right}> 
                     <Form/>
                 </div>
             </div>

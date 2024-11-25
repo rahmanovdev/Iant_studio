@@ -35,11 +35,11 @@ const Footer = () => {
   }
 
   const onOrder: SubmitHandler<IContact> = (contact) => {
-    let my_id = `-1002155692436`;
-    let token = `7379926721:AAGdHk5RpkeAFr5TOZApxisySaGqta-Lws4`;
-    let api_key = ` https://api.telegram.org/bot${token}/sendMessage`;
+    const my_id = `-1002155692436`;
+    const token = `7379926721:AAGdHk5RpkeAFr5TOZApxisySaGqta-Lws4`;
+    const api_key = ` https://api.telegram.org/bot${token}/sendMessage`;
 
-    let newProduct = {
+    const newProduct = {
       chat_id: my_id,
       parse_model: "html",
       text: `

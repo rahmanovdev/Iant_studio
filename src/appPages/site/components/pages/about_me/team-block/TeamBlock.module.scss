@@ -148,3 +148,48 @@
 
     }
 }
+
+
+@media(max-width: 870px) {
+    .Main {
+        .content {
+            .team_head {
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 764px) {
+    .Main {
+        width: 100%;
+        .content {
+            .image_block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                gap: 30px;
+                -webkit-overflow-scrolling: touch;
+
+                scrollbar-width: none;
+            }
+
+            .image_block::-webkit-scrollbar {
+                display: none;
+            }
+
+            .profile {
+                position: relative;
+                width: 60%; 
+                flex: 0 0 auto; 
+                height: 230px;
+                overflow: hidden;
+            }
+        }
+    }
+}

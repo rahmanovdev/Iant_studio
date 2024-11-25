@@ -15,7 +15,7 @@ const MissionBlock = () => {
                         <button>СТАНЬ КЛИЕНТОМ</button>
                     </div>
                     <div className={scss.button2}>
-                        <button>НАШИ КЕЙСЫ</button>
+                        <button>НАШИ КЕЙСЫ</button> 
                     </div>
                 </div>
             </div>
