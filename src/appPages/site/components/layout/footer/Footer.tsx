@@ -14,7 +14,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 interface IContact {
-  email: string;
+  email: string; 
 }
 
 const Footer = () => {

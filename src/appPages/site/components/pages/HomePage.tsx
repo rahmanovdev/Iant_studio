@@ -1,5 +1,6 @@
 import AboutMeSection from "./home/AboutSection/AboutMeSection";
-import Decides from "./home/DecidesSection/Decides";
+// import Decides from "./home/DecidesSection/Decides";
+import Questions from "./home/AnswersForQuestion.tsx/Questions";
 import HeroContent from "./home/HeroContent/HeroContent";
 import Marquee from "./home/Marquee/Marquee";
 import Projects from "./home/ProjectSections/Projects";
@@ -12,11 +13,15 @@ const HomePage = () => {
       <HeroContent />
       <Marquee />
       <AboutMeSection />
-      <Decides />
+      {/* <Decides /> */}
       <Projects />
       <TeamSection />
+      <div
+        style={{ padding: "20px", backgroundColor: "#121212", width: "100%" }}
+      >
+        <Questions />
+      </div>
       <WebPrice />
-      {/* <OurWorks /> */}
     </div>
   );
 };

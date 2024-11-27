@@ -9,7 +9,7 @@ const TeamSection = () => {
 
   const team = [
     {
-      name: "Nikola Jackson",
+      name: "Nikola Jackson", 
       work: "Front End Developer",
       img: "https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png",
     },

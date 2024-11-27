@@ -36,6 +36,13 @@ const AboutBlock = () => {
                 бизнесом
               </h6>
 
+        {/* DIGITAL BLOCK  */}
+        <div className={scss.digital_block}>
+          <div className={scss.block1}>
+            <h6>
+              Компания I<span>ANT</span> Studio в цифрах: <br />
+              <span>комплексная автоматизация</span> <br /> управления бизнесом
+            </h6>
               <div className={scss.under_block}>
                 <div className={scss.year_block}>
                   <p>На рынке с</p>
@@ -74,6 +81,9 @@ const AboutBlock = () => {
             </div>
           </div>
         </div>
+        {/* DIGITAL BLOCK  */}
+      </div>
+      </div>
       </div>
     </section>
   );

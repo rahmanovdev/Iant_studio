@@ -53,7 +53,9 @@
       align-items: center;
       width: 100%;
       justify-content: space-between;
+      flex-wrap: wrap;
       .user {
+        margin-bottom: 20px;
         display: flex;
         align-items: end;
         justify-content: center;
@@ -108,6 +110,145 @@
       margin-top: 20px;
       width: 70%;
       height: 1px;
+    }
+  }
+}
+
+
+
+@media(max-width:768px) {
+  .teamSection {
+    .content {
+      .teamText {
+        h2 {
+          font-size: 40px;
+          text-align: center;
+          text-shadow: 5px 5px 10px gray;
+        }
+        p {
+          color: #ffffff;
+          padding: 26px 0;
+          font-size: 16px;
+          line-height: 1.55;
+          font-weight: 300;
+          opacity: 0.65;
+          background-position: center;
+          border-color: transparent;
+          border-style: solid;
+          text-align: center;
+          width: 70%;
+        }
+      }
+      button {
+        width: 150px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 15px;
+        background: transparent;
+        color: white;
+        border: 1px solid gray;
+        font-weight: 600;
+        &:hover {
+          transition: 0.8s;
+          box-shadow: 5px 5px 10px gray;
+        }
+      }
+      .teamUsers {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        overflow-x: auto !important;
+        .user {
+          margin-bottom: 20px;
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          position: relative;
+          width: 270px;
+          height: 350px;
+          background: gray;
+          border-radius: 5px;
+          cursor: pointer;
+          img {
+            position: absolute;
+            object-fit: cover;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+          }
+          .text {
+            z-index: 3;
+            h3 {
+              display: none;
+            }
+            h5 {
+              display: none;
+            }
+          }
+  
+          &:hover {
+            .text {
+              transition: 0.8s;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.492);
+              padding-block: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: end;
+              flex-direction: column;
+              gap: 5px;
+              h3 {
+                display: block;
+                font-size: 20px;
+              }
+              h5 {
+                display: block;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+      hr {
+        margin-top: 20px;
+        width: 70%;
+        height: 1px;
+      }
+    }
+  }
+}
+
+
+
+
+@media(max-width: 430px) {
+  .teamSection {
+    .content {
+      .teamText {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width: 340px) {
+  .teamSection {
+    .content {
+      .teamText {
+        p {
+          font-size: 11px;
+        }
+      }
     }
   }
 }

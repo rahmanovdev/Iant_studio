@@ -1,6 +1,5 @@
 .Main {
   width: 100%;
-  // background: rgb(255, 255, 255);
   padding: 50px 0;
 
   .content {
@@ -11,6 +10,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .about_text {
         h5 {
           color: rgba(255, 255, 255, 0.618);
@@ -18,6 +18,7 @@
           font-weight: 200;
           margin-bottom: 10px;
         }
+
         h1 {
           color: white;
           font-size: 46px;
@@ -28,12 +29,14 @@
             color: blueviolet;
           }
         }
+
         h4 {
           font-size: 20px;
           font-weight: 400;
           margin-bottom: 40px;
           line-height: 30px;
         }
+
         p {
           font-size: 17px;
           font-weight: 300;
@@ -41,6 +44,7 @@
           line-height: 27px;
         }
       }
+
       .about_img {
         background-image: url("/assets/iant-about-img.jfif");
         background-position: center;
@@ -192,184 +196,1373 @@
   }
 }
 
-@media (max-width: 1200px) {
+
+@media(max-width: 1235px) {
   .Main {
     .content {
+      margin-top: 60px;
+
       .about_block {
         .about_img {
           width: 500px;
           height: 310px;
         }
       }
-    }
-  }
-}
 
-@media (max-width: 1110px) {
-  .Main {
-    .content {
-      .about_block {
-        .about_text {
-          h5 {
-            font-size: 18px;
-          }
-          h1 {
-            font-size: 39px;
-            margin-bottom: 30px;
-          }
-          h4 {
-            font-size: 15px;
-            line-height: 24px;
-            margin-bottom: 30px;
-          }
-          p {
-            font-size: 14px;
-            line-height: 23px;
-          }
-        }
-        .about_img {
-          width: 420px;
-          height: 260px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1110px) {
-  .Main {
-    .content {
-      .about_block {
-        .about_text {
-          h5 {
-            font-size: 18px;
-          }
-          h1 {
-            font-size: 33px;
-            margin-bottom: 30px;
-          }
-          h4 {
-            font-size: 12px;
-            line-height: 20px;
-            margin-bottom: 30px;
-          }
-          p {
-            font-size: 11px;
-            line-height: 20px;
-          }
-        }
-        .about_img {
-          width: 380px;
-          height: 230px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 764px) {
-  .Main {
-    .content {
-      margin-top: -70px;
-      .about_block {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        .about_img {
-          width: 320px;
-          height: 200px;
-        }
-      }
-
+      // DIGITAL INFORMATION
       .digital_block {
+        margin: 100px 0;
+        width: 100%;
+        padding: 30px 20px;
+        background: rgba(255, 255, 255, 0.059);
+        backdrop-filter: blur(50px);
+        border-radius: 5px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 25px;
+        justify-content: space-between;
+
+        .block1 {
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
+
+          h6 {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 27px;
+
+            span {
+              color: blueviolet;
+            }
+          }
+
+          .under_block {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .year_block {
+              p {
+                font-size: 15px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.852);
+                margin-bottom: 3px;
+              }
+
+              h5 {
+                font-size: 40px;
+                font-weight: 300;
+                color: blueviolet;
+              }
+            }
+
+            .underline {
+              height: 57px;
+              width: 3px;
+              background: rgba(255, 255, 255, 0.574);
+            }
+
+            p {
+              font-size: 15px;
+              font-weight: 300;
+              line-height: 23px;
+              color: rgba(255, 255, 255, 0.852);
+            }
+          }
+        }
+
         .main_dig_block {
           display: flex;
           align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          gap: 25px;
+          gap: 14px;
+
+          .block2 {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.074);
+            border-radius: 5px;
+            padding: 26px 18px;
+
+            h4 {
+              font-size: 25px;
+              font-weight: 300;
+            }
+
+            p {
+              font-size: 15px;
+              font-weight: 300;
+              color: rgba(255, 255, 255, 0.814);
+              line-height: 22px;
+            }
+          }
+
+          .block3 {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.074);
+            border-radius: 5px;
+            padding: 26px 18px;
+
+            h4 {
+              font-size: 25px;
+              font-weight: 300;
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 300;
+              color: rgba(255, 255, 255, 0.814);
+              line-height: 22px;
+            }
+          }
+
+          .block4 {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.074);
+            border-radius: 5px;
+            padding: 26px 18px;
+
+            h4 {
+              font-size: 25px;
+              font-weight: 300;
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 300;
+              color: rgba(255, 255, 255, 0.814);
+              line-height: 22px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 1200px) {
+        .Main {
+          .content {
+            .about_block {
+              .about_img {
+                width: 500px;
+                height: 310px;
+              }
+            }
+          }
+        }
+      }
+
+      @media (max-width: 1110px) {
+        .Main {
+          .content {
+            .about_block {
+              .about_text {
+                h5 {
+                  font-size: 18px;
+                }
+
+                h1 {
+                  font-size: 39px;
+                  margin-bottom: 30px;
+                }
+
+                h4 {
+                  font-size: 15px;
+                  line-height: 24px;
+                  margin-bottom: 30px;
+                }
+
+                p {
+                  font-size: 14px;
+                  line-height: 23px;
+                }
+
+
+
+
+
+                @media(max-width: 1160px) {
+                  .Main {
+                    .content {
+
+                      // DIGITAL INFORMATION
+                      .digital_block {
+                        margin: 100px 0;
+                        width: 100%;
+                        padding: 30px 20px;
+                        background: rgba(255, 255, 255, 0.059);
+                        backdrop-filter: blur(50px);
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .block1 {
+                          display: flex;
+                          flex-direction: column;
+                          gap: 80px;
+
+                          h6 {
+                            font-size: 15px;
+                            font-weight: 300;
+                            line-height: 27px;
+
+                            span {
+                              color: blueviolet;
+                            }
+                          }
+
+                          .under_block {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            .year_block {
+                              p {
+                                font-size: 13px;
+                                font-weight: 300;
+                                color: rgba(255, 255, 255, 0.852);
+                                margin-bottom: 3px;
+                              }
+
+                              h5 {
+                                font-size: 37px;
+                                font-weight: 300;
+                                color: blueviolet;
+                              }
+                            }
+
+                            .underline {
+                              height: 57px;
+                              width: 3px;
+                              background: rgba(255, 255, 255, 0.574);
+                            }
+
+                            p {
+                              font-size: 13px;
+                              font-weight: 300;
+                              line-height: 23px;
+                              color: rgba(255, 255, 255, 0.852);
+                            }
+                          }
+                        }
+
+                        .main_dig_block {
+                          display: flex;
+                          align-items: center;
+                          gap: 14px;
+
+                          .block2 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            width: 220px;
+                            height: 250px;
+                            background: rgba(255, 255, 255, 0.074);
+                            border-radius: 5px;
+                            padding: 26px 18px;
+
+                            h4 {
+                              font-size: 22px;
+                              font-weight: 300;
+                            }
+
+                            p {
+                              font-size: 15px;
+                              font-weight: 300;
+                              color: rgba(255, 255, 255, 0.814);
+                              line-height: 22px;
+                            }
+                          }
+
+                          .block3 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            width: 220px;
+                            height: 250px;
+                            background: rgba(255, 255, 255, 0.074);
+                            border-radius: 5px;
+                            padding: 26px 18px;
+
+                            h4 {
+                              font-size: 22px;
+                              font-weight: 300;
+                            }
+
+                            p {
+                              font-size: 14px;
+                              font-weight: 300;
+                              color: rgba(255, 255, 255, 0.814);
+                              line-height: 22px;
+                            }
+                          }
+
+                          .block4 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            width: 220px;
+                            height: 250px;
+                            background: rgba(255, 255, 255, 0.074);
+                            border-radius: 5px;
+                            padding: 26px 18px;
+
+                            h4 {
+                              font-size: 22px;
+                              font-weight: 300;
+                            }
+
+                            p {
+                              font-size: 14px;
+                              font-weight: 300;
+                              color: rgba(255, 255, 255, 0.814);
+                              line-height: 22px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+
+
+
+
+                @media(max-width: 1148px) {
+                  .Main {
+                    .content {
+
+                      // DIGITAL INFORMATION
+                      .digital_block {
+                        margin: 100px 0;
+                        width: 100%;
+                        padding: 30px 20px;
+                        background: rgba(255, 255, 255, 0.059);
+                        backdrop-filter: blur(50px);
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .block1 {
+                          margin-bottom: 30px;
+                          display: flex;
+                          justify-content: space-between;
+                          flex-direction: row;
+                          gap: 80px;
+
+                          h6 {
+                            font-size: 15px;
+                            font-weight: 300;
+                            line-height: 27px;
+
+                            span {
+                              color: blueviolet;
+                            }
+                          }
+
+                          .under_block {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            .year_block {
+                              p {
+                                font-size: 13px;
+                                font-weight: 300;
+                                color: rgba(255, 255, 255, 0.852);
+                                margin-bottom: 3px;
+                              }
+
+                              h5 {
+                                font-size: 37px;
+                                font-weight: 300;
+                                color: blueviolet;
+                              }
+                            }
+
+                            .underline {
+                              height: 57px;
+                              width: 3px;
+                              background: rgba(255, 255, 255, 0.574);
+                            }
+
+                            p {
+                              font-size: 13px;
+                              font-weight: 300;
+                              line-height: 23px;
+                              color: rgba(255, 255, 255, 0.852);
+                            }
+                          }
+                        }
+
+                        .main_dig_block {
+                          display: flex;
+                          align-items: center;
+                          gap: 14px;
+
+                          .block2 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            width: 220px;
+                            height: 250px;
+                            background: rgba(255, 255, 255, 0.074);
+                            border-radius: 5px;
+                            padding: 26px 18px;
+
+                            h4 {
+                              font-size: 22px;
+                              font-weight: 300;
+                            }
+
+                            p {
+                              font-size: 15px;
+                              font-weight: 300;
+                              color: rgba(255, 255, 255, 0.814);
+                              line-height: 22px;
+                            }
+                          }
+
+                          .block3 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            width: 220px;
+                            height: 250px;
+                            background: rgba(255, 255, 255, 0.074);
+                            border-radius: 5px;
+                            padding: 26px 18px;
+
+                            h4 {
+                              font-size: 22px;
+                              font-weight: 300;
+                            }
+
+                            p {
+                              font-size: 14px;
+                              font-weight: 300;
+                              color: rgba(255, 255, 255, 0.814);
+                              line-height: 22px;
+                            }
+                          }
+
+                          .block4 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            width: 220px;
+                            height: 250px;
+                            background: rgba(255, 255, 255, 0.074);
+                            border-radius: 5px;
+                            padding: 26px 18px;
+
+                            h4 {
+                              font-size: 22px;
+                              font-weight: 300;
+                            }
+
+                            p {
+                              font-size: 14px;
+                              font-weight: 300;
+                              color: rgba(255, 255, 255, 0.814);
+                              line-height: 22px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+
+                @media(max-width: 1110px) {
+                  .Main {
+                    .content {
+                      .about_block {
+                        .about_text {
+                          h5 {
+                            font-size: 18px;
+                          }
+
+                          h1 {
+                            font-size: 39px;
+                            margin-bottom: 30px;
+                          }
+
+                          h4 {
+                            font-size: 15px;
+                            line-height: 24px;
+                            margin-bottom: 30px;
+                          }
+
+                          p {
+                            font-size: 14px;
+                            line-height: 23px;
+                          }
+                        }
+
+                        .about_img {
+                          width: 420px;
+                          height: 260px;
+                        }
+                      }
+                    }
+
+                    .about_img {
+                      width: 420px;
+                      height: 260px;
+                    }
+                  }
+                }
+              }
+            }
+
+            @media (max-width: 1110px) {
+              .Main {
+                .content {
+                  .about_block {
+                    .about_text {
+                      h5 {
+                        font-size: 18px;
+                      }
+
+                      h1 {
+                        font-size: 33px;
+                        margin-bottom: 30px;
+                      }
+
+                      h4 {
+                        font-size: 12px;
+                        line-height: 20px;
+                        margin-bottom: 30px;
+                      }
+
+                      p {
+                        font-size: 11px;
+                        line-height: 20px;
+                      }
+
+
+
+                      @media(max-width: 897px) {
+                        .Main {
+                          .content {
+                            .about_block {
+                              display: flex;
+                              align-items: start;
+                              justify-content: start;
+                              flex-direction: column;
+                              gap: 30px;
+
+                              .about_img {
+                                width: 400px;
+                                height: 240px;
+                              }
+
+                              .about_img {
+                                width: 380px;
+                                height: 230px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+
+
+
+
+                    @media (max-width: 764px) {
+                      .Main {
+                        .content {
+                          margin-top: -70px;
+
+                          .about_block {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px;
+
+                            .about_img {
+                              width: 320px;
+                              height: 200px;
+
+                              .under_block {
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+
+                                .year_block {
+                                  p {
+                                    font-size: 13px;
+                                    font-weight: 300;
+                                    color: rgba(255, 255, 255, 0.852);
+                                    margin-bottom: 3px;
+                                  }
+
+                                  h5 {
+                                    font-size: 37px;
+                                    font-weight: 300;
+                                    color: blueviolet;
+                                  }
+                                }
+
+                                .underline {
+                                  height: 57px;
+                                  width: 3px;
+                                  background: rgba(255, 255, 255, 0.574);
+                                }
+
+                                p {
+                                  font-size: 13px;
+                                  font-weight: 300;
+                                  line-height: 23px;
+                                  color: rgba(255, 255, 255, 0.852);
+                                }
+                              }
+                            }
+
+                            .main_dig_block {
+                              width: 100%;
+                              display: flex;
+                              align-items: center;
+                              flex-direction: column;
+                              gap: 14px;
+
+                              .block2 {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 80px;
+                                width: 100%;
+                                height: 250px;
+                                background: rgba(255, 255, 255, 0.074);
+                                border-radius: 5px;
+                                padding: 26px 18px;
+
+                                h4 {
+                                  font-size: 26px;
+                                  font-weight: 300;
+                                }
+
+                                p {
+                                  font-size: 17px;
+                                  font-weight: 300;
+                                  color: rgba(255, 255, 255, 0.814);
+                                  line-height: 22px;
+                                }
+                              }
+
+                              .block3 {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 80px;
+                                width: 100%;
+                                height: 250px;
+                                background: rgba(255, 255, 255, 0.074);
+                                border-radius: 5px;
+                                padding: 26px 18px;
+
+                                h4 {
+                                  font-size: 26px;
+                                  font-weight: 300;
+                                }
+
+                                p {
+                                  font-size: 17px;
+                                  font-weight: 300;
+                                  color: rgba(255, 255, 255, 0.814);
+                                  line-height: 22px;
+                                }
+                              }
+
+                              .block4 {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 70px;
+                                width: 100%;
+                                height: 250px;
+                                background: rgba(255, 255, 255, 0.074);
+                                border-radius: 5px;
+                                padding: 26px 18px;
+
+                                h4 {
+                                  font-size: 26px;
+                                  font-weight: 300;
+                                }
+
+                                p {
+                                  font-size: 17px;
+                                  font-weight: 300;
+                                  color: rgba(255, 255, 255, 0.814);
+                                  line-height: 22px;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      .digital_block {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        gap: 25px;
+
+                        .main_dig_block {
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          flex-direction: column;
+                          gap: 25px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                @media (max-width: 420px) {
+                  .Main {
+                    .content {
+                      .about_block {
+                        .about_img {
+                          width: 100%;
+
+
+                          @media(max-width: 525px) {
+                            .Main {
+                              .content {
+                                .digital_block {
+                                  margin: 100px 0;
+                                  width: 100%;
+                                  padding: 30px 20px;
+                                  background: rgba(255, 255, 255, 0.059);
+                                  backdrop-filter: blur(50px);
+                                  border-radius: 5px;
+                                  display: flex;
+                                  align-items: start;
+                                  justify-content: space-between;
+
+                                  .block1 {
+                                    margin-bottom: 30px;
+                                    display: flex;
+                                    justify-content: start;
+                                    flex-direction: column;
+                                    gap: 60px;
+
+                                    h6 {
+                                      font-size: 15px;
+                                      font-weight: 300;
+                                      line-height: 27px;
+
+                                      span {
+                                        color: blueviolet;
+                                      }
+                                    }
+
+                                    .under_block {
+                                      display: flex;
+                                      align-items: center;
+                                      gap: 20px;
+
+                                      .year_block {
+                                        p {
+                                          font-size: 13px;
+                                          font-weight: 300;
+                                          color: rgba(255, 255, 255, 0.852);
+                                          margin-bottom: 3px;
+                                        }
+
+                                        h5 {
+                                          font-size: 37px;
+                                          font-weight: 300;
+                                          color: blueviolet;
+                                        }
+                                      }
+
+                                      .underline {
+                                        height: 57px;
+                                        width: 3px;
+                                        background: rgba(255, 255, 255, 0.574);
+                                      }
+
+                                      p {
+                                        font-size: 13px;
+                                        font-weight: 300;
+                                        line-height: 23px;
+                                        color: rgba(255, 255, 255, 0.852);
+                                      }
+                                    }
+                                  }
+
+                                  .main_dig_block {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    gap: 14px;
+
+                                    .block2 {
+                                      display: flex;
+                                      flex-direction: column;
+                                      gap: 80px;
+                                      width: 100%;
+                                      height: 250px;
+                                      background: rgba(255, 255, 255, 0.074);
+                                      border-radius: 5px;
+                                      padding: 26px 18px;
+
+                                      h4 {
+                                        font-size: 26px;
+                                        font-weight: 300;
+                                      }
+
+                                      p {
+                                        font-size: 17px;
+                                        font-weight: 300;
+                                        color: rgba(255, 255, 255, 0.814);
+                                        line-height: 22px;
+                                      }
+                                    }
+
+                                    .block3 {
+                                      display: flex;
+                                      flex-direction: column;
+                                      gap: 80px;
+                                      width: 100%;
+                                      height: 250px;
+                                      background: rgba(255, 255, 255, 0.074);
+                                      border-radius: 5px;
+                                      padding: 26px 18px;
+
+                                      h4 {
+                                        font-size: 26px;
+                                        font-weight: 300;
+                                      }
+
+                                      p {
+                                        font-size: 17px;
+                                        font-weight: 300;
+                                        color: rgba(255, 255, 255, 0.814);
+                                        line-height: 22px;
+                                      }
+                                    }
+
+                                    .block4 {
+                                      display: flex;
+                                      flex-direction: column;
+                                      gap: 70px;
+                                      width: 100%;
+                                      height: 250px;
+                                      background: rgba(255, 255, 255, 0.074);
+                                      border-radius: 5px;
+                                      padding: 26px 18px;
+
+                                      h4 {
+                                        font-size: 26px;
+                                        font-weight: 300;
+                                      }
+
+                                      p {
+                                        font-size: 17px;
+                                        font-weight: 300;
+                                        color: rgba(255, 255, 255, 0.814);
+                                        line-height: 22px;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+
+
+
+
+
+
+
+                          @media(max-width: 430px) {
+                            .Main {
+                              .content {
+                                .about_block {
+                                  .about_text {
+                                    h5 {
+                                      font-size: 16px;
+                                    }
+
+                                    h1 {
+                                      font-size: 38px;
+                                      margin-bottom: 22px;
+                                    }
+
+                                    h4 {
+                                      font-size: 16px;
+                                      line-height: 20px;
+                                      margin-bottom: 22px;
+                                    }
+
+                                    p {
+                                      font-size: 13px;
+                                      line-height: 18px;
+                                    }
+                                  }
+
+                                  .about_img {
+                                    width: 100%;
+                                  }
+                                }
+
+
+                                .digital_block {
+                                  margin: 100px 0;
+                                  width: 100%;
+                                  padding: 30px 20px;
+                                  background: rgba(255, 255, 255, 0.059);
+                                  backdrop-filter: blur(50px);
+                                  border-radius: 5px;
+                                  display: flex;
+                                  align-items: start;
+                                  justify-content: space-between;
+
+                                  .block1 {
+                                    margin-bottom: 30px;
+                                    display: flex;
+                                    justify-content: start;
+                                    flex-direction: column;
+                                    gap: 60px;
+
+                                    h6 {
+                                      font-size: 15px;
+                                      font-weight: 300;
+                                      line-height: 27px;
+
+                                      span {
+                                        color: blueviolet;
+                                      }
+                                    }
+
+                                    .under_block {
+                                      display: flex;
+                                      align-items: center;
+                                      gap: 20px;
+
+                                      .year_block {
+                                        p {
+                                          font-size: 13px;
+                                          font-weight: 300;
+                                          color: rgba(255, 255, 255, 0.852);
+                                          margin-bottom: 3px;
+                                        }
+
+                                        h5 {
+                                          font-size: 37px;
+                                          font-weight: 300;
+                                          color: blueviolet;
+                                        }
+                                      }
+
+                                      .underline {
+                                        height: 57px;
+                                        width: 3px;
+                                        background: rgba(255, 255, 255, 0.574);
+                                      }
+
+                                      p {
+                                        font-size: 13px;
+                                        font-weight: 300;
+                                        line-height: 23px;
+                                        color: rgba(255, 255, 255, 0.852);
+                                      }
+                                    }
+                                  }
+
+                                  .main_dig_block {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    gap: 14px;
+
+                                    .block2 {
+                                      display: flex;
+                                      flex-direction: column;
+                                      gap: 50px;
+                                      width: 100%;
+                                      height: 250px;
+                                      background: rgba(255, 255, 255, 0.074);
+                                      border-radius: 5px;
+                                      padding: 26px 18px;
+
+                                      h4 {
+                                        font-size: 23px;
+                                        font-weight: 300;
+                                      }
+
+                                      p {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        color: rgba(255, 255, 255, 0.814);
+                                        line-height: 22px;
+                                      }
+                                    }
+
+                                    .block3 {
+                                      display: flex;
+                                      flex-direction: column;
+                                      gap: 50px;
+                                      width: 100%;
+                                      height: 250px;
+                                      background: rgba(255, 255, 255, 0.074);
+                                      border-radius: 5px;
+                                      padding: 26px 18px;
+
+                                      h4 {
+                                        font-size: 23px;
+                                        font-weight: 300;
+                                      }
+
+                                      p {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        color: rgba(255, 255, 255, 0.814);
+                                        line-height: 22px;
+                                      }
+                                    }
+
+                                    .block4 {
+                                      display: flex;
+                                      flex-direction: column;
+                                      gap: 50px;
+                                      width: 100%;
+                                      height: 250px;
+                                      background: rgba(255, 255, 255, 0.074);
+                                      border-radius: 5px;
+                                      padding: 26px 18px;
+
+                                      h4 {
+                                        font-size: 23px;
+                                        font-weight: 300;
+                                      }
+
+                                      p {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        color: rgba(255, 255, 255, 0.814);
+                                        line-height: 22px;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      @media (max-width: 400px) {
+                        .Main {
+                          .content {
+                            .about_block {
+                              .about_text {
+                                h5 {
+                                  font-size: 16px;
+                                }
+
+                                h1 {
+                                  font-size: 25px;
+                                  margin-bottom: 20px;
+                                }
+
+                                h4 {
+                                  font-size: 10px;
+                                  line-height: 20px;
+                                  margin-bottom: 19px;
+                                }
+
+                                p {
+                                  font-size: 9px;
+                                  line-height: 20px;
+                                }
+
+
+                                @media(max-width: 400px) {
+                                  .Main {
+                                    .content {
+                                      .about_block {
+                                        .about_img {
+                                          width: 100%;
+                                          height: 170px;
+                                        }
+                                      }
+                                    }
+
+                                    .about_img {
+                                      width: 100%;
+
+                                      height: 170px;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+
+
+
+                            @media(max-width: 375px) {
+                              .Main {
+                                .content {
+                                  .about_block {
+                                    .about_text {
+                                      h5 {
+                                        font-size: 16px;
+                                      }
+
+                                      h1 {
+                                        font-size: 25px;
+                                        margin-bottom: 19px;
+                                      }
+
+                                      h4 {
+                                        font-size: 10px;
+                                        line-height: 20px;
+                                        margin-bottom: 17px;
+                                      }
+
+                                      p {
+                                        font-size: 8px;
+                                        line-height: 18px;
+                                        font-size: 16px;
+                                      }
+
+                                      h1 {
+                                        font-size: 36px;
+                                        margin-bottom: 22px;
+                                      }
+
+                                      h4 {
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        margin-bottom: 25px;
+                                      }
+
+                                      p {
+                                        font-size: 11px;
+                                        line-height: 18px;
+                                      }
+                                    }
+
+                                    .about_img {
+                                      width: 100%;
+                                    }
+                                  }
+
+                                  .digital_block {
+                                    margin: 100px 0;
+                                    width: 100%;
+                                    padding: 30px 20px;
+                                    background: rgba(255, 255, 255, 0.059);
+                                    backdrop-filter: blur(50px);
+                                    border-radius: 5px;
+                                    display: flex;
+                                    align-items: start;
+                                    justify-content: space-between;
+
+                                    .block1 {
+                                      margin-bottom: 30px;
+                                      display: flex;
+                                      justify-content: start;
+                                      flex-direction: column;
+                                      gap: 46px;
+
+                                      h6 {
+                                        font-size: 13px;
+                                        font-weight: 300;
+                                        line-height: 27px;
+
+                                        span {
+                                          color: blueviolet;
+                                        }
+                                      }
+
+                                      .under_block {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 20px;
+
+                                        .year_block {
+                                          p {
+                                            font-size: 12px;
+                                            font-weight: 300;
+                                            color: rgba(255, 255, 255, 0.852);
+                                            margin-bottom: 3px;
+                                          }
+
+                                          h5 {
+                                            font-size: 30px;
+                                            font-weight: 300;
+                                            color: blueviolet;
+                                          }
+                                        }
+
+                                        .underline {
+                                          height: 57px;
+                                          width: 3px;
+                                          background: rgba(255, 255, 255, 0.574);
+                                        }
+
+                                        p {
+                                          font-size: 12px;
+                                          font-weight: 300;
+                                          line-height: 23px;
+                                          color: rgba(255, 255, 255, 0.852);
+                                        }
+                                      }
+                                    }
+
+                                    .main_dig_block {
+                                      width: 100%;
+                                      display: flex;
+                                      align-items: center;
+                                      flex-direction: column;
+                                      gap: 14px;
+
+                                      .block2 {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 46px;
+                                        width: 100%;
+                                        height: 250px;
+                                        background: rgba(255, 255, 255, 0.074);
+                                        border-radius: 5px;
+                                        padding: 26px 18px;
+
+                                        h4 {
+                                          font-size: 22px;
+                                          font-weight: 300;
+                                        }
+
+                                        p {
+                                          font-size: 13px;
+                                          font-weight: 300;
+                                          color: rgba(255, 255, 255, 0.814);
+                                          line-height: 22px;
+                                        }
+                                      }
+
+                                      .block3 {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 46px;
+                                        width: 100%;
+                                        height: 250px;
+                                        background: rgba(255, 255, 255, 0.074);
+                                        border-radius: 5px;
+                                        padding: 26px 18px;
+
+                                        h4 {
+                                          font-size: 22px;
+                                          font-weight: 300;
+                                        }
+
+                                        p {
+                                          font-size: 13px;
+                                          font-weight: 300;
+                                          color: rgba(255, 255, 255, 0.814);
+                                          line-height: 22px;
+                                        }
+                                      }
+
+                                      .block4 {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 46px;
+                                        width: 100%;
+                                        height: 250px;
+                                        background: rgba(255, 255, 255, 0.074);
+                                        border-radius: 5px;
+                                        padding: 26px 18px;
+
+                                        h4 {
+                                          font-size: 22px;
+                                          font-weight: 300;
+                                        }
+
+                                        p {
+                                          font-size: 13px;
+                                          font-weight: 300;
+                                          color: rgba(255, 255, 255, 0.814);
+                                          line-height: 22px;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+
+
+                            @media(max-width: 340px) {
+                              .Main {
+                                .content {
+                                  .about_block {
+                                    .about_text {
+                                      h5 {
+                                        font-size: 16px;
+                                      }
+
+                                      h1 {
+                                        font-size: 35px;
+                                        margin-bottom: 22px;
+                                      }
+
+                                      h4 {
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        margin-bottom: 25px;
+                                      }
+
+                                      p {
+                                        font-size: 10px;
+                                        line-height: 18px;
+                                      }
+                                    }
+
+                                    .about_img {
+                                      width: 100%;
+                                    }
+                                  }
+                                }
+
+                                .about_img {
+                                  width: 100%;
+                                  height: 130px;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 }
 
-@media (max-width: 420px) {
-  .Main {
-    .content {
-      .about_block {
-        .about_img {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  .Main {
-    .content {
-      .about_block {
-        .about_text {
-          h5 {
-            font-size: 16px;
-          }
-          h1 {
-            font-size: 25px;
-            margin-bottom: 20px;
-          }
-          h4 {
-            font-size: 10px;
-            line-height: 20px;
-            margin-bottom: 19px;
-          }
-          p {
-            font-size: 9px;
-            line-height: 20px;
-          }
-        }
-        .about_img {
-          width: 100%;
-
-          height: 170px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 340px) {
-  .Main {
-    .content {
-      .about_block {
-        .about_text {
-          h5 {
-            font-size: 16px;
-          }
-          h1 {
-            font-size: 25px;
-            margin-bottom: 19px;
-          }
-          h4 {
-            font-size: 10px;
-            line-height: 20px;
-            margin-bottom: 17px;
-          }
-          p {
-            font-size: 8px;
-            line-height: 18px;
-          }
-        }
-        .about_img {
-          width: 100%;
-          height: 130px;
-        }
-      }
-    }
-  }
-}
+;
