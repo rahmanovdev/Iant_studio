@@ -2,8 +2,6 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import scss from "./Header.module.scss";
-import logo from "../../../../../assets/images/iant╤Г.png";
-import Image from "next/image";
 import Link from "next/link";
 import IAntLogo from "@/assets/IAntLogo";
 
