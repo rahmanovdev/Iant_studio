@@ -1,5 +1,5 @@
 .projects {
-  margin-top: 90px;
+  margin-top: 50px;
   .content {
     display: flex;
     align-items: center;
@@ -203,6 +203,7 @@
 
 @media(max-width: 395px) {
   .projects {
+    margin-top: 0;
     .content {
       .projectBlocks {
         width: 100%;

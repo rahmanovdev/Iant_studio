@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./Marquee.module.scss";
+import styles from "./Marquee2.module.scss";
 
-const Marquee: React.FC = () => {
+const Marquee2: React.FC = () => {
   return (
     <div className={styles.marqueeCont}>
       <div className={styles.marqueeSlider}>
-        <p className={styles.bold}># DESIGN</p>
+        <p className={styles.bold}>DESIGN</p>
         <p className={styles.med}>WEB DEVELOPMENT</p>
         <p className={styles.lit}>CAMPAIGNS</p>
         <p className={styles.bold}>PHOTOGRAPHY</p>
@@ -50,4 +50,4 @@ const Marquee: React.FC = () => {
   );
 };
 
-export default Marquee;
+export default Marquee2;

@@ -4,5 +4,20 @@
   flex-direction: column;
   min-height: 100vh;
 
-  // gap: 80px;
+
+  .groupSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+@media(max-width: 420px) {
+  .content {
+    .groupSection {
+      gap: 1px;
+    }
+  }
 }

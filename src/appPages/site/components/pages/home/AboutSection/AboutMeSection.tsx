@@ -44,7 +44,7 @@ const AboutMeSection = () => {
                 </p>
                 <h3>[ 2 ]</h3>
               </div>
-              <div className={scss.stage_1}>
+              <div className={scss.stage_3}>
                 <button>Запуск сайта</button>
                 <ul>
                   <li className={scss.lit}>Полноценный запуск</li>

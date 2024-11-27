@@ -24,7 +24,7 @@
   min-width: 100%;
   flex-shrink: 0;
   animation-name: slide;
-  animation-direction: normal;
+  animation-direction: reverse;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-play-state: running;
@@ -40,7 +40,7 @@
 }
 
 .marqueeSlider p::before {
-  content: "-";
+  content: ".";
   position: absolute;
   left: -7px;
   font-weight: 900;

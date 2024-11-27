@@ -18,9 +18,12 @@ export function OurWorks() {
     <div className={`${scss.our_works} w-full `}>
       <div className="container mx-auto ">
         <div className="text-center mt-20">
-          <h1 className="text-4xl md:text-[40px] font-bold mb-4 leading-tight">
+          <h1
+            className={`text-[26px] sm:text-[30px] md:text-[40px] font-bold mb-4 leading-snug w-[90%] mx-auto`}
+          >
             Создаем суперэффективные сайты и строим долгосрочное партнерство
           </h1>
+
           <h2 className="text-2xl md:text-3xl font-semibold text-neutral-300 mt-20 ">
             Наши работы
           </h2>

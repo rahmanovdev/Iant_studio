@@ -1,8 +1,6 @@
 .about_me {
-  padding: 90px 0;
+  padding-top: 80px;
   position: relative;
-  height: 100vh;
-  margin-bottom: 100px;
   width: 100%;
 
   .container {
@@ -182,9 +180,9 @@
         background-image: url("../../../../../../assets/images/etab3.svg");
         background-repeat: no-repeat;
         background-position: center;
-        height: 540px;
+        height: 500px;
         background-size: cover;
-        width: 400px;
+        width: 380px;
         object-fit: contain;
         flex-shrink: 0;
 
@@ -219,7 +217,7 @@
         }
 
         h3 {
-          color: #0ed0a2;
+          color: darkorchid;
           font-size: 16px;
           font-family: "Arial", Arial, sans-serif;
           line-height: 1.3;
