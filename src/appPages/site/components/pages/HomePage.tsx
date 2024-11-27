@@ -1,5 +1,4 @@
 import AboutMeSection from "./home/AboutSection/AboutMeSection";
-import { ThreeDCardDemo } from "./home/Card_Projects/ThreeDCard";
 import Decides from "./home/DecidesSection/Decides";
 import HeroContent from "./home/HeroContent/HeroContent";
 import Marquee from "./home/Marquee/Marquee";
@@ -17,7 +16,7 @@ const HomePage = () => {
       <Projects />
       <TeamSection />
       <WebPrice />
-      <ThreeDCardDemo />
+      {/* <OurWorks /> */}
     </div>
   );
 };
