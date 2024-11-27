@@ -15,14 +15,14 @@ const Projects = () => {
               которые помогают пользователям достигать целей.
             </p>
           </div>
-          <div className={scss.projectBlocks}>
+          <div className={scss.projectBlocks}> 
             {projects.map((el, idx) => (
               <div className={scss.projectBlock} key={idx}>
                 <Image
                   src={el.img}
                   alt=""
                   width={400}
-                  height={200}
+                  height={350}
                   className={scss.bgImg}
                 />
                 <div className={scss.text}>

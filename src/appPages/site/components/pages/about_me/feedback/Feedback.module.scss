@@ -1,9 +1,10 @@
 .Main {
-    padding: 100px 0;
+    padding: 70px 0;
 
     .content {
         display: flex;
         align-items: center;
+        gap: 20px;
         justify-content: space-between;
 
 
@@ -74,7 +75,7 @@
                 svg {
                     width: 40px;
                     height: 40px;
-                    background: rgba(255, 255, 255, 0.577);
+                    background: rgba(255, 255, 255, 0.126);
                     padding: 7px 7px;
                     border-radius: 50%;
                 }
@@ -83,37 +84,23 @@
 
 
     }
-}
 
 
-
-@media(max-width: 764px) {
-    .Main {
-        .content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 60px;
+    .contact_map {
+        margin-top: 100px;
+        iframe {
+            width: 100%;
+            border-radius: 10px;
         }
     }
 }
 
 
-@media(max-width: 420px) {
+
+@media(max-width: 1170px) {
     .Main {
         .content {
             .left {
-                h5 {
-                    font-size: 15px;
-                }
-                h1 {
-                    font-size: 40px;
-                }
-                p {
-                    font-size: 17px;
-                }
-    
                 .number_info_block {
                     display: flex;
                     justify-content: start;
@@ -133,6 +120,39 @@
                         font-size: 20px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media(max-width: 990px) {
+    .Main {
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 60px;
+        }
+    }
+}
+
+
+@media(max-width: 420px) {
+    .Main {
+        .content {
+            .left {
+                h5 {
+                    font-size: 15px;
+                }
+                h1 {
+                    font-size: 36px;
+                }
+                p {
+                    font-size: 16px;
+                }
+    
+                
     
                 .addres_info_block {
                     margin-bottom: 30px;
@@ -162,6 +182,26 @@
             }
     
     
+        }
+    }
+}
+
+
+
+@media(max-width:350px) {
+    .Main {
+        .content {
+            .left {
+                h5 {
+                    font-size: 14px;
+                }
+                h1 {
+                    font-size: 29px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

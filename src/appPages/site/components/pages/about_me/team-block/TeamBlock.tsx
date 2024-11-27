@@ -38,7 +38,7 @@ const TeamBlock = () => {
 
           {/* TEAM IMG  */}
           <div className={scss.team_images}>
-            <div className={scss.image_block}>
+            <div className={scss.image_block}> 
               <div className={scss.profile}>
                 <img
                   src={teamPeopleInfo.image}
