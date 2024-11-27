@@ -18,7 +18,7 @@ const CliComments = () => {
                 </div>
 
 
-                <div className={scss.com_block}>
+                <div className={scss.com_block}> 
 
                     <div className={scss.block}>
                         <div className={scss.img_block}>

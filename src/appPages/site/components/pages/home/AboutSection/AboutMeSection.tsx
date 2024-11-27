@@ -6,7 +6,7 @@ const AboutMeSection = () => {
     <>
       <div className={scss.about_me}>
         <BackgroundSecond />
-        <div className="container">
+        <div className={scss.container}>
           <div className={scss.content}>
             <div className={scss.aboutMeText}>
               <h2>Создание сайтов в Кыргызстане</h2>

@@ -1,4 +1,5 @@
 .decides {
+  margin: 60px 0;
   .content {
     display: flex;
     align-items: center;
@@ -26,7 +27,7 @@
         border-color: transparent;
         border-style: solid;
         text-align: center;
-        width: 70%;
+        // width: 70%;
       }
     }
     .blocks {
@@ -69,6 +70,114 @@
       margin-top: 40px;
       width: 70%;
       height: 1px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .decides {
+    .content {
+      .decidesText {
+        h2 {
+          font-size: clamp(28px, 5vw, 46px);
+        }
+
+        p {
+          font-size: clamp(14px, 1.5vw, 18px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .decides {
+    .content {
+      .decidesText {
+        h2 {
+          font-size: 30px;
+          width: 90%;
+        }
+
+        p {
+          font-size: clamp(16px, 1.5vw, 18px);
+        }
+      }
+
+      .blocks {
+        .block {
+          width: 300px;
+          height: 60px;
+          background: black;
+          border-radius: 10px;
+          border: 1px solid gray;
+          cursor: pointer;
+          &:hover {
+            transition: 0.8s;
+            box-shadow: 5px 5px 10px gray;
+            h4 {
+              transition: 0.8s;
+              text-shadow: 5px 5px 10px white;
+            }
+          }
+          h4 {
+            width: 80%;
+            font-size: 15px;
+            font-weight: 400;
+            display: flex;
+            align-items: start;
+            text-align: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .decides {
+    .content {
+      .decidesText {
+        h2 {
+          font-size: 20px;
+          width: 90%;
+        }
+
+        p {
+          font-size: 10px;
+        }
+      }
+      .blocks {
+        .block {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 260px;
+          height: 60px;
+          background: black;
+          border-radius: 10px;
+          border: 1px solid gray;
+          cursor: pointer;
+          &:hover {
+            transition: 0.8s;
+            box-shadow: 5px 5px 10px gray;
+            h4 {
+              transition: 0.8s;
+              text-shadow: 5px 5px 10px white;
+            }
+          }
+          h4 {
+            width: 80%;
+            font-size: 12px;
+            font-weight: 400;
+            display: flex;
+            align-items: start;
+            text-align: center;
+            gap: 10px;
+          }
+        }
+      }
     }
   }
 }

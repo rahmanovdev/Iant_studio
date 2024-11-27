@@ -5,7 +5,7 @@
             margin-bottom: 90px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-between; 
 
 
             .left {
@@ -146,5 +146,125 @@
         // TEAM IMG BLOCK
 
 
+    }
+}
+
+
+@media(max-width: 870px) {
+    .Main {
+        .content {
+            .team_head {
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 764px) {
+    .Main {
+        width: 100%;
+        .content {
+            .image_block {
+                margin-left: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                gap: 30px;
+                -webkit-overflow-scrolling: touch;
+
+                scrollbar-width: none;
+            }
+
+            .image_block::-webkit-scrollbar {
+                display: none;
+            }
+
+            .profile {
+                position: relative;
+                width: 60%; 
+                flex: 0 0 auto; 
+                height: 230px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 420px) {
+    .Main {
+        .content {
+            .team_head {
+                .left {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: rgba(255, 255, 255, 0.459);
+                        margin-bottom: 6px;
+                    }
+    
+                    h1 {
+                        color: white;
+                        font-size: 35px;
+                        font-weight: 300;
+                        margin-bottom: 33px;
+    
+                        span {
+                            color: blueviolet;
+                        }
+                    }
+    
+                    p {
+                        font-size: 15px;
+                        font-weight: 300;
+                        color: rgba(255, 255, 255, 0.689);
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 340px) {
+    .Main {
+        .content {
+            .team_head {
+                .left {
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: rgba(255, 255, 255, 0.459);
+                        margin-bottom: 6px;
+                    }
+    
+                    h1 {
+                        color: white;
+                        font-size: 30px;
+                        font-weight: 300;
+                        margin-bottom: 28px;
+    
+                        span {
+                            color: blueviolet;
+                        }
+                    }
+    
+                    p {
+                        font-size: 15px;
+                        font-weight: 300;
+                        color: rgba(255, 255, 255, 0.689);
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
     }
 }
