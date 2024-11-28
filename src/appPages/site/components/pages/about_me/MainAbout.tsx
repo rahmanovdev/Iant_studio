@@ -5,6 +5,7 @@ import scss from "./MainAbout.module.scss";
 import TeamBlock from "./team-block/TeamBlock";
 import CliComments from "./cli-comments/CliComments";
 import Feedback from "./feedback/Feedback";
+import TeamBlockForMob from "./team-block/TeamBlockForMob";
 
 const MainAbout = () => {
   return (
@@ -13,6 +14,7 @@ const MainAbout = () => {
         <MissionBlock />
         <AboutBlock />
         <TeamBlock/>
+        <TeamBlockForMob/>
         <CliComments/>
         <Feedback/>
       </div>
