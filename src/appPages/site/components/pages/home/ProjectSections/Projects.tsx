@@ -2,8 +2,18 @@
 import Image from "next/image";
 import scss from "./Projects.module.scss";
 import { projects } from "@/constants/projects";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
+
+  useEffect(() => {
+    AOS.init({
+      once: true, 
+    });
+  }, []);
+
   return (
     <section className={scss.projects}>
       <div className="container">
@@ -17,7 +27,7 @@ const Projects = () => {
           </div>
           <div className={scss.projectBlocks}> 
             {projects.map((el, idx) => (
-              <div className={scss.projectBlock} key={idx}>
+              <div data-aos="fade-up" className={scss.projectBlock} key={idx}>
                 <Image
                   src={el.img}
                   alt=""

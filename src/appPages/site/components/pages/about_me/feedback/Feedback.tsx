@@ -44,6 +44,18 @@ const Feedback = () => {
             <Form />
           </div>
         </div>
+
+        <div className={scss.feedback_map}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d544.5559907337428!2d74.61225026359995!3d42.88966315378205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2skg!4v1732619121181!5m2!1sen!2skg"
+            width={600}
+            height={450}
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
       </div>
     </section>
   );

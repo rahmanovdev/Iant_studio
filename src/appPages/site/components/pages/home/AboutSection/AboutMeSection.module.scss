@@ -231,6 +231,10 @@
   }
 }
 
+
+
+
+
 @media (max-width: 884px) {
   .stages {
     overflow-x: auto;
@@ -320,29 +324,30 @@
         p {
           font-size: 14px;
         }
+
+
+        .stage_3 {
+          border-radius: 30px;
+          padding: 30px;
+          gap: 18px;
+          height: 440px;
+          width: 320px;
+
+      button {
+        padding: 6px 16px;
+        border-radius: 14px;
       }
 
-      .stage_3 {
-        border-radius: 30px;
-        padding: 30px;
-        gap: 18px;
-        height: 440px;
-        width: 320px;
-
-        button {
-          padding: 6px 16px;
-          border-radius: 14px;
+      ul {
+        li {
+          font-size: 16px;
         }
+      }
 
-        ul {
-          li {
-            font-size: 16px;
-          }
-        }
-
-        p {
-          font-size: 14px;
-        }
+      p {
+        font-size: 14px;
+      }
+    }
       }
     }
   }

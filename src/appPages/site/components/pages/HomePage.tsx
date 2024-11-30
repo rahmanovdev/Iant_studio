@@ -1,3 +1,4 @@
+import CliComments from "./about_me/cli-comments/CliComments";
 import AboutMeSection from "./home/AboutSection/AboutMeSection";
 // import Decides from "./home/DecidesSection/Decides";
 import Questions from "./home/AnswersForQuestion.tsx/Questions";
@@ -22,6 +23,7 @@ const HomePage = () => {
       <Projects />
       </div>
       <TeamSection />
+      <CliComments />
       <div
         style={{ padding: "20px", backgroundColor: "#121212", width: "100%" }}
       >
