@@ -45,7 +45,7 @@ export function OurWorks() {
                     {el.title}
                   </CardItem>
                   <CardItem
-                    as="p"
+                      as="p"
                     translateZ="60"
                     className="text-neutral-300 py-2 px-2 text-sm max-w-sm"
                   >
