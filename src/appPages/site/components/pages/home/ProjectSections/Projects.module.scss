@@ -95,15 +95,7 @@
   }
 }
 
-
-
-
-
-
-
-
-
-@media(max-width: 700px) {
+@media (max-width: 700px) {
   .projects {
     .content {
       .projectBlocks {
@@ -127,7 +119,6 @@
             button {
               width: 150px;
               height: 35px;
-              
             }
           }
           img {
@@ -144,14 +135,11 @@
       }
     }
   }
-  
 }
 
-
-
-
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   .projects {
+    margin-top: 70px;
     .content {
       .projectBlocks {
         width: 100%;
@@ -175,7 +163,6 @@
             button {
               width: 130px;
               height: 35px;
-              
             }
           }
           img {
@@ -192,18 +179,11 @@
       }
     }
   }
-  
 }
 
-
-
-
-
-
-
-@media(max-width: 395px) {
+@media (max-width: 395px) {
   .projects {
-    margin-top: 0;
+    margin-top: 90px;
     .content {
       .projectBlocks {
         width: 100%;
@@ -227,7 +207,6 @@
             button {
               width: 120px;
               height: 35px;
-              
             }
           }
           img {
@@ -244,5 +223,4 @@
       }
     }
   }
-  
 }

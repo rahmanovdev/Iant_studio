@@ -117,78 +117,19 @@ const TeamBlock = () => {
                   <p className={scss.position}>{teamPeopleInfo.position}</p>
                 </div>
               </div>
-
-              <div
-                data-aos="fade-right"
-                data-aos-delay="2000"
-                data-aos-duration="500"
-                className={scss.profile}
-              >
-                <img
-                  src={teamPeopleInfo.image}
-                  alt="Person 5"
-                  className={scss.profile_image}
-                />
-                <div className={scss.info}>
-                  <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                  <p className={scss.position}>{teamPeopleInfo.position}</p>
-                </div>
-              </div>
-
-              <div
-                data-aos="fade-right"
-                data-aos-delay="2500"
-                data-aos-duration="500"
-                className={scss.profile}
-              >
-                <img
-                  src={teamPeopleInfo.image}
-                  alt="Person 5"
-                  className={scss.profile_image}
-                />
-                <div className={scss.info}>
-                  <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                  <p className={scss.position}>{teamPeopleInfo.position}</p>
-                </div>
-              </div>
-
-              <div
-                data-aos="fade-right"
-                data-aos-delay="3000"
-                data-aos-duration="500"
-                className={scss.profile}
-              >
-                <img
-                  src={teamPeopleInfo.image}
-                  alt="Person 5"
-                  className={scss.profile_image}
-                />
-                <div className={scss.info}>
-                  <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                  <p className={scss.position}>{teamPeopleInfo.position}</p>
-                </div>
-              </div>
-
-              <div
-                data-aos="fade-right"
-                data-aos-delay="3500"
-                data-aos-duration="500"
-                className={scss.profile}
-              >
-                <img
-                  src={teamPeopleInfo.image}
-                  alt="Person 5"
-                  className={scss.profile_image}
-                />
-                <div className={scss.info}>
-                  <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                  <p className={scss.position}>{teamPeopleInfo.position}</p>
-                </div>
-              </div>
-              
             </div>
           </div>
           {/* TEAM IMG */}
+
+          <div className={scss.experts_section}>
+            <div className={scss.number_block}>
+              <h1 className={scss.number}>20</h1>
+              <h1>+</h1>
+            </div>
+
+            <p className={scss.description}>Профессиональных IT экспертов</p>
+            <button className={scss.join_button}>➤ Хочу в команду</button>
+          </div>
         </div>
       </div>
     </section>

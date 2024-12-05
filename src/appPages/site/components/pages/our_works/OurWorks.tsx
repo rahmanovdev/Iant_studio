@@ -42,7 +42,7 @@ export function OurWorks() {
               key={el.id}
               className="w-full max-w-[320px] h-[460px] rounded-[22px] flex items-center justify-center"
             >
-              <CardContainer className="inter-var w-full h-[464px] rounded-[22px] flex items-center justify-center">
+              <CardContainer className="inter-var w-[322px] h-[462px] rounded-[22px] flex items-center justify-center">
                 <CardBody className="bg-black w-full h-full p-4 flex flex-col gap-y-4 rounded-[22px]">
                   <CardItem
                     translateZ="50"
