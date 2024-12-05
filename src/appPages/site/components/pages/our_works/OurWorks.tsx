@@ -14,6 +14,12 @@ import { projects } from "@/constants/projects";
 import Feedback from "../about_me/feedback/Feedback";
 
 export function OurWorks() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className={`${scss.our_works} w-full `}>
       <div className="container mx-auto ">
@@ -70,6 +76,7 @@ export function OurWorks() {
                     >
                       На сайт
                     </CardItem>
+                    <Link onClick={scrollToTop} href={`/projectDetails/${el.id}`}>
                     <CardItem
                       translateZ={20}
                       as="button"
@@ -77,6 +84,7 @@ export function OurWorks() {
                     >
                       Про кейс
                     </CardItem>
+                    </Link>
                   </div>
                 </CardBody>
               </CardContainer>

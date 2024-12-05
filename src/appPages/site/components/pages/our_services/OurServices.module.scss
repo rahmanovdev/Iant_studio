@@ -1,22 +1,13 @@
 .OurServices {
-  padding: 50px 0;
-
-  .backgroundVideo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-
+  margin: 100px 0;
   .content {
+    display: flex;
+      flex-direction: column;
+      gap: 170px;
     .hero1 {
       display: flex;
       justify-content: space-between;
-      gap: 100px;
-      margin-bottom: 100px;
+      gap: 70px;
 
       .left {
         background-image: url("/assets/Katalog.jpg");
@@ -75,7 +66,6 @@
       display: flex;
       justify-content: space-between;
       gap: 50px;
-      margin-bottom: 100px;
 
       .right {
         background-image: url("/assets/Katalog.jpg");
@@ -165,12 +155,18 @@
 @media (max-width: 992px) {
   .content .hero1 {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
   }
 
   .left {
     width: 100%;
     height: 300px;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
   .right {
@@ -194,25 +190,27 @@
   }
 }
 
+
+
 @media (max-width: 768px) {
   .OurServices {
     .content .hero1 {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-
-      .left {
-        width: 500px;
-        height: 200px;
-      }
+      flex-direction: column-reverse;
 
       .right {
         width: 100%;
+        height: 200px;
+      }
+
+      .left {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 70px;
 
         h1 {
           text-align: center;
@@ -240,6 +238,7 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .OurServices {
     .content .hero2 {
@@ -249,16 +248,17 @@
       flex-direction: column-reverse;
 
       .right {
-        width: 500px;
+        width: 100%;
         height: 200px;
       }
 
       .left {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 70px;
 
         h1 {
           text-align: center;

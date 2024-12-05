@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import scss from "./Footer.module.scss";
 import logo from "../../././../../../assets/images/iant╤Г.png";

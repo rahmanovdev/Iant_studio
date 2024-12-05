@@ -1,0 +1,116 @@
+.main_modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+
+        .container {
+            background: #1c1c1c;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            max-width: 500px;
+            width: 100%; 
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+            @media (max-width: 768px) { 
+                width: 90%;
+                padding: 1.5rem;
+            }
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #cfcfcf;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+
+            .formGroup {
+                margin-bottom: 1rem;
+
+                label {
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-size: 0.9rem;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 1px solid #444;
+                    border-radius: 4px;
+                    background: #2b2b2b;
+                    color: #fff;
+                    font-size: 1rem;
+                }
+
+                input::placeholder {
+                    color: #aaa;
+                }
+            }
+
+            .submitBtn {
+                padding: 0.75rem;
+                background: blueviolet;
+                color: #fff;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+
+                &:hover {
+                    background: rgb(140, 54, 221);
+                }
+            }
+        }
+
+        .footer {
+            font-size: 0.8rem;
+            color: #aaa;
+            text-align: center;
+            margin-top: 1rem;
+
+            a {
+                color: blueviolet;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

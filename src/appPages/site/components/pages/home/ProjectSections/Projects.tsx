@@ -5,6 +5,7 @@ import { projects } from "@/constants/projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const Projects = () => {
 
@@ -13,6 +14,13 @@ const Projects = () => {
       once: true, 
     });
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <section className={scss.projects}>
@@ -37,8 +45,10 @@ const Projects = () => {
                 />
                 <div className={scss.text}>
                   <h2>{el.title}</h2>
-                  <h4>{el.description}</h4>
-                  <button>Перейти</button>
+                  <h4>{el.name}</h4>
+                  <Link href={`/projectDetails/${el.id}`}>
+                      <button onClick={scrollToTop}>Перейти</button>
+                  </Link>
                 </div>
                 <Image src={el.img2} alt="" width={400} height={200} />
               </div>

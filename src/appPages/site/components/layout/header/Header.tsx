@@ -4,10 +4,13 @@ import { useState } from "react";
 import scss from "./Header.module.scss";
 import Link from "next/link";
 import IAntLogo from "@/assets/IAntLogo";
+import useModalStore from "@/store/useModalStore";
+// import Modal from "@/ui/modal/Modal";
 
 const Header = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const { openModal } = useModalStore();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,9 +21,11 @@ const Header = () => {
       <div className="container">
         <div className={scss.content}>
           {/* <Image src={logo} alt="img" width={700} height={500} quality={90} /> */}
+          <Link href="/">
           <div className={scss.logo}>
             <IAntLogo />
           </div>
+          </Link>
           <div className={scss.header_nav}>
             <div
               className={`${scss.nav_link} ${
@@ -114,10 +119,13 @@ const Header = () => {
             </div>
           </div>
           <div className={scss.container_btn}>
-            <button className={scss.button}>Заказать сайт</button>
+            <button onClick={openModal} className={scss.button}>Заказать сайт</button>
           </div>
         </div>
       </div>
+
+
+      {/* <Modal/> */}
     </header>
   );
 };

@@ -5,6 +5,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import Form from "./Form";
+import SocialIcons from "@/ui/SocialIcons";
 
 const Feedback = () => {
   return (
@@ -57,6 +58,8 @@ const Feedback = () => {
           />
         </div>
       </div>
+
+      <SocialIcons/>
     </section>
   );
 };

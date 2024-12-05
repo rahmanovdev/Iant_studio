@@ -6,10 +6,6 @@ import Contacts from "../contacts/Contacts";
 const OurServices: FC = () => {
   return (
     <section className={scss.OurServices}>
-      <video autoPlay loop muted playsInline className={scss.backgroundVideo}>
-        <source src="/videos/background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.hero1}>
@@ -19,7 +15,7 @@ const OurServices: FC = () => {
               <span>
                 Разработка уникального веб-сайта для вас, включая полный цикл
                 работ над сайтом, <br /> от информационной сессии до запуска
-                коммерческого веб-сайта и его поддержки.
+                коммерческого веб-сайта и его поддержки. 
               </span>
               <h2>Этапы работ</h2>
               <ul>
@@ -243,7 +239,7 @@ const OurServices: FC = () => {
                   <span>
                     <GiCheckMark />
                   </span>
-                  Заключение договора
+                  Заключение договора 
                 </li>
                 <li>
                   <span>
