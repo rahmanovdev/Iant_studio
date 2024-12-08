@@ -1,5 +1,9 @@
-import OurServices from "./our_services/OurServices";
+import dynamic from "next/dynamic";
 import scss from "./OurServicesPage.module.scss";
+
+const OurServices = dynamic(() => import("./our_services/OurServices"), {
+  loading: () => <p></p>,
+});
 
 const OurServicesPage = () => {
   return (

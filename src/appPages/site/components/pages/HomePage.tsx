@@ -1,26 +1,46 @@
-import CliComments from "./about_me/cli-comments/CliComments";
-import AboutMeSection from "./home/AboutSection/AboutMeSection";
-// import Decides from "./home/DecidesSection/Decides";
-import Questions from "./home/AnswersForQuestion.tsx/Questions";
-import HeroContent from "./home/HeroContent/HeroContent";
-import Marquee from "./home/Marquee/Marquee";
-// import Marquee2 from "./home/Marquee/Marquee2";
-import Projects from "./home/ProjectSections/Projects";
-import TeamSection from "./home/TeamSection/TeamSection";
-import WebPrice from "./home/WebPriceSection/WebPrice";
+import dynamic from "next/dynamic";
 import scss from "./HomePage.module.scss";
+
+const HeroContent = dynamic(() => import("./home/HeroContent/HeroContent"), {
+  loading: () => <p></p>,
+});
+
+const Marquee = dynamic(() => import("./home/Marquee/Marquee"), {
+  loading: () => <p></p>,
+});
+
+const AboutMeSection = dynamic(() => import("./home/AboutSection/AboutMeSection"), {
+  loading: () => <p></p>,
+});
+
+const Projects = dynamic(() => import("./home/ProjectSections/Projects"), {
+  loading: () => <p></p>,
+});
+
+const TeamSection = dynamic(() => import("./home/TeamSection/TeamSection"), {
+  loading: () => <p></p>,
+});
+
+const CliComments = dynamic(() => import("./about_me/cli-comments/CliComments"), {
+  loading: () => <p></p>,
+});
+
+const Questions = dynamic(() => import("./home/AnswersForQuestion.tsx/Questions"), {
+  loading: () => <p></p>,
+});
+
+const WebPrice = dynamic(() => import("./home/WebPriceSection/WebPrice"), {
+  loading: () => <p></p>,
+});
+
 const HomePage = () => {
   return (
     <div className={scss.content}>
       <HeroContent />
-      {/* <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '16px'}}> */}
       <Marquee />
-      {/* <Marquee2/> */}
-      {/* </div> */}
       <div className={scss.groupSection}>
-      <AboutMeSection />
-      {/* <Decides /> */}
-      <Projects />
+        <AboutMeSection />
+        <Projects />
       </div>
       <TeamSection />
       <CliComments />

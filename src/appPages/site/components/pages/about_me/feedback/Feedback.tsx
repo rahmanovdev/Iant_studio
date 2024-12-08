@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import scss from "./Feedback.module.scss";
 import { FaInstagram } from "react-icons/fa";

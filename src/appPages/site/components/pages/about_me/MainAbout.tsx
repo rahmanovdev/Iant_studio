@@ -1,11 +1,30 @@
+import dynamic from "next/dynamic";
 import React from "react";
-import MissionBlock from "./mission-block/MissionBlock";
-import AboutBlock from "./about-block/AboutBlock";
 import scss from "./MainAbout.module.scss";
-import TeamBlock from "./team-block/TeamBlock";
-import CliComments from "./cli-comments/CliComments";
-import Feedback from "./feedback/Feedback";
-import TeamBlockForMob from "./team-block/TeamBlockForMob";
+
+const MissionBlock = dynamic(() => import("./mission-block/MissionBlock"), {
+  loading: () => <p></p>,
+});
+
+const AboutBlock = dynamic(() => import("./about-block/AboutBlock"), {
+  loading: () => <p></p>,
+});
+
+const TeamBlock = dynamic(() => import("./team-block/TeamBlock"), {
+  loading: () => <p></p>,
+});
+
+const TeamBlockForMob = dynamic(() => import("./team-block/TeamBlockForMob"), {
+  loading: () => <p></p>,
+});
+
+const CliComments = dynamic(() => import("./cli-comments/CliComments"), {
+  loading: () => <p></p>,
+});
+
+const Feedback = dynamic(() => import("./feedback/Feedback"), {
+  loading: () => <p></p>,
+});
 
 const MainAbout = () => {
   return (
@@ -13,10 +32,10 @@ const MainAbout = () => {
       <div className={scss.Main_about}>
         <MissionBlock />
         <AboutBlock />
-        <TeamBlock/>
-        <TeamBlockForMob/>
-        <CliComments/>
-        <Feedback/>
+        <TeamBlock />
+        <TeamBlockForMob />
+        <CliComments />
+        <Feedback />
       </div>
     </>
   );
