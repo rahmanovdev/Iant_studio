@@ -1,287 +1,195 @@
-.OurServices {
-  margin: 100px 0;
+.Main {
   .content {
+    margin: 90px 0;
     display: flex;
-      flex-direction: column;
-      gap: 170px;
-    .hero1 {
+    flex-direction: column;
+    gap: 30px;
+
+    .service_box {
+      width: 100%;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.059);
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      gap: 70px;
+      padding: 40px 40px;
 
-      .left {
-        background-image: url("/assets/Katalog.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 400px;
-        height: 400px;
-        border-radius: 30px 10px 40px;
-        box-shadow: inset 0 6px 20px rgb(0, 0, 0), 0 15px 30px rgb(0, 0, 0),
-          0 25px 50px rgba(0, 0, 0, 0.62);
-      }
 
-      .right {
+      .service_bottom {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        h1 {
-          font-size: 40px;
-          font-weight: 700;
-          color: blueviolet;
+        align-items: center;
+        gap: 50px;
+        .service_text {
+          width: 250px;
+          h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: blueviolet;
+            user-select: none;
+          }
+          p {
+            font-size: 17px;
+            font-weight: 300;
+          }
         }
-
-        span {
-          font-size: 16px;
-          font-weight: 300;
-          color: white;
-          line-height: 1.4;
-        }
-
-        h2 {
-          font-size: 28px;
-          font-weight: 600;
-          color: blueviolet;
-        }
-
-        ul {
+  
+  
+        .main_check_mark {
           display: flex;
           flex-direction: column;
-          gap: 7px;
-          list-style: none;
-          font-size: 16px;
-          color: white;
-
-          li {
+          gap: 15px;
+          .check_mark {
             display: flex;
+            align-items: start;
             gap: 10px;
-            span {
-              color: blueviolet;
+            width: 540px;
+  
+            .check_mark_logo {
+              svg {
+                width: 30px;
+                height: 30px;
+                padding: 4px 4px;
+                background: blueviolet;
+                color: white;
+                border-radius: 50%;
+              }
             }
           }
         }
       }
+
+
     }
 
-    .hero2 {
-      display: flex;
-      justify-content: space-between;
-      gap: 50px;
+  }
+}
 
-      .right {
-        background-image: url("/assets/Katalog.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 400px;
-        height: 400px;
-        border-radius: 30px 10px 40px;
-        box-shadow: inset 0 6px 20px rgb(0, 0, 0), 0 15px 30px rgb(0, 0, 0),
-          0 25px 50px rgba(0, 0, 0, 0.62);
-      }
 
-      .left {
+
+
+@media(max-width: 1170px) {
+  .Main {
+    .content {
+      .service_box {
+        width: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
-        gap: 20px;
-        h1 {
-          font-size: 40px;
-          font-weight: 700;
-          color: blueviolet;
-        }
-
-        span {
-          font-size: 16px;
-          font-weight: 500;
-          color: white;
-          line-height: 1.4;
-          display: block;
-        }
-
-        h2 {
-          font-size: 28px;
-          font-weight: 600;
-          color: blueviolet;
-        }
-
-        ul {
+        gap: 60px;
+        .service_bottom {
           display: flex;
-          flex-direction: column;
-          list-style: none;
-          font-size: 16px;
-          color: white;
-
-          li {
-            display: flex;
-            gap: 10px;
-            svg {
+          align-items: start;
+          gap: 50px;
+          .service_text {
+            width: 250px;
+            h2 {
+              font-size: 30px;
+              font-weight: 600;
+              margin-bottom: 15px;
               color: blueviolet;
+              user-select: none;
             }
-            padding: 7px 0;
+            p {
+              font-size: 17px;
+              font-weight: 300;
+            }
+          }
+    
+    
+          .main_check_mark {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .check_mark {
+              display: flex;
+              align-items: start;
+              gap: 10px;
+              width: 100%;
+    
+              .check_mark_logo {
+                svg {
+                  width: 30px;
+                  height: 30px;
+                  padding: 4px 4px;
+                  background: blueviolet;
+                  color: white;
+                  border-radius: 50%;
+                }
+              }
+            }
           }
         }
+  
+  
       }
-    }
-  }
-}
-@media (max-width: 1200px) {
-  .content {
-    .hero1 {
-      .left {
-        width: 450px;
-        height: 400px;
-      }
-
-      .right {
-        width: 100%;
-        h1 {
-          font-size: 35px;
-        }
-
-        span {
-          font-size: 16px;
-        }
-
-        h2 {
-          font-size: 24px;
-        }
-
-        ul {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .content .hero1 {
-    display: flex;
-    justify-content: center;
-      align-items: center;
-      flex-direction: column-reverse;
-  }
-
-  .left {
-    width: 100%;
-    height: 300px;
-    display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .right {
-    width: 100%;
-
-    h1 {
-      font-size: 30px;
-    }
-
-    span {
-      font-size: 14px;
-    }
-
-    h2 {
-      font-size: 22px;
-    }
-
-    ul {
-      font-size: 14px;
+  
     }
   }
 }
 
 
 
-@media (max-width: 768px) {
-  .OurServices {
-    .content .hero1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column-reverse;
-
-      .right {
-        width: 100%;
-        height: 200px;
-      }
-
-      .left {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 70px;
-
-        h1 {
-          text-align: center;
-          font-size: 28px;
-        }
-
-        span {
-          text-align: center;
-          font-size: 12px;
-        }
-
-        h2 {
-          text-align: center;
-          font-size: 20px;
-        }
-
-        ul {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
-
-
-@media (max-width: 768px) {
-  .OurServices {
-    .content .hero2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column-reverse;
-
-      .right {
-        width: 100%;
-        height: 200px;
-      }
-
-      .left {
+@media(max-width: 600px) {
+  .Main {
+    .content {
+      .service_box {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        margin-top: 70px;
-
-        h1 {
-          text-align: center;
-          font-size: 28px;
-        }
-
-        span {
-          text-align: center;
-          font-size: 12px;
-        }
-
-        h2 {
-          text-align: center;
-          font-size: 20px;
-        }
-
-        ul {
+        flex-direction: column;
+        gap: 60px;
+        padding: 60px 40px;
+        .service_bottom {
           display: flex;
+          align-items: center;
           flex-direction: column;
-          justify-content: center;
-          font-size: 12px;
+          gap: 50px;
+          .service_text {
+            width: 250px;
+            h2 {
+              text-align: center;
+              font-size: 30px;
+              font-weight: 600;
+              margin-bottom: 15px;
+              color: blueviolet;
+              user-select: none;
+            }
+            p {
+              text-align: center;
+              font-size: 17px;
+              font-weight: 300;
+            }
+          }
+    
+    
+          .main_check_mark {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .check_mark {
+              display: flex;
+              align-items: start;
+              gap: 20px;
+              width: 100%;
+    
+              .check_mark_logo {
+                svg {
+                  width: 30px;
+                  height: 30px;
+                  padding: 4px 4px;
+                  background: blueviolet;
+                  color: white;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
         }
+  
+  
       }
+  
     }
   }
 }

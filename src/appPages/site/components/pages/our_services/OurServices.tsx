@@ -1,289 +1,223 @@
-import React, { FC } from "react";
+import React from "react";
 import scss from "./OurServices.module.scss";
-import { GiCheckMark } from "react-icons/gi";
-import Contacts from "../contacts/Contacts";
+import service1 from "../../../../../../public/assets/service1.svg";
+import service2 from "../../../../../../public/assets/service2.svg";
+import service3 from "../../../../../../public/assets/service3.svg";
+import service4 from "../../../../../../public/assets/service4.svg";
+import Image from "next/image";
+import HeadOurService from "./HeadOurService";
+import { IoMdCheckmark } from "react-icons/io";
+import Feedback from "../about_me/feedback/Feedback";
 
-const OurServices: FC = () => {
+
+const OurServices = () => {
   return (
-    <section className={scss.OurServices}>
+    <section className={scss.Main}>
+      <HeadOurService />
       <div className="container">
         <div className={scss.content}>
-          <div className={scss.hero1}>
-            <div className={scss.left}></div>
-            <div className={scss.right}>
-              <h1>Создание веб-сайтов</h1>
-              <span>
-                Разработка уникального веб-сайта для вас, включая полный цикл
-                работ над сайтом, <br /> от информационной сессии до запуска
-                коммерческого веб-сайта и его поддержки. 
-              </span>
-              <h2>Этапы работ</h2>
-              <ul>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Обсуждение и разработка проекта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Разработка и утверждение дизайна веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Верстка веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Программирование веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Интеграция системы управления и контента веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Оптимизация веб-сайта к индексации и поисковой выдачи
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Круглосуточная поддержка веб-сайта
-                </li>
-              </ul>
+          {/* #1 */}
+          <div className={scss.service_box}>
+            <Image src={service1} alt="" width={200} height={200} />
+
+            <div className={scss.service_bottom}>
+            <div className={scss.service_text}>
+              <h2>Создание <br /> сайтов</h2>
+              <p>Современный сайт – <br />это появление новых <br /> клиентов и рост высоких <br /> продаж!</p>
             </div>
-          </div>
-          <div className={scss.hero2}>
-            <div className={scss.left}>
-              <h1>Дизайн</h1>
-              <span>
-                Разработка уникального макета сайта, отдельных элементов сайта,
-                <br />
-                баннеров. Дизайн разрабатывается с учетом вкусовых предпочтений
-                <br />
-                клиента и с учетом последних тенденций в дизайне веб-сайтов.
-                <br />
-              </span>
-              <h2>Этапы работ</h2>
-              <ul>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Обсуждение проекта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Заключение договора
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Разработка структуры веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Разработка прототипа веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Утверждение стиля веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Оптимизация веб-сайта к индексации и поисковой выдачи
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Разработка дизайна Главной страницы веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Разработка дизайна внутренних страниц веб-сайта и всплывающих
-                  окон
-                </li>
-                <li>
-                  <span>
-                    <span>
-                      <GiCheckMark />
-                    </span>
-                  </span>
-                  Верстка макета
-                </li>
-              </ul>
+
+            <div className={scss.main_check_mark}>
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Делаем продающие сайты и лендинги для любого бизнеса.</p>
+              </div>
             </div>
-            <div className={scss.right}></div>
-          </div>
-          <div className={scss.hero1}>
-            <div className={scss.left}></div>
-            <div className={scss.right}>
-              <h1>SEO оптимизация</h1>
-              <span>
-                Оптимизация веб-сайта для поднятия Вашей позиции в результатах
-                <br />
-                выдачи поисковых систем с целью увеличения сетевого трафика и
-                <br />
-                потенциальных клиентов, а затем и монетизации этого трафика.
-              </span>
-              <h2>Этапы работ</h2>
-              <ul>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Обсуждение проекта
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Заключение договора
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Внутренняя оптимизация
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Внешняя оптимизация
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Наполнение социальных сетей
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Изготовление печатной продукции
-                </li>
-              </ul>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Разработаем сайт с современным дизайном и удобным интерфейсом</p>
+              </div>
             </div>
-          </div>
-          <div className={scss.hero2}>
-            <div className={scss.left}>
-              <h1>Поддержка веб-сайта</h1>
-              <span>
-                Поддержка работоспособности веб-сайта. <br /> Оптимизация кода
-                веб-сайта, обновление системы управления веб-сайта, <br /> а
-                также отдельных моделей для оптимизации Вашей работы на
-                веб-сайте. Лечение сайта от вирусов.
-              </span>
-              <h2>Этапы работ</h2>
-              <ul>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Обсуждение проекта
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Заключение договора 
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Проверка статуса сайта и обнаружение проблем
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Лечение веб-сайта от вирусов
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Обновление CMS и модулей
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Оптимизация кода веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Замена контента веб-сайта
-                </li>
-                <li>
-                  <span>
-                    <GiCheckMark />
-                  </span>
-                  Наполнение веб-сайта контентом окон
-                </li>
-              </ul>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Перед началом работы проведем маркетинговый анализ.</p>
+              </div>
             </div>
-            <div className={scss.right}></div>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Представим ваш бизнес в наиболее выгодном свете.</p>
+              </div>
+            </div>
+            </div>
+            </div>
+
           </div>
+          {/* #1 */}
+
+
+          {/* #2 */}
+          <div className={scss.service_box}>
+            <Image src={service2} alt="" width={200} height={200} />
+
+            <div className={scss.service_bottom}>
+            <div className={scss.service_text}>
+              <h2>Разработка лого <br />& дизайн сайта</h2>
+              <p>Запоминающийся стиль <br /> выделит вас из сотни <br /> конкурентов.</p>
+            </div>
+
+            <div className={scss.main_check_mark}>
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Проведем анализ фирменных стилей аналогичных компаний, чтобы избежать повторений.</p>
+              </div>
+            </div>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Разработаем сайт с современным дизайном и удобным интерфейсом</p>
+              </div>
+            </div>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Подберем цвета и шрифт, которые сделают ваш бренд узнаваемым с первого взгляда.</p>
+              </div>
+            </div>
+
+            
+            </div>
+            </div>
+
+          </div>
+          {/* #2 */}
+
+
+          {/* #3 */}
+          <div className={scss.service_box}>
+            <Image src={service3} alt="" width={200} height={200} />
+
+            <div className={scss.service_bottom}>
+            <div className={scss.service_text}>
+              <h2>Разработка <br /> мобильных <br /> приложении</h2>
+              <p>Сделаем мобильное <br /> приложение, которое <br /> принесет вам прибыль сразу <br /> после запуска.</p>
+            </div>
+
+            <div className={scss.main_check_mark}>
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Разработаем концепцию приложения под задачи именно вашего бизнеса.</p>
+              </div>
+            </div>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Спроектируем интуитивно понятный интерфейс, привлекающий пользователей.</p>
+              </div>
+            </div>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Создадим красивый современный дизайн в духе самых актуальных трендов.</p>
+              </div>
+            </div>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Окажем полную техническую и информационную поддержку после запуска приложения.</p>
+              </div>
+            </div>
+            </div>
+            </div>
+
+          </div>
+          {/* #3 */}
+
+
+          {/* #4 */}
+          <div className={scss.service_box}>
+            <Image src={service4} alt="" width={200} height={200} />
+
+            <div className={scss.service_bottom}>
+            <div className={scss.service_text}>
+              <h2>Внедрение <br /> CRM</h2>
+              <p>CRM повышает <br /> эффективность работы с <br /> клиентами, что влечет <br /> увеличение продаж и дохода <br /> компании.</p>
+            </div>
+
+            <div className={scss.main_check_mark}>
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Определим специфику вашей организации.</p>
+              </div>
+            </div>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Подберем CRM-систему, идеально подходящую вашему бизнесу.</p>
+              </div>
+            </div>
+
+            <div className={scss.check_mark}>
+              <div className={scss.check_mark_logo}>
+                <IoMdCheckmark />
+              </div>
+              <div className={scss.check_mark_text}>
+                <p>Внедрим CRM, оптимизирующую процессы бизнес-отношений с клиентами, проведем обучение ваших сотрудников.</p>
+              </div>
+            </div>
+
+            
+            </div>
+            </div>
+
+          </div>
+          {/* #4 */}
         </div>
       </div>
-      <Contacts />
+
+
+
+      <Feedback/>
     </section>
   );
 };
