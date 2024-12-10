@@ -1,10 +1,10 @@
-import { OurWorks } from "./our_works/OurWorks";
+import OurWorks from "./our_works/OurWorks";
 import scss from "./OurWorksPage.module.scss";
 const OurWorksPage = () => {
   return (
     <>
       <div className={scss.content}>
-        <OurWorks />
+        <OurWorks/>
       </div>
     </>
   );
