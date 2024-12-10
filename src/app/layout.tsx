@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import LayoutClient from "./layout.client";
+import Script from "next/script"; // Script компонентин импорттойбуз
 
 export const metadata: Metadata = {
   title: "iant.studio",
@@ -16,6 +17,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <LayoutClient>{children}</LayoutClient>
+        <Script
+          id="jivo-widget"
+          src="//code.jivo.ru/widget/B3QRxgzgJO"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
