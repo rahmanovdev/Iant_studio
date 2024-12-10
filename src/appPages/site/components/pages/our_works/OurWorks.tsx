@@ -1,39 +1,40 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import { projects } from "@/constants/projects";
 import {
   CardBody,
   CardContainer,
   CardItem,
 } from "../../../../../components/ui/3d-card";
-import Link from "next/link";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import scss from "./OurWorks.module.scss";
-import { projects } from "@/constants/projects";
-import Feedback from "../about_me/feedback/Feedback";
+
+// Lazy load Feedback component
+const Feedback = dynamic(() => import("../about_me/feedback/Feedback"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false,
+});
 
 export function OurWorks() {
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
-    <div className={`${scss.our_works} w-full `}>
-      <div className="container mx-auto ">
-        <div className="text-center mt-20">
-          <h1
-            className={`text-[26px] sm:text-[30px] md:text-[40px] font-bold mb-4 leading-snug w-[90%] mx-auto`}
-          >
+    <div className={scss.our_works}>
+      <div className="container mx-auto">
+        <header className="text-center mt-20">
+          <h1 className="text-[26px] sm:text-[30px] md:text-[40px] font-bold mb-4 leading-snug w-[90%] mx-auto">
             Создаем суперэффективные сайты и строим долгосрочное партнерство
           </h1>
-
-          <h2 className="text-2xl md:text-3xl font-semibold text-neutral-300 mt-20 ">
+          <h2 className="text-2xl md:text-3xl font-semibold text-neutral-300 mt-20">
             Наши работы
           </h2>
-        </div>
+        </header>
+
         <div
           className={`${scss.content} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center mt-24`}
         >
@@ -60,10 +61,14 @@ export function OurWorks() {
                   <CardItem translateZ="100" className="w-full h-full">
                     <Image
                       src={el.img}
-                      height="1000"
-                      width="1000"
+                      height={1000}
+                      width={1000}
                       className="h-[80%] w-full object-cover rounded-xl group-hover/card:shadow-xl"
                       alt={el.title}
+                      loading="lazy"
+                      quality={60}
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQrJiEwVz0+O1E5R0RUYXp8ZT9DXXd6eX+Ij4qSlZaVR1BRYWdgZmByfoX/2wBDARUXFx4aHR4eHoVDOUOFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYX/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                     />
                   </CardItem>
                   <div className="flex justify-between items-center mt-auto py-2">
@@ -76,14 +81,17 @@ export function OurWorks() {
                     >
                       На сайт
                     </CardItem>
-                    <Link onClick={scrollToTop} href={`/projectDetails/${el.id}`}>
-                    <CardItem
-                      translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold"
+                    <Link
+                      onClick={scrollToTop}
+                      href={`/projectDetails/${el.id}`}
                     >
-                      Про кейс
-                    </CardItem>
+                      <CardItem
+                        translateZ={20}
+                        as="button"
+                        className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold"
+                      >
+                        Про кейс
+                      </CardItem>
                     </Link>
                   </div>
                 </CardBody>

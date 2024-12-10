@@ -1,190 +1,182 @@
 .ProjectsDetails {
+  .content {
+    margin: 50px 0;
+    h1 {
+      font-size: 40px;
+    }
+
+    span {
+      font-size: 18px;
+      color: blueviolet;
+    }
+    .projectDetailsBlock {
+      margin: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left {
+        img {
+          width: 500px;
+          height: 280px;
+          object-fit: cover;
+          border-radius: 18px;
+        }
+      }
+
+      .right {
+        .right_top {
+          h4 {
+            font-size: 22px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            font-size: 17px;
+            line-height: 26px;
+            margin-bottom: 19px;
+          }
+        }
+        .right_bottom {
+          h4 {
+            font-size: 22px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            font-size: 17px;
+            line-height: 26px;
+            margin-bottom: 19px;
+          }
+        }
+
+        button {
+          width: 200px;
+          height: 40px;
+          background: white;
+          border-radius: 15px;
+          color: black;
+          font-size: 16px;
+          font-weight: 600;
+          margin-top: 17px;
+        }
+      }
+    }
+
+    .used_tech {
+      margin-top: 100px;
+      h3 {
+        font-size: 28px;
+      }
+      .main_used_block {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .block {
+          width: 90px;
+          height: 90px;
+          border-radius: 17px;
+          padding: 20px 20px;
+          background: rgba(255, 255, 255, 0.074);
+
+          svg {
+            width: 50px;
+            height: 50px;
+            color: rgba(255, 255, 255, 0.796);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1065px) {
+  .ProjectsDetails {
     .content {
-        margin: 50px 0;
-        h1 {
-            font-size: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .projectDetailsBlock {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+        .left {
+          img {
+            width: 100%;
+            height: 300px;
+          }
         }
-
-        span {
-            font-size: 18px;
-            color: blueviolet;
+      }
+      .used_tech {
+        margin-top: 50px;
+        .main_used_block {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 20px;
         }
-        .projectDetailsBlock {
-            margin: 30px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .left {
-                img {
-                    width: 500px;
-                    height: 380px;
-                    object-fit: cover;
-                    border-radius: 18px;
-                }
-            }
-
-            .right {
-                .right_top {
-                    h4 {
-                        font-size: 22px;
-                        margin-bottom: 5px;
-                    }
-
-                    p {
-                        font-size: 17px;
-                        line-height: 26px;
-                        margin-bottom: 19px;
-                    }
-                }
-                .right_bottom {
-                    h4 {
-                        font-size: 22px;
-                        margin-bottom: 5px;
-                    }
-
-                    p {
-                        font-size: 17px;
-                        line-height: 26px;
-                        margin-bottom: 19px;
-                    }
-                }
-
-                button {
-                    width: 200px;
-                    height: 40px;
-                    background: white;
-                    border-radius: 15px;
-                    color: black;
-                    font-size: 16px;
-                    font-weight: 600;
-                    margin-top: 17px;
-                }
-            }
-        }
-
-
-        .used_tech {
-            margin-top: 100px;
-            h3 {
-                font-size: 28px;
-            }
-            .main_used_block {
-                margin: 20px 0;
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                .block {
-                    width: 90px;
-                    height: 90px;
-                    border-radius: 17px;
-                    padding: 20px 20px;
-                    background: rgba(255, 255, 255, 0.074);
-    
-                    svg {
-                        width: 50px;
-                        height: 50px;
-                        color: rgba(255, 255, 255, 0.796);
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 
+@media (max-width: 430px) {
+  .ProjectsDetails {
+    .content {
+      .projectDetailsBlock {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
 
-
-@media(max-width: 1065px) {
-    .ProjectsDetails {
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .projectDetailsBlock {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                gap: 30px;
-
-                .left {
-                    img {
-                        width: 100%;
-                        height: 300px;
-                    }
-                }
-            }
-            .used_tech {
-                margin-top: 50px;
-                .main_used_block {
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                    
-                }
-            }
+        .left {
+          img {
+            width: 100%;
+            height: 280px;
+          }
         }
-    }
-}
 
-
-
-@media(max-width: 430px) {
-    .ProjectsDetails {
-        .content {
-            .projectDetailsBlock {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                gap: 30px;
-
-                .left {
-                    img {
-                        width: 100%;
-                        height: 280px;
-                    }
-                }
-
-
-
-                .right {
-                    .right_top {
-                        h4 {
-                            font-size: 22px;
-                            margin-bottom: 5px;
-                        }
-    
-                        p {
-                            font-size: 17px;
-                            line-height: 26px;
-                            margin-bottom: 25px;
-                        }
-                    }
-                    .right_bottom {
-                        h4 {
-                            font-size: 22px;
-                            margin-bottom: 5px;
-                        }
-    
-                        p {
-                            font-size: 17px;
-                            line-height: 26px;
-                            margin-bottom: 19px;
-                        }
-                    }
-                }
+        .right {
+          .right_top {
+            h4 {
+              font-size: 22px;
+              margin-bottom: 5px;
             }
-            .used_tech {
-                margin-top: 50px;
-                .main_used_block {
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                }
+
+            p {
+              font-size: 17px;
+              line-height: 26px;
+              margin-bottom: 25px;
             }
+          }
+          .right_bottom {
+            h4 {
+              font-size: 22px;
+              margin-bottom: 5px;
+            }
+
+            p {
+              font-size: 17px;
+              line-height: 26px;
+              margin-bottom: 19px;
+            }
+          }
         }
+      }
+      .used_tech {
+        margin-top: 50px;
+        .main_used_block {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+      }
     }
+  }
 }

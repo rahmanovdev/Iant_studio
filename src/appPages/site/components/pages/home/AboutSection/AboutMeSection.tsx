@@ -9,7 +9,7 @@ import scss from "./AboutMeSection.module.scss";
 const AboutMeSection = () => {
   useEffect(() => {
     AOS.init({
-      once: true, 
+      once: true,
     });
   }, []);
 
@@ -18,10 +18,7 @@ const AboutMeSection = () => {
       <BackgroundSecond />
       <div className={scss.container}>
         <div className={scss.content}>
-          <div
-            className={scss.aboutMeText}
-            data-aos="fade-up" 
-          >
+          <div className={scss.aboutMeText} data-aos="fade-up">
             <h2>Создание сайтов в Кыргызстане</h2>
             <p>
               I<span>ANT Studio</span> — ваш надёжный партнер в создании
@@ -37,7 +34,7 @@ const AboutMeSection = () => {
             <div
               data-aos="flip-left"
               data-aos-duration="1000"
-              className={scss.stage_1} 
+              className={scss.stage_1}
             >
               <button>Дизайн</button>
               <ul>
@@ -51,7 +48,7 @@ const AboutMeSection = () => {
             </div>
             <div
               data-aos="flip-left"
-              data-aos-duration="2000" 
+              data-aos-duration="2000"
               className={scss.stage_2}
             >
               <button>Разработка</button>
@@ -67,7 +64,7 @@ const AboutMeSection = () => {
             </div>
             <div
               data-aos="flip-left"
-              data-aos-duration="2500" 
+              data-aos-duration="2500"
               className={scss.stage_3}
             >
               <button>Запуск сайта</button>
