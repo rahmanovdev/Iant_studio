@@ -6,7 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Link from "next/link";
-import SoonProjects from "@/ui/comingSoon/SoonProjects";
 
 const Projects = () => {
 
@@ -35,7 +34,7 @@ const Projects = () => {
             </p>
           </div>
           <div className={scss.projectBlocks}> 
-            {projects.map((el, idx) => (
+            {projects.slice(0, 4).map((el, idx) => (
               <div data-aos="fade-up" className={scss.projectBlock} key={idx}>
                 <Image
                   src={el.img}
@@ -57,7 +56,6 @@ const Projects = () => {
           </div>
           <hr />
 
-          <SoonProjects/>
         </div>
       </div>
     </section>
