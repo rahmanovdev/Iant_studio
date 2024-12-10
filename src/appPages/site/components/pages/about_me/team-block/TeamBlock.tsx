@@ -5,11 +5,14 @@ import scss from "./TeamBlock.module.scss";
 import { PiCubeFocus } from "react-icons/pi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useSignUpModal from "@/store/useSignUpCommand";
+import CommandModal from "@/ui/commandModal/CommandModal";
 
 const TeamBlock = () => {
+  const {openModal} = useSignUpModal();
   useEffect(() => {
     AOS.init({
-      once: true, // Анимация запускается только один раз
+      once: false, 
     });
   }, []);
 
@@ -128,10 +131,13 @@ const TeamBlock = () => {
             </div>
 
             <p className={scss.description}>Профессиональных IT экспертов</p>
-            <button className={scss.join_button}>➤ Хочу в команду</button>
-          </div>
+            <button onClick={openModal} className={scss.join_button}>➤ Хочу в команду</button>
+          </div> 
         </div>
       </div>
+
+
+      <CommandModal/>
     </section>
   );
 };

@@ -9,7 +9,7 @@ import scss from "./AboutMeSection.module.scss";
 const AboutMeSection = () => {
   useEffect(() => {
     AOS.init({
-      once: true,
+      once: false,
     });
   }, []);
 

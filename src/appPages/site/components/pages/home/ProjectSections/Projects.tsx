@@ -10,7 +10,7 @@ import Link from "next/link";
 const Projects = () => {
   useEffect(() => {
     AOS.init({
-      once: true,
+      once: false,
     });
   }, []);
 

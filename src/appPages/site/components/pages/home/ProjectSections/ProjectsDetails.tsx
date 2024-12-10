@@ -16,7 +16,7 @@ import { RiSupabaseLine } from "react-icons/ri";
 const ProjectsDetails = () => {
   const params = useParams();
   const id = typeof params.id === "string" ? params.id : "";
-  const project = projects?.find((item) => item.id.toString() === id);
+  const project = projects?.find((item) => item.id.toString() === id); 
 
   if (!project) {
     return <p className={styles.notFound}>Project not found</p>;
