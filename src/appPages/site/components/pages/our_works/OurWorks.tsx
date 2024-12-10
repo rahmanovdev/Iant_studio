@@ -1,6 +1,5 @@
 "use client";
-
-import React from "react";
+import React, { useEffect } from "react";
 import scss from "./OurWorks.module.scss";
 import Image from "next/image";
 import { projects } from "@/constants/projects";
