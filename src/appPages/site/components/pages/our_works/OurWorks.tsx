@@ -12,6 +12,7 @@ import { BackgroundGradient } from "@/components/ui/background-gradient";
 import scss from "./OurWorks.module.scss";
 import { projects } from "@/constants/projects";
 import Feedback from "../about_me/feedback/Feedback";
+import SoonProjects from "@/ui/comingSoon/SoonProjects";
 
 export function OurWorks() {
   const scrollToTop = () => {
@@ -86,13 +87,21 @@ export function OurWorks() {
                     </CardItem>
                     </Link>
                   </div>
+
                 </CardBody>
+
               </CardContainer>
-            </BackgroundGradient>
+            </BackgroundGradient>            
           ))}
+      <SoonProjects/>
+
         </div>
         <Feedback />
       </div>
+
+
+
+
     </div>
   );
 }

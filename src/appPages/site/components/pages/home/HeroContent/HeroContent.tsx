@@ -1,8 +1,10 @@
 "use client";
 
+import useModalStore from "@/store/useModalStore";
 import Background from "../background/Background";
 import scss from "./HeroContent.module.scss";
 const HeroContent = () => {
+  const { openModal } = useModalStore();
   return (
     <>
       <Background />
@@ -21,7 +23,7 @@ const HeroContent = () => {
               для вашего бизнеса
             </p>
             <div className={scss.hero_btns}>
-              <button className={scss.project}>ОБСУДИТЬ ПРОЕКТ</button>
+              <button onClick={openModal} className={scss.project}>ОБСУДИТЬ ПРОЕКТ</button>
 
               <div className={scss.button}>Портфолио</div>
             </div>

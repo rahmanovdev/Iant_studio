@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Link from "next/link";
+import SoonProjects from "@/ui/comingSoon/SoonProjects";
 
 const Projects = () => {
 
@@ -55,6 +56,8 @@ const Projects = () => {
             ))}
           </div>
           <hr />
+
+          <SoonProjects/>
         </div>
       </div>
     </section>
