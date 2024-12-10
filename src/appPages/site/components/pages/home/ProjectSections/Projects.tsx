@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { projects } from "@/constants/projects";
 import scss from "./Projects.module.scss";
+import SoonProjects from "@/ui/comingSoon/SoonProjects";
 
 interface ProjectCardProps {
   project: {
@@ -87,6 +88,8 @@ const Projects = () => {
             ))}
           </div>
           <hr />
+
+          <SoonProjects />
         </div>
       </div>
     </section>

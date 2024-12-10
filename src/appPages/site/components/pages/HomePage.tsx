@@ -33,6 +33,7 @@ const WebPrice = dynamic(() => import("./home/WebPriceSection/WebPrice"), {
   loading: () => <p></p>,
 });
 
+
 const HomePage = () => {
   return (
     <div className={scss.content}>

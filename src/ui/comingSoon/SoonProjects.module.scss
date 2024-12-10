@@ -1,0 +1,62 @@
+.container {
+    color: blueviolet;
+    font-family: 'Monaco', monospace;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 0;
+    animation: yaziyiSallandir 120ms infinite normal;
+  }
+  
+  .typewriterText {
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid blueviolet;
+    font-size: 28px;
+    animation: typing 3.5s steps(15, end), blink 0.7s step-end infinite;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15ch;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .loadingBar {
+    color: blueviolet;
+  }
+  
+  .progressBar {
+    color: black;
+  }
+  
+  .percentage {
+    font-size: 20px;
+  }
+  
+  @keyframes yaziyiSallandir {
+    0% {
+      opacity: 0;
+      transform: translateX(0); 
+    }
+    40%,
+    80% {
+      opacity: 1;
+      transform: translateX(-2px); 
+    }
+  }
+  

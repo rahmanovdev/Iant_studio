@@ -11,12 +11,18 @@ import {
 } from "../../../../../components/ui/3d-card";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import scss from "./OurWorks.module.scss";
+<<<<<<< HEAD
 
 // Lazy load Feedback component
 const Feedback = dynamic(() => import("../about_me/feedback/Feedback"), {
   loading: () => <div>Loading...</div>,
   ssr: false,
 });
+=======
+import { projects } from "@/constants/projects";
+import Feedback from "../about_me/feedback/Feedback";
+import SoonProjects from "@/ui/comingSoon/SoonProjects";
+>>>>>>> e8f2e295df1f2729a0f5f1d700e443ff53112d3a
 
 export function OurWorks() {
   const scrollToTop = () => {
@@ -94,13 +100,21 @@ export function OurWorks() {
                       </CardItem>
                     </Link>
                   </div>
+
                 </CardBody>
+
               </CardContainer>
-            </BackgroundGradient>
+            </BackgroundGradient>            
           ))}
+      <SoonProjects/>
+
         </div>
         <Feedback />
       </div>
+
+
+
+
     </div>
   );
 }
