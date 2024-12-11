@@ -11,10 +11,10 @@ import CommandModal from "@/ui/commandModal/CommandModal";
 const TeamBlock = () => {
   const {openModal} = useSignUpModal();
   useEffect(() => {
-    AOS.init({
-      once: false, 
-    });
+    AOS.init({ once: false });
+    AOS.refresh();
   }, []);
+  
 
   const teamPeopleInfo = {
     image:
@@ -24,7 +24,7 @@ const TeamBlock = () => {
   };
 
   return (
-    <section className={scss.Main}>
+    <section id="team-block" className={scss.Main}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.team_head}>
