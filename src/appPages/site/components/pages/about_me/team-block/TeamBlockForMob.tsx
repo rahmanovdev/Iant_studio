@@ -9,9 +9,12 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 import styles from "./TeamBlockForMob.module.scss";
+import useSignUpModal from "@/store/useSignUpCommand";
+import CommandModal from "@/ui/commandModal/CommandModal";
 
 const TeamBlockForMob = () => {
-  const teamPeopleInfo = {
+  const { openModal } = useSignUpModal();
+  const teamPeopleInfo = { 
     image:
       "https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg",
     name: "Баланчаев Баланча",
@@ -95,7 +98,23 @@ const TeamBlockForMob = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+
+
+
+        <div className={styles.experts_section}>
+            <div className={styles.number_block}>
+              <h1 className={styles.number}>20</h1>
+              <h1>+</h1>
+            </div>
+
+            <p className={styles.description}>Профессиональных IT экспертов</p>
+            <button onClick={openModal} className={styles.join_button}>➤ Хочу в команду</button>
+          </div> 
+
+
       </div>
+
+      <CommandModal/>
     </section>
   );
 };

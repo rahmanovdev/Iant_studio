@@ -8,7 +8,7 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
-  }, 
+  },  
   {
     id: 2,
     title: "HKU",
