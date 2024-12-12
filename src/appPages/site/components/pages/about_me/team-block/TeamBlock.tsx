@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Image from "next/image";
 import scss from "./TeamBlock.module.scss";
 import { PiCubeFocus } from "react-icons/pi";
 import AOS from "aos";
@@ -9,12 +10,12 @@ import useSignUpModal from "@/store/useSignUpCommand";
 import CommandModal from "@/ui/commandModal/CommandModal";
 
 const TeamBlock = () => {
-  const {openModal} = useSignUpModal();
+  const { openModal } = useSignUpModal();
+
   useEffect(() => {
     AOS.init({ once: false });
     AOS.refresh();
   }, []);
-  
 
   const teamPeopleInfo = {
     image:
@@ -53,73 +54,27 @@ const TeamBlock = () => {
           {/* TEAM IMG */}
           <div className={scss.team_images}>
             <div className={scss.image_block}>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="0"
-                data-aos-duration="500"
-                className={scss.profile}
-              >
-                <img
-                  src={teamPeopleInfo.image}
-                  alt="Person 1"
-                  className={scss.profile_image}
-                />
-                <div className={scss.info}>
-                  <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                  <p className={scss.position}>{teamPeopleInfo.position}</p>
+              {[0, 500, 1000, 1500].map((delay, index) => (
+                <div
+                  key={index}
+                  data-aos="fade-right"
+                  data-aos-delay={delay}
+                  data-aos-duration="500"
+                  className={scss.profile}
+                >
+                  <Image
+                    src={teamPeopleInfo.image}
+                    alt={`Person ${index + 1}`}
+                    className={scss.profile_image}
+                    width={500} 
+                    height={500} 
+                  />
+                  <div className={scss.info}>
+                    <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
+                    <p className={scss.position}>{teamPeopleInfo.position}</p>
+                  </div>
                 </div>
-              </div>
-
-              <div
-                data-aos="fade-right"
-                data-aos-delay="500"
-                data-aos-duration="500"
-                className={scss.profile}
-              >
-                <img
-                  src={teamPeopleInfo.image}
-                  alt="Person 2"
-                  className={scss.profile_image}
-                />
-                <div className={scss.info}>
-                  <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                  <p className={scss.position}>{teamPeopleInfo.position}</p>
-                </div>
-              </div>
-
-              <div
-                data-aos="fade-right"
-                data-aos-delay="1000"
-                data-aos-duration="500"
-                className={scss.profile}
-              >
-                <img
-                  src={teamPeopleInfo.image}
-                  alt="Person 3"
-                  className={scss.profile_image}
-                />
-                <div className={scss.info}>
-                  <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                  <p className={scss.position}>{teamPeopleInfo.position}</p>
-                </div>
-              </div>
-
-              <div
-                data-aos="fade-right"
-                data-aos-delay="1500"
-                data-aos-duration="500"
-                className={scss.profile}
-              >
-                <img
-                  src={teamPeopleInfo.image}
-                  alt="Person 4"
-                  className={scss.profile_image}
-                />
-                <div className={scss.info}>
-                  <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                  <p className={scss.position}>{teamPeopleInfo.position}</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           {/* TEAM IMG */}
@@ -131,13 +86,14 @@ const TeamBlock = () => {
             </div>
 
             <p className={scss.description}>Профессиональных IT экспертов</p>
-            <button onClick={openModal} className={scss.join_button}>➤ Хочу в команду</button>
-          </div> 
+            <button onClick={openModal} className={scss.join_button}>
+              ➤ Хочу в команду
+            </button>
+          </div>
         </div>
       </div>
 
-
-      <CommandModal/>
+      <CommandModal />
     </section>
   );
 };
