@@ -5,9 +5,15 @@ import scss from "./MissionBlock.module.scss";
 
 import Background from "../../home/background/Background";
 import useModalStore from "@/store/useModalStore";
+import { useRouter } from "next/navigation";
 
 const MissionBlock = () => {
   const { openModal } = useModalStore();
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/our_works");
+  };
   return (
     <>
       <Background />
@@ -29,7 +35,7 @@ const MissionBlock = () => {
                 <button onClick={openModal}>СТАНЬ КЛИЕНТОМ</button>
               </div>
               <div className={scss.button2}>
-                <button>НАШИ КЕЙСЫ</button>
+                <button onClick={handleClick}>НАШИ КЕЙСЫ</button>
               </div>
             </div>
           </div>
