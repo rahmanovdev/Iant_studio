@@ -1,7 +1,12 @@
+"use client";
+
 import React from 'react'
 import scss from "./CliCommetns.module.scss";
+import useSendReview from '@/store/useSendReview';
+import ClientReviewModal from '@/ui/clientReviewModal/ClientReviewModal';
 
 const CliComments = () => {
+    const { openModal } = useSendReview();
     const usersCom = {
         image: 'https://imgcdn.stablediffusionweb.com/2024/5/6/2b1d888a-a22f-49d5-94b2-d9e1fb2c2640.jpg',
         name: 'Баланчаев Баланча',
@@ -9,6 +14,7 @@ const CliComments = () => {
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum nobis eveniet! Delectus iure maxime, eum ullam deserunt animi dicta, itaque natus architecto accusamus doloremque iste facilis reiciendis, ratione tempora dolor similique repudiandae minima velit excepturi consectetur amet ad vel? Mollitia est modi adipisci quod debitis nostrum obcaecati molestias pariatur culpa placeat assumenda magni veniam odio nesciunt dicta repellendus aspernatur velit, distinctio similique, officia commodi. Nostrum fuga nesciunt eaque voluptas dignissimos velit, ad accusantium rerum quidem. Rerum consequatur, ea blanditiis reiciendis soluta culpa eum sit magni, modi nobis facilis veniam, temporibus velit natus laborum consectetur aut. At optio vel culpa!',
     }
   return (
+   <>
     <section className={scss.Main}>
         <div className="container">
             <div className={scss.content}>
@@ -81,12 +87,23 @@ const CliComments = () => {
                     </div>
 
                 </div>
+
+
+
+                <div className={scss.main_button}>
+                <div onClick={openModal} className={scss.button}>Оставить отзыв</div>
+                </div>
             </div>
 
 
         </div>
+
+
     </section>
+
+    <ClientReviewModal />
+   </>
   )
 }
 
-export default CliComments
+export default CliComments;

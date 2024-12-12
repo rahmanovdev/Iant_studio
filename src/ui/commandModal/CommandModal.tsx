@@ -15,8 +15,8 @@ interface IFormTelegram {
   }
   
   /// imports from ENV
-  const TG_TOKEN = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN;
-  const CHAD_ID = process.env.NEXT_PUBLIC_TELEGRAM_CHAD_ID;
+  const TG_TOKEN = process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_JOIN_TEAM_TELEGRAM_TOKEN;
+  const CHAD_ID = process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_JOIN_TEAM_TELEGRAM_CHAD_ID;
   /// imports from ENV
 
 const CommandModal: React.FC = () => {
@@ -47,6 +47,7 @@ const CommandModal: React.FC = () => {
         className: "toast-custom",
         autoClose: 2000,
       });
+      closeModal();
     } catch (error) {
       toast.error("Пожалуйста, попробуйте позже.", {
         className: "toast-custom",
