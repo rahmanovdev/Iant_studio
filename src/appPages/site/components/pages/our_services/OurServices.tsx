@@ -95,6 +95,7 @@ const ServiceBox: React.FC<ServiceBoxProps> = ({ data }) => (
     data-aos-anchor-placement={data.id === 3 ? "top-bottom" : undefined}
   >
     <Image
+      data-aos="fade-up"
       src={serviceImages[data.image]}
       alt={data.title}
       width={200}
@@ -104,8 +105,8 @@ const ServiceBox: React.FC<ServiceBoxProps> = ({ data }) => (
     />
     <div className={scss.service_bottom}>
       <div className={scss.service_text}>
-        <h2>{data.title}</h2>
-        <p>{data.description}</p>
+        <h2 data-aos="fade-up">{data.title}</h2>
+        <p data-aos="fade-up">{data.description}</p>
       </div>
       <div className={scss.main_check_mark}>
         {data.features.map((feature: string, index: number) => (
@@ -114,7 +115,7 @@ const ServiceBox: React.FC<ServiceBoxProps> = ({ data }) => (
               <IoMdCheckmark />
             </div>
             <div className={scss.check_mark_text}>
-              <p>{feature}</p>
+              <p data-aos="fade-up">{feature}</p>
             </div>
           </div>
         ))}

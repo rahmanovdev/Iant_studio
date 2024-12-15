@@ -3,6 +3,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { AiOutlineRight } from "react-icons/ai";
 import scss from "./TeamSection.module.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 interface TeamMember {
   name: string;
@@ -34,7 +37,7 @@ const teamMembers: TeamMember[] = [
 ];
 
 const TeamMemberCard = ({ member }: { member: TeamMember }) => (
-  <div className={scss.user}>
+  <div className={scss.user} data-aos="fade-up">
     <Image
       src={member.img}
       alt={`${member.name} - ${member.work}`}
