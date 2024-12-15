@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Marquee2.module.scss";
-
 const Marquee2: React.FC = () => {
   return (
     <div className={styles.marqueeCont}>

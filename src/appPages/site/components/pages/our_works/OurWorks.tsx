@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import scss from "./OurWorks.module.scss";
 import Image from "next/image";
 import { projects } from "@/constants/projects";
@@ -46,9 +47,9 @@ const OurWorks = () => {
                     className={scss.bgImg}
                   />
                   <div className={scss.text}>
-                    <h2>{el.title}</h2>
-                    <h4>{el.name}</h4>
-                    <Link href={`/projectDetails/${el.id}`}>
+                    <h2 data-aos="fade-up">{el.title}</h2>
+                    <h4 data-aos="fade-up">{el.name}</h4>
+                    <Link data-aos="fade-up" href={`/projectDetails/${el.id}`}>
                       <button onClick={scrollToTop}>Перейти</button>
                     </Link>
                   </div>

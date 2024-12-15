@@ -1,8 +1,8 @@
 import React from "react";
 import OrderSite from "@/ui/orderSite/OrderSite";
-import OurWorks from "./our_works/OurWorks";
 import scss from "./OurWorksPage.module.scss";
 import Feedback from "./about_me/feedback/Feedback";
+import OurWorks from "./our_works/OurWorks";
 const OurWorksPage = () => {
   return (
     <>

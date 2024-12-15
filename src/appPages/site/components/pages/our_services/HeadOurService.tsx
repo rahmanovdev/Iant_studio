@@ -1,22 +1,23 @@
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
 import scss from "./HeadOurService.module.scss";
 import Snowflake from "./Snowflake";
-
 const HeadOurService = () => {
-  const [snowflakes, setSnowflakes] = useState<Array<{ id: number; x: number; y: number; duration: number }>>([]);
+  const [snowflakes, setSnowflakes] = useState<
+    Array<{ id: number; x: number; y: number; duration: number }>
+  >([]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       const container = document.querySelector(`.${scss.Head}`);
       if (container) {
-        const x = Math.random() * container.clientWidth; 
-        const y = Math.random() * container.clientHeight; 
-        const duration = Math.random() * 3 + 2; 
+        const x = Math.random() * container.clientWidth;
+        const y = Math.random() * container.clientHeight;
+        const duration = Math.random() * 3 + 2;
 
         const newSnowflake = {
-          id: Date.now() + Math.random(), 
+          id: Date.now() + Math.random(),
           x,
           y,
           duration,
@@ -26,7 +27,9 @@ const HeadOurService = () => {
 
         setTimeout(() => {
           setSnowflakes((prevSnowflakes) =>
-            prevSnowflakes.filter((snowflake) => snowflake.id !== newSnowflake.id)
+            prevSnowflakes.filter(
+              (snowflake) => snowflake.id !== newSnowflake.id
+            )
           );
         }, duration * 1000);
       }
@@ -51,7 +54,12 @@ const HeadOurService = () => {
           </div>
         </div>
         {snowflakes.map((snowflake) => (
-          <Snowflake key={snowflake.id} x={snowflake.x} y={snowflake.y} duration={snowflake.duration} />
+          <Snowflake
+            key={snowflake.id}
+            x={snowflake.x}
+            y={snowflake.y}
+            duration={snowflake.duration}
+          />
         ))}
       </div>
     </section>

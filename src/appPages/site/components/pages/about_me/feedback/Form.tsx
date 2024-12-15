@@ -5,7 +5,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { SubmitHandler, useForm } from "react-hook-form";
 import axios from "axios";
-
 interface IFormTelegram {
   name: string;
   phone: string;
@@ -88,5 +87,4 @@ const Form = () => {
   );
 };
 
-export default Form; 
-
+export default Form;

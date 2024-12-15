@@ -6,7 +6,6 @@ import Link from "next/link";
 import IAntLogo from "@/assets/IAntLogo";
 import useModalStore from "@/store/useModalStore";
 // import Modal from "@/ui/modal/Modal";
-
 const Header = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +21,9 @@ const Header = () => {
         <div className={scss.content}>
           {/* <Image src={logo} alt="img" width={700} height={500} quality={90} /> */}
           <Link href="/">
-          <div className={scss.logo}>
-            <IAntLogo />
-          </div>
+            <div className={scss.logo}>
+              <IAntLogo />
+            </div>
           </Link>
           <div className={scss.header_nav}>
             <div
@@ -119,11 +118,12 @@ const Header = () => {
             </div>
           </div>
           <div className={scss.container_btn}>
-            <button onClick={openModal} className={scss.button}>Заказать сайт</button>
+            <button onClick={openModal} className={scss.button}>
+              Заказать сайт
+            </button>
           </div>
         </div>
       </div>
-
 
       {/* <Modal/> */}
     </header>

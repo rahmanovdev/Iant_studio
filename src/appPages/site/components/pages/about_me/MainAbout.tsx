@@ -36,8 +36,8 @@ const MainAbout = () => {
         <TeamBlock />
         <TeamBlockForMob />
         <CliComments />
-        <div style={{display: 'flex', justifyContent: 'center'}}>
-        <OrderSite/>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <OrderSite />
         </div>
         <Feedback />
       </div>

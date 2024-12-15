@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import styles from "./CommandModal.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -9,22 +8,20 @@ import "react-toastify/dist/ReactToastify.css";
 import useSignUpModal from "@/store/useSignUpCommand";
 
 interface IFormTelegram {
-    name: string;
-    position: string;
-    phone: string;
-  }
-  
-  /// imports from ENV
-  const TG_TOKEN = process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_JOIN_TEAM_TELEGRAM_TOKEN;
-  const CHAD_ID = process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_JOIN_TEAM_TELEGRAM_CHAD_ID;
-  /// imports from ENV
+  name: string;
+  position: string;
+  phone: string;
+}
+
+/// imports from ENV
+const TG_TOKEN =
+  process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_JOIN_TEAM_TELEGRAM_TOKEN;
+const CHAD_ID =
+  process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_JOIN_TEAM_TELEGRAM_CHAD_ID;
+/// imports from ENV
 
 const CommandModal: React.FC = () => {
-  const {
-    register,
-    handleSubmit,
-    reset,
-  } = useForm<IFormTelegram>({
+  const { register, handleSubmit, reset } = useForm<IFormTelegram>({
     mode: "onChange",
   });
 
@@ -70,25 +67,34 @@ const CommandModal: React.FC = () => {
           </button>
           <h2 className={styles.title}>Оставить заявку</h2>
           <p className={styles.description}>
-            Оставьте ваши данные, и мы свяжемся с вами в ближайшее
-            время.
+            Оставьте ваши данные, и мы свяжемся с вами в ближайшее время.
           </p>
           <form onClick={handleSubmit(onSumbit)} className={styles.form}>
             <div className={styles.formGroup}>
               <label>Ваше имя</label>
-              <input type="text" placeholder="Введите имя" {...register('name', {required: true})} />
+              <input
+                type="text"
+                placeholder="Введите имя"
+                {...register("name", { required: true })}
+              />
             </div>
             <div className={styles.formGroup}>
               <label>Ваша позиция</label>
-              <input type="text" placeholder="For example: Frontend" {...register('position', {required: true})} />
+              <input
+                type="text"
+                placeholder="For example: Frontend"
+                {...register("position", { required: true })}
+              />
             </div>
             <div className={styles.formGroup}>
               <label>Ваш телефон</label>
-              <input type="tel" placeholder="+996 550 01 02 03" {...register('phone', {required: true})} />
+              <input
+                type="tel"
+                placeholder="+996 550 01 02 03"
+                {...register("phone", { required: true })}
+              />
             </div>
-            <button className={styles.submitBtn}>
-              Отправить
-            </button>
+            <button className={styles.submitBtn}>Отправить</button>
           </form>
           {/* <p className={styles.footer}>
             Нажимая на кнопку, вы даете согласие на обработку персональных
