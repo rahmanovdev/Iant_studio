@@ -1,3 +1,4 @@
+import React from "react";
 import Contacts from "./contacts/Contacts";
 import scss from "./ContactsPage.module.scss";
 const ContactsPage = () => {

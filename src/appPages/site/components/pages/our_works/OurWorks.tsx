@@ -4,7 +4,6 @@ import Image from "next/image";
 import { projects } from "@/constants/projects";
 import Link from "next/link";
 import { BsBag } from "react-icons/bs";
-import Feedback from "../about_me/feedback/Feedback";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -61,8 +60,6 @@ const OurWorks = () => {
           {/* BOTTOM SECTION  */}
         </div>
       </div>
-
-      <Feedback />
     </section>
   );
 };

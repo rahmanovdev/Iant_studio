@@ -3,8 +3,15 @@
 import useModalStore from "@/store/useModalStore";
 import Background from "../background/Background";
 import scss from "./HeroContent.module.scss";
+import { useRouter } from "next/navigation";
 const HeroContent = () => {
   const { openModal } = useModalStore();
+  const router = useRouter();
+
+
+  const handleClick = () => {
+    router.push("/our_works");
+  };
   return (
     <>
       <Background />
@@ -25,7 +32,7 @@ const HeroContent = () => {
             <div className={scss.hero_btns}>
               <button onClick={openModal} className={scss.project}>ОБСУДИТЬ ПРОЕКТ</button>
 
-              <div className={scss.button}>Портфолио</div>
+              <div onClick={handleClick} className={scss.button}>Портфолио</div>
             </div>
           </div>
         </div>

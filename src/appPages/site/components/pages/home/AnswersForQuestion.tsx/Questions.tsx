@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import scss from "./Questions.module.scss";
 
@@ -34,7 +33,8 @@ const Questions: React.FC = () => {
     },
     {
       id: 5,
-      question: "Будет ли мой сайт правильно отображаться на мобильных устройствах?",
+      question:
+        "Будет ли мой сайт правильно отображаться на мобильных устройствах?",
       answer:
         "Все наши веб-сайты имеют адаптивным дизайн и корректно отображаются на любых устройствах. Сайт будет отображаться правильно на больших мониторах, ноутбуках, планшетах и телефонах.",
     },
@@ -50,10 +50,12 @@ const Questions: React.FC = () => {
     setActiveIndex(index === activeIndex ? null : index);
   };
   return (
-    <section style={{marginTop: '70px', marginBottom: '60px'}}>
+    <section style={{ marginTop: "70px", marginBottom: "60px" }}>
       <div className="container">
         <div className={scss.text}>
-            <h1>ОТВЕТЫ <span>на часто задаваемые вопросы</span></h1>
+          <h1>
+            ОТВЕТЫ <span>на часто задаваемые вопросы</span>
+          </h1>
         </div>
         <div className={scss.accordion}>
           {items.map((item, index) => (

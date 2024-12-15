@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import scss from "./Feedback.module.scss";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -61,7 +60,7 @@ const Feedback = () => {
         </div>
       </div>
 
-      <SocialIcons/>
+      <SocialIcons />
     </section>
   );
 };

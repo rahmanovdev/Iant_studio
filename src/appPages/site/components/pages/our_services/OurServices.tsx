@@ -22,7 +22,6 @@ interface ServiceBoxProps {
 
 // Lazy load components
 const HeadOurService = lazy(() => import("./HeadOurService"));
-const Feedback = lazy(() => import("../about_me/feedback/Feedback"));
 
 // Optimize images with next/image
 const serviceImages = {
@@ -144,10 +143,6 @@ const OurServices: React.FC = () => {
           ))}
         </div>
       </div>
-
-      <Suspense fallback={<div>Loading...</div>}>
-        <Feedback />
-      </Suspense>
     </section>
   );
 };

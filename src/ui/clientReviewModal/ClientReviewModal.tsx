@@ -1,27 +1,27 @@
 "use client";
 
 import React from "react";
-import styles from "./Modal.module.scss";
-import useModalStore from "@/store/useModalStore";
+import styles from "./ClientReviewModal.module.scss";
 import { SubmitHandler, useForm } from "react-hook-form";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import useSendReview from "@/store/useSendReview";
 
 interface IFormTelegram {
     name: string;
-    phone: string;
+    review: string;
   }
   
   /// imports from ENV
-  const TG_TOKEN = process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_ORDER_SERVICES_TELEGRAM_TOKEN;
-  const CHAD_ID = process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_ORDER_SERVICES_TELEGRAM_CHAD_ID;
+  const TG_TOKEN = process.env.NEXT_PUBLIC_IANT_REVIEWS_TELEGRAM_TOKEN;
+  const CHAD_ID = process.env.NEXT_PUBLIC_IANT_REVIEWS_TELEGRAM_CHAD_ID;
   /// imports from ENV
 
-const Modal: React.FC = () => {
+const ClientReviewModal: React.FC = () => {
   const {
     register,
-    handleSubmit, 
+    handleSubmit,
     reset,
   } = useForm<IFormTelegram>({
     mode: "onChange",
@@ -29,7 +29,7 @@ const Modal: React.FC = () => {
 
   const botsMessageModel = (data: IFormTelegram) => {
     let messageTG = `Client's name: <b>${data.name}</b>\n`;
-    messageTG += `Client's phone: <b>${data.phone}</b>\n`;
+    messageTG += `Client's review: <b>${data.review}</b>\n`;
     return messageTG;
   };
 
@@ -55,7 +55,7 @@ const Modal: React.FC = () => {
     }
   };
 
-  const { isOpen, closeModal } = useModalStore();
+  const { isOpen, closeModal } = useSendReview();
 
   if (!isOpen) return null;
 
@@ -66,36 +66,28 @@ const Modal: React.FC = () => {
           <button className={styles.close} onClick={closeModal}>
             &times;
           </button>
-          <h2 className={styles.title}>Оставить заявку</h2>
-          <p className={styles.description}>
-            Пожалуйста, оставьте ваши данные, и мы свяжемся с вами в ближайшее
+          <h2 className={styles.title}>Оставить отзыв</h2>
+          {/* <p className={styles.description}>
+            Оставьте ваши данные, и мы свяжемся с вами в ближайшее
             время.
-          </p>
-          <form onClick={handleSubmit(onSumbit)} className={styles.form}> 
+          </p> */}
+          <form onClick={handleSubmit(onSumbit)} className={styles.form}>
             <div className={styles.formGroup}>
               <label>Ваше имя</label>
               <input type="text" placeholder="Введите имя" {...register('name', {required: true})} />
             </div>
             <div className={styles.formGroup}>
-              <label>Ваш телефон</label>
-              <input type="tel" placeholder="+996 550 01 02 03" {...register('phone', {required: true})} />
+              <label>Ваш отзыв</label>
+              <input type="text" placeholder="Отзыв..." {...register('review', {required: true})} />
             </div>
             <button className={styles.submitBtn}>
               Отправить
             </button>
           </form>
-          <p className={styles.footer}>
-            Нажимая на кнопку, вы даете согласие на обработку персональных
-            данных и соглашаетесь с{" "}
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              политикой конфиденциальности
-            </a>
-            .
-          </p>
         </div>
       </div>
     </section>
   );
 };
 
-export default Modal;
+export default ClientReviewModal;

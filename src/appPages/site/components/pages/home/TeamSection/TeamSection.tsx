@@ -1,11 +1,7 @@
 "use client";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"; // Подключаем роутер из next/navigation
 import { AiOutlineRight } from "react-icons/ai";
 import scss from "./TeamSection.module.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 interface TeamMember {
   name: string;
@@ -37,27 +33,27 @@ const teamMembers: TeamMember[] = [
 ];
 
 const TeamMemberCard = ({ member }: { member: TeamMember }) => (
-  <div className={scss.user} data-aos="fade-up">
-    <Image
+  <div className={scss.user}>
+    <img
       src={member.img}
       alt={`${member.name} - ${member.work}`}
       width={280}
       height={400}
-      loading="lazy"
-      quality={75}
-      placeholder="blur"
-      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQrJiEwVz0+O1E5R0RUYXp8ZT9DXXd6eX+Ij4qSlZaVR1BRYWdgZmByfoX/2wBDARUXFx4aHR4eHoVDOUOFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYX/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
     />
     <div className={scss.text}>
       <h3>{member.name}</h3>
       <h5>{member.work}</h5>
     </div>
-    <div className={scss.bg}></div>
   </div>
 );
 
 const TeamSection = () => {
   const router = useRouter();
+
+  // Функция для перехода на страницу /about и прокрутки до team-block
+  const scrollToSection = () => {
+    router.push("/about_me#team-block"); // Переход к странице /about и прокрутка к элементу team-block
+  };
 
   return (
     <section className={scss.teamSection}>
@@ -67,9 +63,7 @@ const TeamSection = () => {
             <h2>Команда профессионалов</h2>
             <p>
               Наша команда опытных и квалифицированных специалистов, которые
-              объединяют свои знания и навыки для достижения общих целей. Они
-              эффективно работают вместе, предлагая высокое качество решений и
-              гарантируя надежный результат.
+              объединяют свои знания и навыки для достижения общих целей.
             </p>
           </div>
 
@@ -80,7 +74,7 @@ const TeamSection = () => {
           </div>
 
           <button
-            onClick={() => router.push("/about_me")}
+            onClick={scrollToSection}
             className="flex items-center gap-2 hover:opacity-90 transition-opacity"
           >
             Вся команда <AiOutlineRight />

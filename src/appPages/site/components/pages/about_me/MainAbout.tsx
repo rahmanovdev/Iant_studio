@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import scss from "./MainAbout.module.scss";
+import OrderSite from "@/ui/orderSite/OrderSite";
 
 const MissionBlock = dynamic(() => import("./mission-block/MissionBlock"), {
   loading: () => <p></p>,
@@ -35,6 +36,9 @@ const MainAbout = () => {
         <TeamBlock />
         <TeamBlockForMob />
         <CliComments />
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+        <OrderSite/>
+        </div>
         <Feedback />
       </div>
     </>

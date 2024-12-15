@@ -9,9 +9,12 @@ const Marquee = dynamic(() => import("./home/Marquee/Marquee"), {
   loading: () => <p></p>,
 });
 
-const AboutMeSection = dynamic(() => import("./home/AboutSection/AboutMeSection"), {
-  loading: () => <p></p>,
-});
+const AboutMeSection = dynamic(
+  () => import("./home/AboutSection/AboutMeSection"),
+  {
+    loading: () => <p></p>,
+  }
+);
 
 const Projects = dynamic(() => import("./home/ProjectSections/Projects"), {
   loading: () => <p></p>,
@@ -21,18 +24,23 @@ const TeamSection = dynamic(() => import("./home/TeamSection/TeamSection"), {
   loading: () => <p></p>,
 });
 
-const CliComments = dynamic(() => import("./about_me/cli-comments/CliComments"), {
-  loading: () => <p></p>,
-});
+const CliComments = dynamic(
+  () => import("./about_me/cli-comments/CliComments"),
+  {
+    loading: () => <p></p>,
+  }
+);
 
-const Questions = dynamic(() => import("./home/AnswersForQuestion.tsx/Questions"), {
-  loading: () => <p></p>,
-});
+const Questions = dynamic(
+  () => import("./home/AnswersForQuestion.tsx/Questions"),
+  {
+    loading: () => <p></p>,
+  }
+);
 
 const WebPrice = dynamic(() => import("./home/WebPriceSection/WebPrice"), {
   loading: () => <p></p>,
 });
-
 
 const HomePage = () => {
   return (
