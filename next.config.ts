@@ -6,8 +6,9 @@ const nextConfig: NextConfig = {
       "static.vecteezy.com",
       "optim.tildacdn.one",
       "images.unsplash.com",
-      'www.photoland.com.au',
-      'imgcdn.stablediffusionweb.com'
+      "www.photoland.com.au",
+      "imgcdn.stablediffusionweb.com",
+      "i.postimg.cc",
     ],
   },
 };

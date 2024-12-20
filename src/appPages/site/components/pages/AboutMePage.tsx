@@ -5,7 +5,7 @@ const AboutMePage = () => {
   return (
     <>
       <div className={scss.content}>
-        <MainAbout/>
+        <MainAbout />
       </div>
       ;
     </>
