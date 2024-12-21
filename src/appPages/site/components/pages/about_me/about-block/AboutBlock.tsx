@@ -20,7 +20,7 @@ const useCountUp = (target: number, isVisible: boolean, duration: number = 2000)
           }
           return prevCount + increment;
         });
-      }, 50); 
+      }, 80); 
     }
 
     return () => clearInterval(interval);
@@ -51,9 +51,9 @@ const AboutBlock = () => {
     };
   }, []);
 
-  const expertsCount = useCountUp(27, isVisible, 6000); 
-  const implementationsCount = useCountUp(21, isVisible, 6000);
-  const clientsCount = useCountUp(30, isVisible, 6000);
+  const expertsCount = useCountUp(20, isVisible, 6000); 
+  const implementationsCount = useCountUp(10, isVisible, 10000);
+  const clientsCount = useCountUp(13, isVisible, 6000);
 
   return (
     <section className={scss.Main}>

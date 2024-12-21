@@ -30,13 +30,13 @@
             margin-top: 100px;
             margin-bottom: 50px;
             display: flex;
-            align-items: center;
+            align-items: start;
             gap: 30px;
             overflow-x: auto;
             .block {
                 flex-shrink: 0;
                 width: 420px;
-                height: 400px;
+                height: auto;
                 padding: 30px 30px;
                 background: rgba(255, 255, 255, 0.074);
                 border-radius: 8px;

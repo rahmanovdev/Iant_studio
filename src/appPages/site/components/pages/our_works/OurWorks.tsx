@@ -15,6 +15,20 @@ const scrollToTop = () => {
 };
 
 const OurWorks = () => {
+  const sortedProjects = [...projects].sort((a, b) => {
+    const formatDate = (dateStr: string) => {
+      const [day, month, year] = dateStr.split('-');
+      return new Date(`${year}-${month}-${day}`);
+    };
+  
+    const dateA = formatDate(a.realeseDate);
+    const dateB = formatDate(b.realeseDate);
+  
+    console.log("dateA", dateA, "dateB", dateB); 
+    return dateA.getTime() - dateB.getTime();  
+  });
+  
+
   return (
     <section className={scss.Main}>
       <div className="container">
@@ -24,7 +38,7 @@ const OurWorks = () => {
             <div className={scss.left}>
               <h1>Портфолию веб-сайтов</h1>
               <p>Кейсы внедрений и разработки</p>
-            </div>                                 
+            </div>
             <div className={scss.right}>
               <p>
                 Профессиональные услуги <br /> по внедрению и разработке.
@@ -38,25 +52,25 @@ const OurWorks = () => {
           {/* BOTTOM SECTION */}
           <div className={scss.ourWorks_bottom}>
             <div className={scss.projectBlocks}>
-              {projects.map((el, idx) => (
+              {sortedProjects.map((el, idx) => (
                 <div
                   data-aos="fade-up"
                   className={`${scss.projectBlock} ${el.comingSoon ? scss.comingSoon : ""}`}
                   key={idx}
                 >
-                  {
-                    el.comingSoon ? (<> <p className={scss.soon}>СКОРО</p> </>) : (
-                      <>
+                  {el.comingSoon ? (
+                    <> <p className={scss.soon}>СКОРО</p> </>
+                  ) : (
+                    <>
                       <Image
-                    src={el.img}
-                    alt="Project Image"
-                    width={400}
-                    height={350}
-                    className={scss.bgImg}
-                  />
-                      </>
-                    )
-                  }
+                        src={el.img}
+                        alt="Project Image"
+                        width={400}
+                        height={350}
+                        className={scss.bgImg}
+                      />
+                    </>
+                  )}
                   <div className={scss.text}>
                     <h2
                       style={{
@@ -68,9 +82,7 @@ const OurWorks = () => {
                     >
                       {el.title}
                     </h2>
-                    <h4 data-aos="fade-up">
-                      {el.name}
-                    </h4>
+                    <h4 data-aos="fade-up">{el.name}</h4>
                     <Link href={el.comingSoon ? "#" : `/projectDetails/${el.id}`}>
                       <button
                         onClick={scrollToTop}

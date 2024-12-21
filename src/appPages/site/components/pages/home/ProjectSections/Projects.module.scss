@@ -94,8 +94,82 @@
       width: 70%;
       height: 1px;
     }
+
+
+
+
+    .button {
+      margin-top: 30px;
+      button {
+          font-family: "Circle", Arial, sans-serif;
+          --black: #000000;
+          --ch-black: #2a2a2a;
+          --eer-black: #1b1b1b;
+          --night-rider: #2e2e2e;
+          --white: #ffffff;
+          --af-white: #f3f3f3;
+          --ch-white: #e1e1e1;
+          border-radius: 30px;
+          width: 180px;
+      height: 50px;
+      display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 0px 15px;
+          background: transparent;
+      border: none;
+      color: white;
+          position: relative;
+          cursor: pointer;
+          font-weight: 700;
+          transition-duration: 0.2s;
+          background-color: var(--ch-black);
+      
+          &:before,
+          &:after {
+              content: "";
+              position: absolute;
+      background: transparent;
+      left: -2px;
+          top: -2px;
+          border-radius: 30px;
+          background: linear-gradient(45deg,
+                  var(--ch-black),
+                  var(--eer-black),
+                  var(--night-rider),
+                  var(--ch-white),
+                  var(--night-rider),
+                  var(--eer-black),
+                  var(--ch-black),
+                  var(--ch-black));
+          background-size: 400%;
+          width: calc(100% + 4px);
+          height: calc(100% + 4px);
+          z-index: -1;
+          animation: steam 20s linear infinite;
+      }
+                          &:after {
+                              filter: blur(50px);
+      }
   }
 }
+  }
+}
+
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
 
 @media (max-width: 700px) {
   .projects {

@@ -12,6 +12,7 @@ export const projects = [
     description:
       "Наша задача заключалась в создании современного веб-сайта для гимназии. Мы реализовали решение, которое позволяет клиентам легко редактировать контент без необходимости создания отдельной CRM системы.",
     href: "https://3-gymnasium.kg",
+    realeseDate: '20-09-2024'
   },
 
   {
@@ -20,12 +21,13 @@ export const projects = [
     img: 'https://i.postimg.cc/76n3FHGR/Project1.png',
     img2: "https://i.postimg.cc/VLpCHrZ6/Project1-mobile.png",
     about:
-      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
+      "A SHOP — это современный интернет-магазин, предлагающий широкий ассортимент товаров, от продуктов питания до электроники. Магазин ориентирован на удобство пользователей, предлагая простой и интуитивно понятный интерфейс для покупателей.",
     name: "Интернет магазин",
     description:
-      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
-    href: "",
+      "Наша задача заключалась в разработке функционального веб-сайта для интернет-магазина. Мы реализовали удобную систему поиска и фильтрации товаров, а также предоставили возможность администраторам легко редактировать контент.",
+    href: "https://fake-store-blush-nu.vercel.app",
     comingSoon: false,
+    realeseDate: '20-10-2024'
   },
   {
     id: 3,
@@ -33,12 +35,13 @@ export const projects = [
     img: "https://i.postimg.cc/fbZk6xcw/2024-12-21-173954.png",
     img2: "https://i.postimg.cc/DzgmF861/2024-12-21-174022.png",
     about:
-      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
+      "Velo Site — это специализированный веб-сайт для продажи велосипедов, ориентированный как на любителей, так и на профессиональных велосипедистов. Сайт предлагает широкий выбор моделей для различных целей, от городских прогулок до экстремального спорта.",
     name: "Продажа велосипедов",
     description:
-      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
+      "Основной задачей было создание современного и удобного веб-сайта, который позволяет пользователям легко находить и выбирать велосипеды.",
     href: "",
     comingSoon: false,
+    realeseDate: '23-09-2024'
   },
   {
     id: 4,
@@ -46,53 +49,27 @@ export const projects = [
     img: "https://i.postimg.cc/GtsycbHr/Project3.png",
     img2: "https://i.postimg.cc/y6JQJ9R6/Project3-mobile.png",
     about:
-      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
+      "StrongPass — это веб-сайт, предназначенный для проверки надежности паролей. Он помогает пользователям создавать и проверять пароли, чтобы обеспечить их защиту от потенциальных угроз и повысить уровень безопасности аккаунтов.",
     name: "Сайт проверки паролей",
     description:
-      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
+      "Наша задача заключалась в разработке удобного инструмента для оценки паролей. Сайт анализирует введенные пользователем пароли по различным критериям, таким как длина, сложность и использование специальных символов.",
     href: "https://strong-pass.vercel.app/",
     comingSoon: false,
-  },
-
-  {
-    id: 5,
-    title: "HKU",
-    img: "https://optim.tildacdn.one/tild3864-3861-4264-a335-333831393865/-/resize/1000x/-/format/webp/__DESC.png",
-    img2: "https://optim.tildacdn.one/tild6432-6566-4362-b432-343861386636/-/resize/352x/-/format/webp/__MOB.png",
-    about:
-      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
-    name: "Корейский университет",
-    description:
-      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
-    href: "",
-
-  }, 
- 
-  {
-    id: 6,
-    title: "HKU",
-    img: "https://optim.tildacdn.one/tild6430-3431-4631-b936-643331326662/-/resize/1000x/-/format/webp/sds__DESC.png",
-    img2: "https://optim.tildacdn.one/tild3132-3136-4366-b537-333230316432/-/resize/352x/-/format/webp/erew__MOB.png",
-    about:
-      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
-    name: "Корейский университет",
-    description:
-      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
-    href: "",
-    comingSoon: false,
+    realeseDate: '19-11-2024'
   },
   {
     id: 7,
-    title: "HKU",
-    img: "https://optim.tildacdn.one/tild3363-3836-4432-a136-386335336335/-/resize/1000x/-/format/webp/image.png",
-    img2: "https://optim.tildacdn.one/tild3135-3830-4233-b065-643930353232/-/resize/352x/-/format/webp/image.png",
+    title: "A MOVIE",
+    img: "https://i.postimg.cc/Zq5kgmYM/2024-12-21-223539.png",
+    img2: "https://i.postimg.cc/XNFPsqcv/2024-12-21-223602.png",
     about:
-      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
-    name: "Корейский университет",
+      "A MOVE — это веб-сайт для поиска фильмов и сериалов, созданный для киноманов, которые хотят быстро находить интересный контент. Платформа предлагает удобный интерфейс и актуальную информацию о рейтингах, жанрах и описаниях.",
+    name: "Сайт кинопоиска",
     description:
-      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
+      "Наша задача заключалась в разработке функционального и интуитивного веб-сайта. Мы реализовали удобную систему поиска и фильтрации по жанрам, рейтингу и годам выпуска.",
     href: "",
     comingSoon: false,
+    realeseDate: '27-09-2024'
   },
   {
     id: 8,
@@ -106,5 +83,6 @@ export const projects = [
       "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
     comingSoon: true,
+    realeseDate: '20-12-2024'
   },
 ];
