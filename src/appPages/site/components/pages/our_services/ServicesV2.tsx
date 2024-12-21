@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import HeadOurService from "./HeadOurService";
-import Feedback from "../about_me/feedback/Feedback";
 
 const Services = () => {
     const services = [
@@ -38,10 +37,10 @@ const Services = () => {
     ];
 
     return (
-        <section id="services" className="py-20 bg-black relative overflow-hidden text-white">
+        <section id="services" className="py-30 bg-black relative overflow-hidden text-white">
             <HeadOurService />
             <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-2 max-w-6xl mx-auto px-6 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-16 max-w-6xl mx-auto px-6 relative z-10">
                 {services.map((service, index) => (
                     <div
                         key={index}
@@ -62,9 +61,6 @@ const Services = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className="relative z-10 pt-20">
-                <Feedback />
             </div>
         </section>
     );
