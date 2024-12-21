@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
       "optim.tildacdn.one",
       "images.unsplash.com",
       'www.photoland.com.au',
-      'imgcdn.stablediffusionweb.com'
+      'imgcdn.stablediffusionweb.com',
+      "t4.ftcdn.net",
+      "lh3.googleusercontent.com",
+      "tikkurila.com",
     ],
   },
 };

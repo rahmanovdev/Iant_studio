@@ -8,6 +8,7 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
+    comingSoon: false, 
   },  
   {
     id: 2,
@@ -18,6 +19,7 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
+    comingSoon: false,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
+    comingSoon: false,
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
+    comingSoon: false,
   },
 
   {
@@ -49,6 +53,7 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
+    comingSoon: false,
   }, 
   {
     id: 6,
@@ -59,6 +64,7 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
+    comingSoon: false,
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
+    comingSoon: false,
   },
   {
     id: 8,
@@ -79,5 +86,6 @@ export const projects = [
     name: "Корейский университет",
     description: "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
+    comingSoon: true,
   },
 ];

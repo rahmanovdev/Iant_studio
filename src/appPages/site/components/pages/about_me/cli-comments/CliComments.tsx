@@ -7,14 +7,33 @@ import ClientReviewModal from "@/ui/clientReviewModal/ClientReviewModal";
 
 const CliComments = () => {
   const { openModal } = useSendReview();
-  const usersCom = {
-    image:
-      "https://imgcdn.stablediffusionweb.com/2024/5/6/2b1d888a-a22f-49d5-94b2-d9e1fb2c2640.jpg",
-    name: "Баланчаев Баланча",
-    position: "Honda Motor Co. JP",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum nobis eveniet! Delectus iure maxime, eum ullam deserunt animi dicta, itaque natus architecto accusamus doloremque iste facilis reiciendis, ratione tempora dolor similique repudiandae minima velit excepturi consectetur amet ad vel? Mollitia est modi adipisci quod debitis nostrum obcaecati molestias pariatur culpa placeat assumenda magni veniam odio nesciunt dicta repellendus aspernatur velit, distinctio similique, officia commodi. Nostrum fuga nesciunt eaque voluptas dignissimos velit, ad accusantium rerum quidem. Rerum consequatur, ea blanditiis reiciendis soluta culpa eum sit magni, modi nobis facilис veniam, temporibus velit natus laborum consectetur авт. At optio vel culpa!",
-  };
+
+  const usersComments = [
+    {
+      image:
+        "https://imgcdn.stablediffusionweb.com/2024/5/6/2b1d888a-a22f-49d5-94b2-d9e1fb2c2640.jpg",
+      name: "Абдурахман Абдибаитов",
+      position: "Frontend Developer",
+      description:
+        "Хочу выразить огромную благодарность команде iANT за создание моего сайта! Все пожелания были учтены, работа выполнена качественно и в срок. Особенно порадовал профессиональный подход, внимание к деталям и постоянная связь на всех этапах разработки. Теперь у меня современный, стильный и функциональный сайт, который полностью отвечает моим запросам. Рекомендую iANT как надежных специалистов в своей области! Спасибо за качественно выполненный сайт! Понравился ваш подход — вы оперативно реагировали на мои запросы и всегда находили подходящие решения. Дизайн получился просто шикарным.",
+    },
+    {
+      image:
+        "https://imgcdn.stablediffusionweb.com/2024/5/6/2b1d888a-a22f-49d5-94b2-d9e1fb2c2640.jpg",
+      name: "Жумадил Рахмонов",
+      position: "Fullstack Developer",
+      description:
+        "Хочу искренне поблагодарить команду iANT за разработку моего сайта! Все мои запросы были учтены, а работа выполнена на высоком уровне и точно в срок. Особенно впечатлил профессионализм, внимание к деталям и постоянная обратная связь на всех этапах работы. В результате я получил современный, стильный и удобный сайт, который полностью отвечает моим ожиданиям. Рекомендую iANT как настоящих профессионалов в своей области! Благодарю за отлично выполненную работу! Очень понравился ваш подход — вы быстро реагировали на мои запросы и всегда предлагали оптимальные решения. Дизайн сайта вышел просто великолепным.",
+    },
+    {
+      image:
+        "https://imgcdn.stablediffusionweb.com/2024/5/6/2b1d888a-a22f-49d5-94b2-d9e1fb2c2640.jpg",
+      name: "Иван Петрович",
+      position: "System Administrator",
+      description:
+        "Хочу выразить огромную благодарность команде iANT за создание моего сайта! Все пожелания были учтены, работа выполнена качественно и в срок. Особенно порадовал профессиональный подход, внимание к деталям и постоянная связь на всех этапах разработки. Теперь у меня современный, стильный и функциональный сайт, который полностью отвечает моим запросам. Рекомендую iANT как надежных специалистов в своей области! Спасибо за качественно выполненный сайт! Понравился ваш подход — вы оперативно реагировали на мои запросы и всегда находили подходящие решения. Дизайн получился просто шикарным.",
+    },
+  ];
 
   return (
     <>
@@ -31,26 +50,24 @@ const CliComments = () => {
             </div>
 
             <div className={scss.com_block}>
-              {Array(5)
-                .fill(usersCom)
-                .map((user, index) => (
-                  <div className={scss.block} key={index}>
-                    <div className={scss.img_block}>
-                      <Image
-                        src={user.image}
-                        alt={user.name}
-                        width={100}
-                        height={100}
-                        className={scss.profile_image}
-                      />
-                      <div className={scss.text_block}>
-                        <h5>{user.name}</h5>
-                        <h6>{user.position}</h6>
-                      </div>
+              {usersComments.map((user, index) => (
+                <div className={scss.block} key={index}>
+                  <div className={scss.img_block}>
+                    <Image
+                      src={user.image}
+                      alt={user.name}
+                      width={100}
+                      height={100}
+                      className={scss.profile_image}
+                    />
+                    <div className={scss.text_block}>
+                      <h5>{user.name}</h5>
+                      <h6>{user.position}</h6>
                     </div>
-                    <p>{user.description}</p>
                   </div>
-                ))}
+                  <p>{user.description}</p>
+                </div>
+              ))}
             </div>
 
             <div className={scss.main_button}>
