@@ -22,11 +22,11 @@ const OrderSite = () => {
           <div className={scss.orderBlock}>
             <div className={scss.left}>
               <p>Для деловых предложений:</p>
-              <span>info@astudio.kg</span>
+              <span>info@iantstudio.kg</span>
             </div>
             <div className={scss.right}>
               <p>Для консультации:</p>
-              <span>+996 559 708 515</span>
+              <span>+996 700 188 251</span>
             </div>
           </div>
 
