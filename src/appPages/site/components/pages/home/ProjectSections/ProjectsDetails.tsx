@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import styles from "./ProjectsDetails.module.scss";
 import { projects } from "@/constants/projects";
 import { useParams } from "next/navigation";
@@ -16,7 +17,7 @@ import { RiSupabaseLine } from "react-icons/ri";
 const ProjectsDetails = () => {
   const params = useParams();
   const id = typeof params.id === "string" ? params.id : "";
-  const project = projects?.find((item) => item.id.toString() === id); 
+  const project = projects?.find((item) => item.id.toString() === id);
 
   if (!project) {
     return <p className={styles.notFound}>Project not found</p>;
@@ -32,10 +33,14 @@ const ProjectsDetails = () => {
 
         <div className={styles.projectDetailsBlock}>
           <div className={styles.left}>
-            <img
+            <Image
               src={project.img}
               alt={project.title}
               className={styles.image}
+              width={500} 
+              height={300} 
+              objectFit="cover" 
+              priority={true} 
             />
           </div>
 
@@ -51,7 +56,7 @@ const ProjectsDetails = () => {
             </div>
 
             <a
-              href="https://3-gymnasium.kg/"
+              href={project.href}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.linkButton}

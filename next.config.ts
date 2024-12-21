@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
       "www.photoland.com.au",
       "imgcdn.stablediffusionweb.com",
       "i.postimg.cc",
+      "postimg.cc",
     ],
   },
 };
