@@ -51,7 +51,7 @@ const ProjectsDetails = () => {
             </div>
 
             <a
-              href=""
+              href="https://3-gymnasium.kg/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.linkButton}

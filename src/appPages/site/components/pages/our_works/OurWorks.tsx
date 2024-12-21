@@ -24,7 +24,7 @@ const OurWorks = () => {
             <div className={scss.left}>
               <h1>Портфолию веб-сайтов</h1>
               <p>Кейсы внедрений и разработки</p>
-            </div>
+            </div>                                 
             <div className={scss.right}>
               <p>
                 Профессиональные услуги <br /> по внедрению и разработке.
