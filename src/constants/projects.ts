@@ -96,12 +96,12 @@ export const projects = [
   },
   {
     id: 8,
-    title: "HKU",
+    title: "Тез Тап",
     img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
     img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
     about:
       "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
-    name: "Корейский университет",
+    name: "Сайт запчастей",
     description:
       "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",

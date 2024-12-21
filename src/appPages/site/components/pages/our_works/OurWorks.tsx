@@ -44,13 +44,19 @@ const OurWorks = () => {
                   className={`${scss.projectBlock} ${el.comingSoon ? scss.comingSoon : ""}`}
                   key={idx}
                 >
-                  <Image
+                  {
+                    el.comingSoon ? (<> <p className={scss.soon}>СКОРО</p> </>) : (
+                      <>
+                      <Image
                     src={el.img}
                     alt="Project Image"
                     width={400}
                     height={350}
-                    className={`${scss.bgImg} ${!el.comingSoon ? scss.disabledImage : ""}`}
+                    className={scss.bgImg}
                   />
+                      </>
+                    )
+                  }
                   <div className={scss.text}>
                     <h2
                       style={{
@@ -60,12 +66,10 @@ const OurWorks = () => {
                       }}
                       data-aos="fade-up"
                     >
-                      {el.comingSoon ? "Скоро..." : el.title}
+                      {el.title}
                     </h2>
                     <h4 data-aos="fade-up">
-                      {el.comingSoon
-                        ? "Проект в процессе разработки"
-                        : el.name}
+                      {el.name}
                     </h4>
                     <Link href={el.comingSoon ? "#" : `/projectDetails/${el.id}`}>
                       <button
