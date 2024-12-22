@@ -12,7 +12,16 @@ export const projects = [
     description:
       "Наша задача заключалась в создании современного веб-сайта для гимназии. Мы реализовали решение, которое позволяет клиентам легко редактировать контент без необходимости создания отдельной CRM системы.",
     href: "https://3-gymnasium.kg",
-    realeseDate: '20-09-2024'
+    realeseDate: '20-09-2024',
+    tech: [
+      "JavaScript",
+      "React",
+      "Redux",
+      "NextJs",
+      "Typescript",
+      "Docker",
+      "Python"
+    ]
   },
 
   {
@@ -27,7 +36,16 @@ export const projects = [
       "Наша задача заключалась в разработке функционального веб-сайта для интернет-магазина. Мы реализовали удобную систему поиска и фильтрации товаров, а также предоставили возможность администраторам легко редактировать контент.",
     href: "https://fake-store-blush-nu.vercel.app",
     comingSoon: false,
-    realeseDate: '20-10-2024'
+    realeseDate: '20-10-2024',
+    tech: [
+      "Typescript",
+      "React",
+      "Redux",
+      "Zustand",
+      "NextJs",
+      "SupaBase",
+      "Prisma"
+    ]
   },
   {
     id: 3,
@@ -41,7 +59,15 @@ export const projects = [
       "Основной задачей было создание современного и удобного веб-сайта, который позволяет пользователям легко находить и выбирать велосипеды.",
     href: "",
     comingSoon: false,
-    realeseDate: '23-09-2024'
+    realeseDate: '23-09-2024',
+    tech: [
+      "Typescript",
+      "React",
+      "Redux",
+      "NextJs",
+      "Prisma",
+      "Supabase"
+    ]
   },
   {
     id: 4,
@@ -55,7 +81,14 @@ export const projects = [
       "Наша задача заключалась в разработке удобного инструмента для оценки паролей. Сайт анализирует введенные пользователем пароли по различным критериям, таким как длина, сложность и использование специальных символов.",
     href: "https://strong-pass.vercel.app/",
     comingSoon: false,
-    realeseDate: '19-11-2024'
+    realeseDate: '19-11-2024',
+    tech: [
+      "Typescript",
+      "React",
+      "Redux",
+      "NextJs",
+      "Zustand",
+    ]
   },
   {
     id: 7,
@@ -69,7 +102,15 @@ export const projects = [
       "Наша задача заключалась в разработке функционального и интуитивного веб-сайта. Мы реализовали удобную систему поиска и фильтрации по жанрам, рейтингу и годам выпуска.",
     href: "",
     comingSoon: false,
-    realeseDate: '27-09-2024'
+    realeseDate: '27-09-2024',
+    tech: [
+      "Typescript",
+      "React",
+      "Redux",
+      "NextJs",
+      "Rest API",
+      "Zustand"
+    ]
   },
   {
     id: 8,
@@ -83,6 +124,14 @@ export const projects = [
       "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
     comingSoon: true,
-    realeseDate: '20-12-2024'
+    realeseDate: '20-12-2024',
+    tech: [
+      "Typescript",
+      "React",
+      "Redux",
+      "NextJs",
+      "Docker",
+      "Python"
+    ]
   },
 ];
