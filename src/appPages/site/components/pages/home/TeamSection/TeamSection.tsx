@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation"; // Подключаем роутер из next/navigation
 import { AiOutlineRight } from "react-icons/ai";
 import scss from "./TeamSection.module.scss";
+import Image from "next/image";
 
 interface TeamMember {
   name: string;
@@ -34,11 +35,12 @@ const teamMembers: TeamMember[] = [
 
 const TeamMemberCard = ({ member }: { member: TeamMember }) => (
   <div className={scss.user}>
-    <img
+    <Image
       src={member.img}
       alt={`${member.name} - ${member.work}`}
-      width={280}
-      height={400}
+      width={700}
+      height={500}
+      quality={90}
     />
     <div className={scss.text}>
       <h3>{member.name}</h3>
@@ -50,9 +52,8 @@ const TeamMemberCard = ({ member }: { member: TeamMember }) => (
 const TeamSection = () => {
   const router = useRouter();
 
-  // Функция для перехода на страницу /about и прокрутки до team-block
   const scrollToSection = () => {
-    router.push("/about_me#team-block"); // Переход к странице /about и прокрутка к элементу team-block
+    router.push("/about_me#team-block"); 
   };
 
   return (
