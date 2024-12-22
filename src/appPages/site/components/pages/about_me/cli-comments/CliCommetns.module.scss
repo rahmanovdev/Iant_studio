@@ -36,7 +36,7 @@
             .block {
                 flex-shrink: 0;
                 width: 420px;
-                height: auto;
+                height: 350px;
                 padding: 30px 30px;
                 background: rgba(255, 255, 255, 0.074);
                 border-radius: 8px;
@@ -66,10 +66,13 @@
                 }
 
                 p {
+                    overflow-y: auto;
                     margin-top: 37px;
                     font-size: 13px;
                     font-weight: 200;
                     color: rgba(255, 255, 255, 0.705);
+                    height: 200px; 
+                    overflow-y: auto; 
                 }
             }
         }
