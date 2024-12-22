@@ -114,9 +114,7 @@
   }
 }
 
-
-
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .teamSection {
     .content {
       .teamText {
@@ -190,7 +188,7 @@
               display: none;
             }
           }
-  
+
           &:hover {
             .text {
               transition: 0.8s;
@@ -224,13 +222,13 @@
   }
 }
 
-
-
-
-@media(max-width: 430px) {
+@media (max-width: 430px) {
   .teamSection {
     .content {
       .teamText {
+        h2 {
+          font-size: 30px;
+        }
         p {
           font-size: 13px;
         }
@@ -239,9 +237,7 @@
   }
 }
 
-
-
-@media(max-width: 340px) {
+@media (max-width: 340px) {
   .teamSection {
     .content {
       .teamText {
