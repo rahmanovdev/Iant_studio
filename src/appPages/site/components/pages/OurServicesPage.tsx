@@ -3,7 +3,7 @@ import scss from "./OurServicesPage.module.scss";
 import OrderSite from "@/ui/orderSite/OrderSite";
 import Feedback from "./about_me/feedback/Feedback";
 
-const OurServices = dynamic(() => import("./our_services/OurServices"), {
+const ServicesV2 = dynamic(() => import("./our_services/ServicesV2"), {
   loading: () => <p></p>,
 });
 
@@ -11,11 +11,12 @@ const OurServicesPage = () => {
   return (
     <>
       <div className={scss.content}>
-        <OurServices />
-        <div style={{display: 'flex', justifyContent: 'center'}}>
-        <OrderSite/>
+      <ServicesV2 />
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <OrderSite />
         </div>
-        <Feedback/>
+        <Feedback />
+        {/* <OurServices /> */}
       </div>
     </>
   );

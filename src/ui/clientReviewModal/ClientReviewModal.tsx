@@ -10,6 +10,7 @@ import useSendReview from "@/store/useSendReview";
 
 interface IFormTelegram {
     name: string;
+    position: string;
     review: string;
   }
   
@@ -29,6 +30,7 @@ const ClientReviewModal: React.FC = () => {
 
   const botsMessageModel = (data: IFormTelegram) => {
     let messageTG = `Client's name: <b>${data.name}</b>\n`;
+    messageTG += `Client's position: <b>${data.position}</b>\n`;
     messageTG += `Client's review: <b>${data.review}</b>\n`;
     return messageTG;
   };
@@ -75,6 +77,10 @@ const ClientReviewModal: React.FC = () => {
             <div className={styles.formGroup}>
               <label>Ваше имя</label>
               <input type="text" placeholder="Введите имя" {...register('name', {required: true})} />
+            </div>
+            <div className={styles.formGroup}>
+              <label>Ваше специальность</label>
+              <input type="text" placeholder="Ваше специальность" {...register('position', {required: true})} />
             </div>
             <div className={styles.formGroup}>
               <label>Ваш отзыв</label>

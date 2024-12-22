@@ -1,22 +1,31 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import styles from "./ProjectsDetails.module.scss";
 import { projects } from "@/constants/projects";
 import { useParams } from "next/navigation";
 import Feedback from "../../about_me/feedback/Feedback";
 import SocialIcons from "@/ui/SocialIcons";
-import { TbBrandTypescript } from "react-icons/tb";
-import { RiNextjsLine } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { FaNode } from "react-icons/fa";
-import { RiSupabaseLine } from "react-icons/ri";
+// import { TbBrandTypescript } from "react-icons/tb";
+// import { RiNextjsLine } from "react-icons/ri";
+// import { FaReact } from "react-icons/fa";
+// import { SiRedux } from "react-icons/si";
+// import { BiLogoPostgresql } from "react-icons/bi";
+// import { FaPython } from "react-icons/fa";
+// import { FaDocker } from "react-icons/fa";
+// import { IconType } from "react-icons/lib";
+
+// interface IIcon {
+//   icon: IconType;
+// }
+
+
 
 const ProjectsDetails = () => {
   const params = useParams();
   const id = typeof params.id === "string" ? params.id : "";
-  const project = projects?.find((item) => item.id.toString() === id); 
+  const project = projects?.find((item) => item.id.toString() === id);
 
   if (!project) {
     return <p className={styles.notFound}>Project not found</p>;
@@ -32,10 +41,14 @@ const ProjectsDetails = () => {
 
         <div className={styles.projectDetailsBlock}>
           <div className={styles.left}>
-            <img
+            <Image
               src={project.img}
               alt={project.title}
               className={styles.image}
+              width={500} 
+              height={300} 
+              objectFit="cover" 
+              priority={true} 
             />
           </div>
 
@@ -51,7 +64,7 @@ const ProjectsDetails = () => {
             </div>
 
             <a
-              href=""
+              href={project.href}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.linkButton}
@@ -64,8 +77,8 @@ const ProjectsDetails = () => {
         <section className={styles.techStack}>
           <h3>Technologies Used</h3>
           <div className={styles.iconsContainer}>
-            <div className={styles.iconBlock}>
-              <TbBrandTypescript />
+            {/* <div className={styles.iconBlock}>
+              <project.tech />
             </div>
             <div className={styles.iconBlock}>
               <RiNextjsLine />
@@ -77,11 +90,18 @@ const ProjectsDetails = () => {
               <SiRedux />
             </div>
             <div className={styles.iconBlock}>
-              <FaNode />
+              <FaPython/>
             </div>
             <div className={styles.iconBlock}>
-              <RiSupabaseLine />
+              <BiLogoPostgresql />
             </div>
+            <div className={styles.iconBlock}>
+              <FaDocker />
+            </div> */}
+
+            {
+              project.tech.map(el => (<p className={styles.iconBlock} key={el}>{el}</p>))
+            }
           </div>
         </section>
       </div>
