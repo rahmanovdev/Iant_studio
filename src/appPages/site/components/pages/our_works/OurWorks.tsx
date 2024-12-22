@@ -56,7 +56,7 @@ const OurWorks = () => {
                 <div
                   data-aos="fade-up"
                   className={`${scss.projectBlock} ${el.comingSoon ? scss.comingSoon : ""}`}
-                  key={idx}
+                  key={idx} 
                 >
                   {el.comingSoon ? (
                     <> <p className={scss.soon}>СКОРО</p> </>
