@@ -2,11 +2,11 @@
 
 import scss from "./Feedback.module.scss";
 import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import Form from "./Form";
 import SocialIcons from "@/ui/SocialIcons";
+import Link from "next/link";
 
 const Feedback = () => {
   return (
@@ -35,10 +35,15 @@ const Feedback = () => {
             </div>
 
             <div className={scss.social_block}>
-              <FaInstagram />
-              <FaYoutube />
+              <Link href="https://www.instagram.com/iantstudio/">
+                <FaInstagram />
+              </Link>
+              <Link href='https://t.me/abdurahmandev'>
               <FaTelegram />
+              </Link>
+              <Link href='https://www.linkedin.com/company/i-ant-it-company/posts/?feedView=all'>
               <FaLinkedinIn />
+              </Link>
             </div>
           </div>
 
