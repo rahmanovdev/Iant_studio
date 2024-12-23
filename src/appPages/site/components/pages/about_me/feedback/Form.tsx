@@ -11,8 +11,8 @@ interface IFormTelegram {
 }
 
 /// imports from ENV
-const TG_TOKEN = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN;
-const CHAD_ID = process.env.NEXT_PUBLIC_TELEGRAM_CHAD_ID;
+const TG_TOKEN = process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_ORDER_SERVICES_TELEGRAM_TOKEN;
+const CHAD_ID = process.env.NEXT_PUBLIC_IANT_APPLICATIONS_FOR_ORDER_SERVICES_TELEGRAM_CHAD_ID;
 /// imports from ENV
 
 const Form = () => {
@@ -21,7 +21,7 @@ const Form = () => {
     handleSubmit,
     reset,
     formState: { isSubmitting },
-  } = useForm<IFormTelegram>({
+  } = useForm<IFormTelegram>({ 
     mode: "onChange",
   });
 
