@@ -11,4 +11,11 @@
   padding: 0;
   object-fit: cover;
   z-index: -1;
+
+  @media (max-width: 768px) {
+    display: none;
+    background-image: url("/images/background-static-2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }

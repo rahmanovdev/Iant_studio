@@ -2,14 +2,17 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  float: left;
-  // opacity: 0.3;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   padding: 0;
-  // position: fixed;
   object-fit: cover;
   z-index: -1;
+
+  @media (max-width: 768px) {
+    // Мобилдик түзмөктөрдө видео өчүрүлөт
+    display: none;
+    background-image: url("/images/background-static.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }
