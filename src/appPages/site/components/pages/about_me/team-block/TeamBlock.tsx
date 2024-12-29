@@ -17,12 +17,32 @@ const TeamBlock = () => {
     AOS.refresh();
   }, []);
 
-  const teamPeopleInfo = {
-    image:
-      "https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg",
-    name: "Баланчаев Баланча",
-    position: "Frontend Developer",
-  };
+  const teamMembers = [
+    {
+      name: "Jumadil Rakhmonov",
+      position: "CO-Founder",
+      image:
+        "https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png",
+    },
+    {
+      name: "Belek Asrarov",
+      position: "CO-Founder",
+      image:
+        "https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png",
+    },
+    {
+      name: "Adyl Salijanov",
+      position: "CO-Founder",
+      image:
+        "https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png",
+    },
+    {
+      name: "Arlen Ismailov",
+      position: "CO-Founder",
+      image:
+        "https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png",
+    },
+  ];
 
   return (
     <section id="team-block" className={scss.Main}>
@@ -54,24 +74,24 @@ const TeamBlock = () => {
           {/* TEAM IMG */}
           <div className={scss.team_images}>
             <div className={scss.image_block}>
-              {[0, 500, 1000, 1500].map((delay, index) => (
+              {teamMembers.map((member, index) => (
                 <div
                   key={index}
                   data-aos="fade-right"
-                  data-aos-delay={delay}
+                  data-aos-delay={index * 500}
                   data-aos-duration="500"
                   className={scss.profile}
                 >
                   <Image
-                    src={teamPeopleInfo.image}
-                    alt={`Person ${index + 1}`}
+                    src={member.image}
+                    alt={`${member.name} - ${member.position}`}
                     className={scss.profile_image}
-                    width={500} 
-                    height={500} 
+                    width={500}
+                    height={500}
                   />
                   <div className={scss.info}>
-                    <h3 className={scss.name}>{teamPeopleInfo.name}</h3>
-                    <p className={scss.position}>{teamPeopleInfo.position}</p>
+                    <h3 className={scss.name}>{member.name}</h3>
+                    <p className={scss.position}>{member.position}</p>
                   </div>
                 </div>
               ))}

@@ -12,23 +12,23 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Nikola Jackson",
-    work: "Front End Developer",
+    name: "Jumadil Rakhmonov",
+    work: "CO-Founder",
     img: "https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png",
   },
   {
-    name: "Nikola Jackson",
-    work: "Front End Developer",
+    name: "Belek Asrarov",
+    work: "CO-Founder",
     img: "https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png",
   },
   {
-    name: "Nikola Jackson",
-    work: "Front End Developer",
+    name: "Adyl Salijanov",
+    work: "CO-Founder",
     img: "https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png",
   },
   {
-    name: "Nikola Jackson",
-    work: "Front End Developer",
+    name: "Arlen Ismailov",
+    work: "CO-Founder",
     img: "https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png",
   },
 ];
@@ -53,7 +53,7 @@ const TeamSection = () => {
   const router = useRouter();
 
   const scrollToSection = () => {
-    router.push("/about_me#team-block"); 
+    router.push("/about_me#team-block");
   };
 
   return (
