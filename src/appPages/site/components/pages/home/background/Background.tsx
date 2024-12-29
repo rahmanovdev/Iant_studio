@@ -1,23 +1,35 @@
 "use client";
+import { useState, useEffect } from "react";
 import scss from "./Background.module.scss";
 
 const Background = () => {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsVideoLoaded(true);
+  }, []);
+
   return (
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-      className={scss.video}
-      poster="/images/background-static.jpg" // Видео жүктөлгөнчө көрүнө турган сүрөт
-    >
-      <source
-        src="/videos/background.mp4"
-        type="video/mp4"
-        media="(min-width: 768px)" // Десктоп үчүн гана видео көрсөтүү
+    <>
+      <div
+        className={`${scss.placeholder} ${isVideoLoaded ? scss.hide : ""}`}
+        style={{ backgroundImage: "url('/images/background-static.jpg')" }}
       />
-    </video>
+
+      {isVideoLoaded && (
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className={scss.video}
+          onLoadedData={() => setIsVideoLoaded(true)}
+        >
+          <source src="/videos/background.mp4" type="video/mp4" />
+        </video>
+      )}
+    </>
   );
 };
 

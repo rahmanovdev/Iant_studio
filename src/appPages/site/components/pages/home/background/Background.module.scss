@@ -7,12 +7,17 @@
   padding: 0;
   object-fit: cover;
   z-index: -1;
+  will-change: transform;
+  transform: translateZ(0);
+}
 
-  @media (max-width: 768px) {
-    // Мобилдик түзмөктөрдө видео өчүрүлөт
-    display: none;
-    background-image: url("/images/background-static.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+.placeholder {
+  @extend .video;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+
+.hide {
+  opacity: 0;
 }
