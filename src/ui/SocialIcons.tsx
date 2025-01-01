@@ -30,7 +30,7 @@ const SocialIcons: React.FC = () => {
         href="mailto:abdibaitovabdurahman@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="LinkedIn"
+        aria-label="LinkedIn" 
         className="hover-target"
       >
         <SiGmail/>
