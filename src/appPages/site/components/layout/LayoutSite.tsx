@@ -5,7 +5,7 @@ import Loader from "../loader/Loader";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css'; 
+import "react-toastify/dist/ReactToastify.css";
 import Modal from "@/ui/modal/Modal";
 
 interface LayoutSiteProps {
@@ -17,7 +17,7 @@ const LayoutSite: FC<LayoutSiteProps> = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1600);
   }, []);
 
   if (isLoading) {
@@ -26,9 +26,9 @@ const LayoutSite: FC<LayoutSiteProps> = ({ children }) => {
 
   return (
     <div className={scss.LayoutSite}>
-      <ToastContainer/>
+      <ToastContainer />
       <Header />
-      <Modal/>
+      <Modal />
       <main>{children}</main>
       <Footer />
     </div>

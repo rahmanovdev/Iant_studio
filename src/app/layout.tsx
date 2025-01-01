@@ -47,14 +47,6 @@ export const metadata: Metadata = {
     siteName: "iAnt",
     description:
       "Профессиональная разработка сайтов в Кыргызстане. Создание современных веб-сайтов и приложений под ключ.",
-    images: [
-      {
-        url: "https://iant.kg/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "iAnt - Разработка сайтов в Кыргызстане",
-      },
-    ],
   },
   robots: {
     index: true,
@@ -67,9 +59,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+
   icons: {
     icon: "/favicon.ico",
-    apple: [{ url: "/apple-icon.png" }],
   },
 };
 

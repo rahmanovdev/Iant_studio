@@ -1,10 +1,18 @@
+"use client";
 import scss from "./Loader.module.scss";
-const Loader = () => {
+
+const Loading = () => {
   return (
-    <div className={scss.wrapper}>
-      <div className={scss.spinner}></div>
+    <div className={scss.page}>
+      <div className={scss.container}>
+        <div className={scss.ring}></div>
+        <div className={scss.ring}></div>
+        <div className={scss.ring}></div>
+        <div className={scss.ring}></div>
+        <div className={scss.loadingText}>loading</div>
+      </div>
     </div>
   );
 };
 
-export default Loader;
+export default Loading;
