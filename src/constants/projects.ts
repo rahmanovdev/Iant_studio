@@ -48,21 +48,6 @@ export const projects = [
     ],
   },
   {
-    id: 3,
-    title: "Bike site",
-    img: "https://i.postimg.cc/fbZk6xcw/2024-12-21-173954.png",
-    img2: "https://i.postimg.cc/DzgmF861/2024-12-21-174022.png",
-    about:
-      "Velo Site — это специализированный веб-сайт для продажи велосипедов, ориентированный как на любителей, так и на профессиональных велосипедистов. Сайт предлагает широкий выбор моделей для различных целей, от городских прогулок до экстремального спорта.",
-    name: "Продажа велосипедов",
-    description:
-      "Основной задачей было создание современного и удобного веб-сайта, который позволяет пользователям легко находить и выбирать велосипеды.",
-    href: "",
-    comingSoon: false,
-    realeseDate: "23-09-2024",
-    tech: ["Typescript", "React", "Redux", "NextJs", "Prisma", "Supabase"],
-  },
-  {
     id: 4,
     title: "StrongPass",
     img: "https://i.postimg.cc/GtsycbHr/Project3.png",
@@ -79,32 +64,77 @@ export const projects = [
   },
   {
     id: 7,
-    title: "A MOVIE",
-    img: "https://i.postimg.cc/Zq5kgmYM/2024-12-21-223539.png",
-    img2: "https://i.postimg.cc/XNFPsqcv/2024-12-21-223602.png",
+    title: "Spotify APP",
+    img: "https://i.postimg.cc/c41DYMfc/2025-01-28-200012.png",
+    img2: "https://i.postimg.cc/4yf16sH3/2025-01-28-200033.png",
     about:
-      "A MOVE — это веб-сайт для поиска фильмов и сериалов, созданный для киноманов, которые хотят быстро находить интересный контент. Платформа предлагает удобный интерфейс и актуальную информацию о рейтингах, жанрах и описаниях.",
-    name: "Сайт кинопоиска",
+      "Spotify app — это веб-сайт для посика музыки, созданный для любителей музыки, которые хотят быстро находить интересный контент. Платформа предлагает удобный интерфейс и актуальную информацию о рейтингах, жанрах и описаниях.",
+    name: "Spotify",
     description:
       "Наша задача заключалась в разработке функционального и интуитивного веб-сайта. Мы реализовали удобную систему поиска и фильтрации по жанрам, рейтингу и годам выпуска.",
-    href: "",
+    href: "https://spotify-app-delta-two.vercel.app/search",
     comingSoon: false,
     realeseDate: "27-09-2024",
     tech: ["Typescript", "React", "Redux", "NextJs", "Rest API", "Zustand"],
   },
   {
     id: 8,
-    title: "Тез Тап",
+    title: "Сайт агрегатор",
     img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
     img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
     about:
       "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
-    name: "Сайт запчастей",
+    name: "Сайт агрегатор шин",
     description:
       "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
     href: "",
     comingSoon: true,
-    realeseDate: "20-12-2024",
-    tech: ["Typescript", "React", "Redux", "NextJs", "Docker", "Python"],
+    realeseDate: "10-02-2025",
+    tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"],
+  },
+  {
+    id: 9,
+    title: "Интернет магазин игр",
+    img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
+    img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
+    about:
+      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
+    name: "Интернет магазин",
+    description:
+      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
+    href: "",
+    comingSoon: true,
+    realeseDate: "10-02-2025",
+    tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"],
+  },
+  {
+    id: 10,
+    title: "Умра",
+    img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
+    img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
+    about:
+      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
+    name: "Lider Umrah",
+    description:
+      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
+    href: "",
+    comingSoon: true,
+    realeseDate: "10-02-2025",
+    tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"],
+  },
+  {
+    id: 11,
+    title: "Сайт",
+    img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
+    img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
+    about:
+      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
+    name: "Ханафий",
+    description:
+      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
+    href: "",
+    comingSoon: true,
+    realeseDate: "10-02-2025",
+    tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"],
   },
 ];

@@ -79,13 +79,13 @@ const Footer = () => {
             </div>
             <h4>Свяжитес с нами:</h4>
             <form onSubmit={handleSubmit(onOrder)} className={scss.input}>
-              <input
+              <input 
                 type="text"
                 placeholder="E-mail почта, номер телефона..."
                 {...register("email", { required: true })}
               />
               <button type="submit">
-                <GoPaperAirplane />
+                <GoPaperAirplane /> 
               </button>
             </form>
           </div>

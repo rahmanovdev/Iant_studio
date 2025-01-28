@@ -26,24 +26,18 @@ const TeamBlockForMob = () => {
     {
       image:
         "https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg",
-      name: "Абдурахман Абдибаитов",
-      position: "Frontend Developer",
-    },
-    {
-      image:
-        "https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-2.jpg",
       name: "Белек Асраров",
       position: "Backend Developer",
     },
     {
       image:
-        "https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-3.jpg",
+        "https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg",
       name: "Арлен Исмаилов",
       position: "Backend Developer",
     },
     {
       image:
-        "https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-4.jpg",
+        "https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg",
       name: "Адылбек Салижанов",
       position: "Backend Developer",
     },
