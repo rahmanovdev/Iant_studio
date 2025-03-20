@@ -9,18 +9,19 @@ import useSignUpModal from '@/store/useSignUpCommand';
 import CommandModal from '@/ui/commandModal/CommandModal';
 import Image from 'next/image';
 import Arlen from '../../../../../../../public/mans/photo_2024-06-13_12-39-18.jpg';
+import Jumadil from '../../../../../../../public/mans/Jumadil.jpg';
+import Adylbek from '../../../../../../../public/mans/Adyl.jpg';
+import Belek from '../../../../../../../public/mans/Belek.jpg';
 
 // Команда мүчөлөрүнүн маалыматы
 const TEAM_PEOPLE_INFO = [
 	{
-		image:
-			'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
+		image: Jumadil,
 		name: 'Жумадил Рахманов',
 		position: 'Сооснователь'
 	},
 	{
-		image:
-			'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
+		image: Belek,
 		name: 'Белек Асраров',
 		position: 'Сооснователь'
 	},
@@ -30,8 +31,7 @@ const TEAM_PEOPLE_INFO = [
 		position: 'Сооснователь'
 	},
 	{
-		image:
-			'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
+		image: Adylbek,
 		name: 'Адылбек Салижанов',
 		position: 'Сооснователь'
 	}

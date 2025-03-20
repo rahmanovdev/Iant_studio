@@ -3,7 +3,10 @@ import { useRouter } from 'next/navigation';
 import { AiOutlineRight } from 'react-icons/ai';
 import scss from './TeamSection.module.scss';
 import Image from 'next/image';
-import Arlen from '../../../../../../../public/mans/photo_2024-06-13_12-39-18.jpg'; 
+import Arlen from '../../../../../../../public/mans/photo_2024-06-13_12-39-18.jpg';
+import Jumadil from '../../../../../../../public/mans/Jumadil.jpg';
+import Adylbek from '../../../../../../../public/mans/Adyl.jpg';
+import Belek from '../../../../../../../public/mans/Belek.jpg';
 
 interface TeamMember {
 	name: string;
@@ -15,17 +18,17 @@ const teamMembers: TeamMember[] = [
 	{
 		name: 'Жумадил Рахмонов',
 		work: 'Сооснователь',
-		img: 'https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png'
+		img: Jumadil
 	},
 	{
 		name: 'Белек Асраров',
 		work: 'Сооснователь',
-		img: 'https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png'
+		img: Belek
 	},
 	{
 		name: 'Адылбек Салижанов',
 		work: 'Сооснователь',
-		img: 'https://static.vecteezy.com/system/resources/thumbnails/044/245/414/small_2x/confident-young-businessman-writing-on-a-clipboard-png.png'
+		img: Adylbek
 	},
 	{
 		name: 'Арлен Исмаилов',

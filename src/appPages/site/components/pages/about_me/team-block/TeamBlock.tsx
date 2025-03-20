@@ -8,26 +8,26 @@ import 'aos/dist/aos.css';
 import useSignUpModal from '@/store/useSignUpCommand';
 import CommandModal from '@/ui/commandModal/CommandModal';
 import Arlen from '../../../../../../../public/mans/photo_2024-06-13_12-39-18.jpg';
+import Jumadil from '../../../../../../../public/mans/Jumadil.jpg';
+import Adylbek from '../../../../../../../public/mans/Adyl.jpg';
+import Belek from '../../../../../../../public/mans/Belek.jpg';
 
 // Команда мүчөлөрүнүн маалыматы
 const TEAM_MEMBERS = [
 	{
 		name: 'Жумадил Рахмонов',
 		position: 'Сооснователь',
-		image:
-			'https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png'
+		image: Jumadil
 	},
 	{
 		name: 'Белек Асраров',
 		position: 'Сооснователь',
-		image:
-			'https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png'
+		image: Belek
 	},
 	{
 		name: 'Адылбек Салижанов',
 		position: 'Сооснователь',
-		image:
-			'https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png'
+		image: Adylbek
 	},
 	{
 		name: 'Арлен Исмаилов',
