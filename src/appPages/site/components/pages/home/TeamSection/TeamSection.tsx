@@ -3,12 +3,12 @@ import { useRouter } from 'next/navigation';
 import { AiOutlineRight } from 'react-icons/ai';
 import scss from './TeamSection.module.scss';
 import Image from 'next/image';
-import Arlen from '../../../../../../../public/mans/photo_2024-06-13_12-39-18.jpg'; // Салыштырмалуу жол менен импорт
+import Arlen from '../../../../../../../public/mans/photo_2024-06-13_12-39-18.jpg'; 
 
 interface TeamMember {
 	name: string;
 	work: string;
-	img: string | import('next/image').StaticImageData; // Типти кеңейттик
+	img: string | import('next/image').StaticImageData;
 }
 
 const teamMembers: TeamMember[] = [

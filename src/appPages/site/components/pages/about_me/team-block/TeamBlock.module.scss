@@ -1,11 +1,12 @@
 .Main {
   .content {
     padding-bottom: 100px;
+
     .team_head {
-      margin-bottom: 90px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 90px;
 
       .left {
         h5 {
@@ -14,18 +15,15 @@
           color: rgba(255, 255, 255, 0.459);
           margin-bottom: 6px;
         }
-
         h1 {
           color: white;
           font-size: 40px;
           font-weight: 300;
           margin-bottom: 40px;
-
           span {
             color: blueviolet;
           }
         }
-
         p {
           font-size: 17px;
           font-weight: 300;
@@ -44,18 +42,15 @@
           height: 120px;
           background: blueviolet;
         }
-
         .block {
           display: flex;
           flex-direction: column;
           gap: 30px;
-
           svg {
             color: blueviolet;
             width: 30px;
             height: 30px;
           }
-
           p {
             font-size: 17px;
             font-weight: 300;
@@ -66,132 +61,116 @@
       }
     }
 
-    // TEAM IMG BLOCK
     .team_images {
-      display: flex;
-      gap: 20px;
-    }
-
-    .image_block {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 45px;
-    }
-
-    .profile {
-      position: relative;
-      width: 250px;
-      height: 370px;
-      overflow: hidden;
-    }
-
-    .profile_image {
-      width: 100%;
-      height: 100%;
-      border-radius: 6px;
-      object-fit: cover;
-      transition: opacity 0.3s ease;
-    }
-
-    .info {
-      position: absolute;
-      bottom: -40px;
-      left: 10px;
-      color: white;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.5s ease, bottom 0.5s ease;
-    }
-
-    .name {
-      margin: 0;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .position {
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .profile:hover .profile_image {
-      opacity: 0.5;
-    }
-
-    .profile:hover .info {
-      visibility: visible;
-      opacity: 1;
-      left: 30px;
-      bottom: 35px;
-
-      h3 {
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 15px;
+      .image_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 45px;
       }
 
-      p {
-        font-size: 15px;
-        font-weight: 300;
+      .profile {
+        position: relative;
+        width: 250px;
+        height: 370px;
+        overflow: hidden;
+
+        .profile_image {
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+          object-fit: cover;
+          transition: opacity 0.3s ease;
+        }
+
+        .info {
+          position: absolute;
+          bottom: -40px;
+          left: 10px;
+          color: white;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.5s ease, bottom 0.5s ease;
+
+          .name {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .position {
+            margin: 0;
+            font-size: 14px;
+          }
+        }
+
+        &:hover {
+          .profile_image {
+            opacity: 0.5;
+          }
+          .info {
+            visibility: visible;
+            opacity: 1;
+            left: 30px;
+            bottom: 35px;
+
+            h3 {
+              font-size: 18px;
+              font-weight: 400;
+              margin-bottom: 15px;
+            }
+            p {
+              font-size: 15px;
+              font-weight: 300;
+            }
+          }
+        }
       }
     }
-    // TEAM IMG BLOCK 
 
     .experts_section {
       text-align: center;
       padding: 50px;
-      font-family: "Arial", sans-serif;
-    }
 
-    .number_block {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      .number_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    .number {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+        .number,
+        h1 {
+          font-size: 96px;
+          font-weight: 700;
+          color: transparent;
+          -webkit-text-stroke: 1px #ffffff;
+          animation: fade-in 2s ease-in-out;
+        }
+        h1 {
+          -webkit-text-stroke: 1px #e6d8d8;
+        }
+      }
 
-      font-size: 96px;
-      font-weight: 700;
-      color: transparent;
-      -webkit-text-stroke: 1px #ffffff; 
-      animation: fade-in 2s ease-in-out;
-    }
+      .description {
+        font-size: 24px;
+        color: #d1bfbf;
+        margin: 10px 0;
+      }
 
-    h1 {
-      font-size: 96px;
-      font-weight: 700;
-      color: transparent;
-      -webkit-text-stroke: 1px #e6d8d8; 
-      animation: fade-in 2s ease-in-out;
-    }
+      .join_button {
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 10px 20px;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #00f, #f00) 1;
+        background: none;
+        color: #c1b4b4;
+        cursor: pointer;
+        transition: 0.3s ease;
 
-    .description {
-      font-size: 24px;
-      color: #d1bfbf;
-      margin: 10px 0;
-    }
-
-    .join_button {
-      font-size: 18px;
-      border-radius: 10px;
-      color: #000;
-      padding: 10px 20px;
-      border: 2px solid transparent;
-      border-image: linear-gradient(to right, #00f, #f00) 1;
-      background: none;
-      color: #c1b4b4;
-      cursor: pointer;
-      transition: 0.3s ease;
-
-      &:hover {
-        background: linear-gradient(to right, #00f, #f00);
-        color: #fff;
+        &:hover {
+          background: linear-gradient(to right, #00f, #f00);
+          color: #fff;
+        }
       }
     }
 
@@ -205,121 +184,36 @@
         transform: translateY(0);
       }
     }
-
-
   }
-}
 
-@media (max-width: 870px) {
-  .Main {
-    .content {
-      .team_head {
-        .right {
-          display: none;
-        }
-      }
+  @media (max-width: 870px) {
+    .content .team_head .right {
+      display: none;
     }
   }
-}
 
-@media (max-width: 764px) {
-  .Main {
+  @media (max-width: 764px) {
     display: none;
+
     .content {
       .image_block {
         margin-left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 30px;
         -webkit-overflow-scrolling: touch;
-
         scrollbar-width: none;
-      }
 
-      .image_block::-webkit-scrollbar {
-        display: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
-
       .profile {
-        position: relative;
         width: 60%;
         flex: 0 0 auto;
         height: 230px;
-        overflow: hidden;
       }
     }
   }
 }
-
-// @media (max-width: 420px) {
-//   .Main {
-//     .content {
-//       .team_head {
-//         .left {
-//           h5 {
-//             font-size: 14px;
-//             font-weight: 300;
-//             color: rgba(255, 255, 255, 0.459);
-//             margin-bottom: 6px;
-//           }
-
-//           h1 {
-//             color: white;
-//             font-size: 35px;
-//             font-weight: 300;
-//             margin-bottom: 33px;
-
-//             span {
-//               color: blueviolet;
-//             }
-//           }
-
-//           p {
-//             font-size: 15px;
-//             font-weight: 300;
-//             color: rgba(255, 255, 255, 0.689);
-//             line-height: 27px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media(max-width: 340px) {
-//     .Main {
-//         .content {
-//             .team_head {
-//                 .left {
-//                     h5 {
-//                         font-size: 14px;
-//                         font-weight: 300;
-//                         color: rgba(255, 255, 255, 0.459);
-//                         margin-bottom: 6px;
-//                     }
-
-//                     h1 {
-//                         color: white;
-//                         font-size: 30px;
-//                         font-weight: 300;
-//                         margin-bottom: 28px;
-
-//                         span {
-//                             color: blueviolet;
-//                         }
-//                     }
-
-//                     p {
-//                         font-size: 15px;
-//                         font-weight: 300;
-//                         color: rgba(255, 255, 255, 0.689);
-//                         line-height: 27px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }

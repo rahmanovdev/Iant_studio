@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import { memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,34 +10,35 @@ import CommandModal from '@/ui/commandModal/CommandModal';
 import Image from 'next/image';
 import Arlen from '../../../../../../../public/mans/photo_2024-06-13_12-39-18.jpg';
 
+// Команда мүчөлөрүнүн маалыматы
+const TEAM_PEOPLE_INFO = [
+	{
+		image:
+			'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
+		name: 'Жумадил Рахманов',
+		position: 'Сооснователь'
+	},
+	{
+		image:
+			'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
+		name: 'Белек Асраров',
+		position: 'Сооснователь'
+	},
+	{
+		image: Arlen,
+		name: 'Арлен Исмаилов',
+		position: 'Сооснователь'
+	},
+	{
+		image:
+			'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
+		name: 'Адылбек Салижанов',
+		position: 'Сооснователь'
+	}
+];
+
 const TeamBlockForMob = () => {
 	const { openModal } = useSignUpModal();
-
-	const teamPeopleInfo = [
-		{
-			image:
-				'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
-			name: 'Жумадил Рахманов',
-			position: 'Сооснователь'
-		},
-		{
-			image:
-				'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
-			name: 'Белек Асраров',
-			position: 'Сооснователь'
-		},
-		{
-			image: Arlen,
-			name: 'Арлен Исмаилов',
-			position: 'Сооснователь'
-		},
-		{
-			image:
-				'https://www.photoland.com.au/wp-content/uploads/2021/09/Can-People-Get-Passport-Photos-Done-Online-1.jpg',
-			name: 'Адылбек Салижанов',
-			position: 'Сооснователь'
-		}
-	];
 
 	return (
 		<section className={styles.main_slides}>
@@ -58,23 +59,21 @@ const TeamBlockForMob = () => {
 
 			<div className={styles.teamBlockContainer}>
 				<Swiper
-					pagination={{
-						dynamicBullets: true
-					}}
+					pagination={{ dynamicBullets: true }}
 					modules={[Pagination]}
 					className={styles.mySwiper}
 				>
-					{teamPeopleInfo.map((person, index) => (
-						<SwiperSlide key={index} className={styles.swiperSlide}>
+					{TEAM_PEOPLE_INFO.map(person => (
+						<SwiperSlide key={person.name} className={styles.swiperSlide}>
 							<div className={styles.profile}>
 								<Image
 									src={person.image}
-									alt={person.name}
+									alt={`${person.name} - ${person.position}`}
 									className={styles.profile_image}
-									width={700}
-									height={500}
-									priority={index === 0}
+									width={250}
+									height={370}
 									quality={90}
+									priority={person.name === 'Жумадил Рахманов'} // Биринчи сүрөткө гана
 								/>
 								<div className={styles.info}>
 									<h3 className={styles.name}>{person.name}</h3>
@@ -102,4 +101,4 @@ const TeamBlockForMob = () => {
 	);
 };
 
-export default TeamBlockForMob;
+export default memo(TeamBlockForMob);

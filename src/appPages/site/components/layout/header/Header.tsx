@@ -1,133 +1,91 @@
-"use client";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
-import scss from "./Header.module.scss";
-import Link from "next/link";
-import IAntLogo from "@/assets/IAntLogo";
-import useModalStore from "@/store/useModalStore";
-// import Modal from "@/ui/modal/Modal";
+'use client';
+import { usePathname } from 'next/navigation';
+import { useState, useCallback } from 'react';
+import { memo } from 'react';
+import scss from './Header.module.scss';
+import Link from 'next/link';
+import IAntLogo from '@/assets/IAntLogo';
+import useModalStore from '@/store/useModalStore';
+
+const NAV_ITEMS = [
+	{ href: '/', label: 'Главная' },
+	{ href: '/about_me', label: 'О нас' },
+	{ href: '/our_works', label: 'Портфолио' },
+	{ href: '/our_services', label: 'Услуги' },
+	{ href: '/contacts', label: 'Контакты' }
+];
+
 const Header = () => {
-  const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-  const { openModal } = useModalStore();
+	const pathname = usePathname();
+	const [isOpen, setIsOpen] = useState(false);
+	const { openModal } = useModalStore();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+	const toggleMenu = useCallback(() => {
+		setIsOpen(prev => !prev);
+	}, []);
 
-  return (
-    <header className={scss.header}>
-      <div className="container">
-        <div className={scss.content}>
-          {/* <Image src={logo} alt="img" width={700} height={500} quality={90} /> */}
-          <Link href="/">
-            <div className={scss.logo}>
-              <IAntLogo />
-            </div>
-          </Link>
-          <div className={scss.header_nav}>
-            <div
-              className={`${scss.nav_link} ${
-                pathname === "/" ? scss.active : ""
-              }`}
-            >
-              <Link href={"/"}>
-                <span className={scss.link_content}>
-                  <span className={scss.text_top}>Главная</span>
-                  <span className={scss.text_bottom}>Главная</span>
-                </span>
-              </Link>
-            </div>
-            <div
-              className={`${scss.nav_link} ${
-                pathname === "/about_me" ? scss.active : ""
-              }`}
-            >
-              <Link href={"/about_me"}>
-                <span className={scss.link_content}>
-                  <span className={scss.text_top}>О нас</span>
-                  <span className={scss.text_bottom}>О нас</span>
-                </span>
-              </Link>
-            </div>
-            <div
-              className={`${scss.nav_link} ${
-                pathname === "/our_works" ? scss.active : ""
-              }`}
-            >
-              <Link href={"/our_works"}>
-                <span className={scss.link_content}>
-                  <span className={scss.text_top}>Портфолио</span>
-                  <span className={scss.text_bottom}>Портфолио</span>
-                </span>
-              </Link>
-            </div>
-            <div
-              className={`${scss.nav_link} ${
-                pathname === "/our_services" ? scss.active : ""
-              }`}
-            >
-              <Link href={"/our_services"}>
-                <span className={scss.link_content}>
-                  <span className={scss.text_top}>Услуги</span>
-                  <span className={scss.text_bottom}>Услуги</span>
-                </span>
-              </Link>
-            </div>
-            <div
-              className={`${scss.nav_link} ${
-                pathname === "/contacts" ? scss.active : ""
-              }`}
-            >
-              <Link href={"/contacts"}>
-                <span className={scss.link_content}>
-                  <span className={scss.text_top}>Контакты</span>
-                  <span className={scss.text_bottom}>Контакты</span>
-                </span>
-              </Link>
-            </div>
-          </div>
-          <div className={scss.burger}>
-            <div className={scss.burger_icon} onClick={toggleMenu}>
-              <span
-                className={`${scss.line} ${isOpen ? scss.active : ""}`}
-              ></span>
-              <span
-                className={`${scss.line} ${isOpen ? scss.active : ""}`}
-              ></span>
-              <span
-                className={`${scss.line} ${isOpen ? scss.active : ""}`}
-              ></span>
-            </div>
-            <div className={`${scss.burger_menu} ${isOpen ? scss.active : ""}`}>
-              <Link href="/" onClick={toggleMenu}>
-                Главная
-              </Link>
-              <Link href="/about_me" onClick={toggleMenu}>
-                О нас
-              </Link>
-              <Link href="/our_works" onClick={toggleMenu}>
-                Портфолио
-              </Link>
-              <Link href="/our_services" onClick={toggleMenu}>
-                Услуги
-              </Link>
-              <Link href="/contacts" onClick={toggleMenu}>
-                Контакты
-              </Link>
-            </div>
-          </div>
-          <div className={scss.container_btn}>
-            <button onClick={openModal} className={scss.button}>
-              Заказать сайт
-            </button>
-          </div>
-        </div>
-      </div>
+	const renderNavLinks = () =>
+		NAV_ITEMS.map(item => (
+			<div
+				key={item.href}
+				className={`${scss.nav_link} ${
+					pathname === item.href ? scss.active : ''
+				}`}
+			>
+				<Link href={item.href}>
+					<span className={scss.link_content}>
+						<span className={scss.text_top}>{item.label}</span>
+						<span className={scss.text_bottom}>{item.label}</span>
+					</span>
+				</Link>
+			</div>
+		));
 
-      {/* <Modal/> */}
-    </header>
-  );
+	const renderBurgerLinks = () =>
+		NAV_ITEMS.map(item => (
+			<Link key={item.href} href={item.href} onClick={toggleMenu}>
+				{item.label}
+			</Link>
+		));
+
+	return (
+		<header className={scss.header}>
+			<div className='container'>
+				<div className={scss.content}>
+					<Link href='/'>
+						<div className={scss.logo}>
+							<IAntLogo />
+						</div>
+					</Link>
+
+					<nav className={scss.header_nav}>{renderNavLinks()}</nav>
+
+					<div className={scss.burger}>
+						<div className={scss.burger_icon} onClick={toggleMenu}>
+							<span
+								className={`${scss.line} ${isOpen ? scss.active : ''}`}
+							></span>
+							<span
+								className={`${scss.line} ${isOpen ? scss.active : ''}`}
+							></span>
+							<span
+								className={`${scss.line} ${isOpen ? scss.active : ''}`}
+							></span>
+						</div>
+						<div className={`${scss.burger_menu} ${isOpen ? scss.active : ''}`}>
+							{renderBurgerLinks()}
+						</div>
+					</div>
+
+					<div className={scss.container_btn}>
+						<button onClick={openModal} className={scss.button}>
+							Заказать сайт
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+	);
 };
 
-export default Header;
+export default memo(Header);

@@ -1,206 +1,149 @@
 .Main {
-    .content {
-        padding-top: 130px;
-        margin-bottom: 168px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+  .content {
+    padding-top: 130px;
+    margin-bottom: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        h5 {
-            font-size: 18px;
-            font-weight: 200;
-            color: rgba(255, 255, 255, 0.688);
-            margin-bottom: 20px;
-            user-select: none;
-            text-shadow: 5px 5px 10px gray;
+    h5 {
+      font-size: 18px;
+      font-weight: 200;
+      color: rgba(255, 255, 255, 0.688);
+      margin-bottom: 20px;
+      user-select: none;
+      text-shadow: 5px 5px 10px gray;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: clamp(25px, 5vw, 40px);
+      font-weight: 300;
+      margin-bottom: 35px;
+
+      span {
+        color: blueviolet;
+      }
+    }
+
+    p {
+      text-align: center;
+      line-height: 29px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.732);
+      margin-bottom: 30px;
+    }
+
+    .button_block {
+      display: flex;
+      gap: 20px;
+
+      .button1 button {
+        width: 200px;
+        height: 50px;
+        border: none;
+        background: blueviolet;
+        color: white;
+        border-radius: 37px;
+        cursor: pointer;
+
+        &:hover {
+          transition: 0.8s;
+          box-shadow: 5px 5px 10px blueviolet;
+        }
+      }
+
+      .button2 button {
+        width: 180px;
+        height: 50px;
+        padding: 0 15px;
+        background: var(--ch-black, #141414);
+        border: none;
+        color: white;
+        border-radius: 30px;
+        font-weight: 700;
+        font-family: "Circle", Arial, sans-serif;
+        cursor: pointer;
+        position: relative;
+        transition: 0.2s;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          width: calc(100% + 4px);
+          height: calc(100% + 4px);
+          border-radius: 30px;
+          background: linear-gradient(
+            45deg,
+            #141414,
+            #1b1b1b,
+            #2e2e2e,
+            #e1e1e1,
+            #2e2e2e,
+            #1b1b1b,
+            #141414,
+            #141414
+          );
+          background-size: 400%;
+          z-index: -1;
+          animation: steam 20s linear infinite;
         }
 
-        h1 {
-            text-align: center;
-            font-size: clamp(25px, 5vw, 40px);
-            font-family: 300;
-            margin-bottom: 35px;
-
-            span {
-                color: blueviolet;
-            }
+        &::after {
+          filter: blur(50px);
         }
-
-        p {
-            text-align: center;
-            line-height: 29px;
-            font-weight: 300;
-            color: rgba(255, 255, 255, 0.732);
-            margin-bottom: 30px;
-        }
-
-
-        .button_block {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-
-            .button1 {
-                button {
-                    width: 200px;
-                    height: 50px;
-                    border: none;
-                    background: blueviolet;
-                    color: white;
-                    border-radius: 37px;
-
-                    &:hover {
-                        transition: 0.8s;
-                        box-shadow: 5px 5px 10px blueviolet;
-                    }
-                }
-            }
-
-            .button2 {
-                button {
-                    font-family: "Circle", Arial, sans-serif;
-                        --black: #000000;
-                        --ch-black: #141414;
-                        --eer-black: #1b1b1b;
-                        --night-rider: #2e2e2e;
-                        --white: #ffffff;
-                        --af-white: #f3f3f3;
-                        --ch-white: #e1e1e1;
-                        border-radius: 30px;
-                        width: 180px;
-                    height: 50px;
-                    display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 10px;
-                        padding: 0px 15px;
-                        background: transparent;
-                    border: none;
-                    color: white;
-                        position: relative;
-                        cursor: pointer;
-                        font-weight: 700;
-                        transition-duration: 0.2s;
-                        background-color: var(--ch-black);
-                    
-                        &:before,
-                        &:after {
-                            content: "";
-                            position: absolute;
-                    background: transparent;
-                    left: -2px;
-                        top: -2px;
-                        border-radius: 30px;
-                        background: linear-gradient(45deg,
-                                var(--ch-black),
-                                var(--eer-black),
-                                var(--night-rider),
-                                var(--ch-white),
-                                var(--night-rider),
-                                var(--eer-black),
-                                var(--ch-black),
-                                var(--ch-black));
-                        background-size: 400%;
-                        width: calc(100% + 4px);
-                        height: calc(100% + 4px);
-                        z-index: -1;
-                        animation: steam 20s linear infinite;
-                    }
-                                        &:after {
-                                            filter: blur(50px);
-                    }
-                                }
-                        }
-        }
-        }
-        }
-    
-    
-        @keyframes steam {
-            0% {
-                background-position: 0 0;
-            }
-    
-            50% {
-                background-position: 400% 0;
-            }
-    
-            100% {
-                background-position: 0 0;
+      }
     }
   }
 
-
-
-@media(max-width: 500px) {
-    .Main {
-        .content {
-            p {
-                font-size: 13px;
-            }
-            .button_block {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                gap: 24px;
-            }
-
-
-            .button_block {
-                .button1 {
-                    button {
-                        width: 150px;
-                        height: 40px;
-                        font-size: 10px;
-                    }
-                }
-    
-                .button2 {
-                    button {
-                        width: 150px;
-                        height: 40px;
-                        font-size: 10px;
-                    }
-                }
-            }
-        }
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
     }
-}
-
-
-@media(max-width: 450px) {
-    .Main {
-        .content {
-            padding-top: 100px;
-        }
+    50% {
+      background-position: 400% 0;
     }
-}
-
-
-@media(max-width: 350px) {
-    .Main {
-        .content {
-            padding-top: 50px;
-
-            .button_block {
-                .button1 {
-                    button {
-                        width: 135px;
-                        height: 40px;
-                        font-size: 9px;
-                    }
-                }
-    
-                .button2 {
-                    button {
-                        width: 135px;
-                        height: 40px;
-                        font-size: 9px;
-                    }
-                }
-            }
-        }
+    100% {
+      background-position: 0 0;
     }
+  }
+
+  @media (max-width: 500px) {
+    .content {
+      padding-top: 100px;
+
+      p {
+        font-size: 13px;
+      }
+
+      .button_block {
+        flex-direction: column;
+        gap: 24px;
+
+        .button1 button,
+        .button2 button {
+          width: 150px;
+          height: 40px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .content {
+      padding-top: 50px;
+
+      .button_block {
+        .button1 button,
+        .button2 button {
+          width: 135px;
+          font-size: 9px;
+        }
+      }
+    }
+  }
 }

@@ -1,212 +1,176 @@
 .main_slides {
-    display: none;
-    .team_head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; 
-        margin-bottom: 40px;
-    
-    
-        .left {
-            h5 {
-                font-size: 13px;
-                font-weight: 300;
-                color: rgba(255, 255, 255, 0.459);
-                margin-bottom: 6px;
-            }
-    
-            h1 {
-                color: white;
-                font-size: 30px;
-                font-weight: 300;
-                margin-bottom: 25px;
-    
-                span {
-                    color: blueviolet;
-                }
-            }
-    
-            p {
-                font-size: 14px;
-                font-weight: 300;
-                color: rgba(255, 255, 255, 0.689);
-                line-height: 24px;
-            }
+  display: none;
+
+  .team_head {
+    margin-bottom: 40px;
+
+    .left {
+      h5 {
+        font-size: 13px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.459);
+        margin-bottom: 6px;
+      }
+      h1 {
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 25px;
+        span {
+          color: blueviolet;
         }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.689);
+        line-height: 24px;
+      }
     }
-    
-    
-    
-    
-    
-    .teamBlockContainer {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 40px;
-      }
-    
-      @media(max-width: 764px) {
-        .teamBlockContainer {
-            display: block;
-        }
-      }
-      
-      .mySwiper {
-        width: 100%;
-        height: 100%;
-      }
-      
-      .swiperSlide {
-        text-align: center;
-        font-size: 18px;
-        background: transparent;
-      
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-        img {
-          display: block;
+  }
+
+  .teamBlockContainer {
+    width: 100%;
+    margin-bottom: 40px;
+
+    .mySwiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiperSlide {
+      text-align: center;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .profile {
+        position: relative;
+        width: 250px;
+        height: 370px;
+        overflow: hidden;
+
+        .profile_image {
           width: 100%;
           height: 100%;
+          border-radius: 6px;
           object-fit: cover;
+          transition: opacity 0.3s ease;
         }
-    
-    
-    
-        .profile {
-            position: relative;
-            width: 250px;
-            height: 370px;
-            overflow: hidden;
-        }
-    
-        .profile_image {
-            width: 100%;
-            height: 100%;
-            border-radius: 6px;
-            object-fit: cover;
-            transition: opacity 0.3s ease;
-        }
-    
+
         .info {
-            position: absolute;
-            bottom: -40px;
-            left: 10px;
-            color: white;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.5s ease, bottom 0.5s ease;
-        }
-    
-        .name {
+          position: absolute;
+          bottom: -40px;
+          left: 10px;
+          color: white;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.5s ease, bottom 0.5s ease;
+
+          .name {
             margin: 0;
             font-size: 16px;
             font-weight: bold;
-        }
-    
-        .position {
+          }
+          .position {
             margin: 0;
             font-size: 14px;
+          }
         }
-    
-        .profile:hover .profile_image {
+
+        &:hover {
+          .profile_image {
             opacity: 0.5;
-        }
-    
-        .profile:hover .info {
+          }
+          .info {
             visibility: visible;
             opacity: 1;
             left: 30px;
             bottom: 35px;
-    
+
             h3 {
-                font-size: 18px;
-                font-weight: 400;
-                margin-bottom: 15px;
+              font-size: 18px;
+              font-weight: 400;
+              margin-bottom: 15px;
             }
-    
             p {
-                font-size: 15px;
-                font-weight: 300;
+              font-size: 15px;
+              font-weight: 300;
             }
+          }
+        }
+      }
     }
+
+    .experts_section {
+      text-align: center;
+      padding: 50px;
+
+      .number_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -10px;
+
+        .number,
+        h1 {
+          font-weight: 700;
+          color: transparent;
+          animation: fade-in 2s ease-in-out;
+        }
+        .number {
+          font-size: 76px;
+          -webkit-text-stroke: 1px #ffffff;
+        }
+        h1 {
+          font-size: 66px;
+          -webkit-text-stroke: 1px #e6d8d8;
+        }
+      }
+
+      .description {
+        font-size: 24px;
+        color: #d1bfbf;
+        margin: 10px 0;
+      }
+
+      .join_button {
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 10px 20px;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, #00f, #f00) 1;
+        background: none;
+        color: #c1b4b4;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: linear-gradient(to right, #00f, #f00);
+          color: #fff;
+        }
+      }
     }
+  }
 
-.experts_section {
-    text-align: center;
-    padding: 50px;
-    font-family: "Arial", sans-serif;
-}
-
-.number_block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: -10px;
-}
-
-.number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 76px;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: 1px #ffffff; // Outline effect
-    animation: fade-in 2s ease-in-out;
-}
-
-h1 {
-    font-size: 66px;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: 1px #e6d8d8; // Outline effect
-    animation: fade-in 2s ease-in-out;
-}
-
-.description {
-    font-size: 24px;
-    color: #d1bfbf;
-    margin: 10px 0;
-}
-
-.join_button {
-    font-size: 18px;
-    border-radius: 10px;
-    color: #000;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, #00f, #f00) 1;
-    background: none;
-    color: #c1b4b4;
-    cursor: pointer;
-    transition: 0.3s ease;
-
-    &:hover {
-        background: linear-gradient(to right, #00f, #f00);
-        color: #fff;
-    }
-}
-
-@keyframes fade-in {
+  @keyframes fade-in {
     from {
-        opacity: 0;
-        transform: translateY(-20px);
+      opacity: 0;
+      transform: translateY(-20px);
     }
-
     to {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-}
+  }
 
+  @media (max-width: 764px) {
+    display: block;
+    margin-bottom: 30px;
 
-@media(max-width: 764px) {
-    .main_slides {
-        display: block;
-        margin-bottom: 30px;
+    .teamBlockContainer {
+      display: block;
     }
+  }
 }
