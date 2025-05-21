@@ -1,8 +1,22 @@
 // import fakeStoreImg from "../../public/assets/Project1.png";
 
-export const projects = [
+// Проекттер массиви
+const projectsData = [
   {
-    id: 1,
+    title: "Образовательный сайт",
+    img: "https://i.postimg.cc/7P3jmV2f/2025-05-21-192154.png",
+    img2: "https://i.postimg.cc/bvGCQNqx/2025-05-21-192532.png",
+    about:
+      "Этот сайт посвящён обучению исламским наукам в соответствии с мазхабом Ханафи. Он служит центральной платформой для студентов и преподавателей, стремящихся к получению подлинных знаний в области религии.",
+    name: "Ханафий",
+    description:
+      "Наша задача заключалась в создании современного образовательного сайта, ориентированного на последователей ханафитского мазхаба. Мы реализовали решение, которое позволяет пользователям смотреть уроки, читать статьи, задавать вопросы и получать знания без необходимости в отдельной CRM-системе.",
+    href: "http://89.169.44.186/",
+    comingSoon: false,
+    realeseDate: "10-02-2025",
+    tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"]
+  },
+  {
     title: "3-GYMNASIUM",
     img: "https://i.postimg.cc/tgxDy9dz/2024-12-22-140817.png",
     img2: "https://i.postimg.cc/bJfgw43f/2024-12-22-140836.png",
@@ -23,9 +37,8 @@ export const projects = [
       "Python",
     ],
   },
-
+ 
   {
-    id: 2,
     title: "A SHOP",
     img: "https://i.postimg.cc/76n3FHGR/Project1.png",
     img2: "https://i.postimg.cc/VLpCHrZ6/Project1-mobile.png",
@@ -48,7 +61,6 @@ export const projects = [
     ],
   },
   {
-    id: 4,
     title: "StrongPass",
     img: "https://i.postimg.cc/GtsycbHr/Project3.png",
     img2: "https://i.postimg.cc/y6JQJ9R6/Project3-mobile.png",
@@ -63,7 +75,6 @@ export const projects = [
     tech: ["Typescript", "React", "Redux", "NextJs", "Zustand"],
   },
   {
-    id: 7,
     title: "Spotify APP",
     img: "https://i.postimg.cc/c41DYMfc/2025-01-28-200012.png",
     img2: "https://i.postimg.cc/4yf16sH3/2025-01-28-200033.png",
@@ -78,7 +89,6 @@ export const projects = [
     tech: ["Typescript", "React", "Redux", "NextJs", "Rest API", "Zustand"],
   },
   {
-    id: 8,
     title: "Сайт агрегатор",
     img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
     img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
@@ -93,7 +103,6 @@ export const projects = [
     tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"],
   },
   {
-    id: 9,
     title: "Интернет магазин игр",
     img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
     img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
@@ -108,7 +117,6 @@ export const projects = [
     tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"],
   },
   {
-    id: 10,
     title: "Умра",
     img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
     img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
@@ -122,19 +130,10 @@ export const projects = [
     realeseDate: "10-02-2025",
     tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"],
   },
-  {
-    id: 11,
-    title: "Сайт",
-    img: "https://optim.tildacdn.one/tild3832-3534-4234-b234-346163363962/-/resize/1000x/-/format/webp/fdg__DESC.png",
-    img2: "https://optim.tildacdn.one/tild3664-6533-4336-a237-646432646431/-/resize/352x/-/format/webp/__MOB.png",
-    about:
-      "Hwasin KSTU is a company with many years of experience, high-quality projects, a team of professionals, and modern equipment that is engaged in construction, supply of goods, and outsourcing throughout Ukraine.",
-    name: "Ханафий",
-    description:
-      "Our task was to create a new website in a modern style. We implemented a solution that allows customers to edit content without creating a separate CRM system.",
-    href: "",
-    comingSoon: true,
-    realeseDate: "10-02-2025",
-    tech: ["Typescript", "Next", "Redux", "Django", "Docker", "Python", "SQL"],
-  },
 ];
+
+// ID номерлерин автоматтык түрдө берүү
+export const projects = projectsData.map((project, index) => ({
+  ...project,
+  id: index + 1, // Индекс 0 дөн башталгандыктан, ID 1 ден башталышы үчүн +1 кошобуз
+}));

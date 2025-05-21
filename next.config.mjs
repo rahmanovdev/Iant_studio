@@ -7,6 +7,10 @@ const nextConfig = {
       "imgcdn.stablediffusionweb.com",
       "i.postimg.cc",
       "static.vecteezy.com",
+      "ibb.co",
+      "postimg.cc",
+      "https://postimg.cc/d7YjFFk3"
+
     ],
   },
   async headers() {

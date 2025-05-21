@@ -20,14 +20,13 @@ export const metadata: Metadata = {
     "создание сайтов",
     "веб студия",
     "сайт жасоо",
-    "сайт жасатуу",
     "веб разработка",
     "iAnt",
-    "айант",
-    "Кыргызстан",
-    "Бишкек",
+    "разработка сайтов Кыргызстан",
+    "разработка сайтов Бишкек",
     "верстка сайтов",
     "дизайн сайтов",
+    "заказать сайт Бишкек",
     "вебсайт",
     "заказать сайт",
   ],
@@ -81,11 +80,64 @@ export default function RootLayout({
               "name": "iAnt",
               "url": "https://iant.kg",
               "logo": "https://iant.kg/logo.png",
-              "description": "Разработка современных сайтов в Кыргызстане",
+              "description": "Профессиональная веб-студия в Кыргызстане. Создание современных сайтов, интернет-магазинов и веб-приложений под ключ.",
               "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "Kyrgyzstan"
-              }
+                "addressLocality": "Бишкек",
+                "addressCountry": "Кыргызстан"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+996700188251",
+                "contactType": "customer service"
+              },
+              "sameAs": [
+                "https://www.facebook.com/iant.kg",
+                "https://www.instagram.com/iant.kg"
+              ]
+            }
+          `}
+        </Script>
+        <Script id="local-business-schema" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebDesign",
+              "name": "iAnt - Разработка сайтов в Кыргызстане",
+              "image": "https://iant.kg/logo.png",
+              "@id": "https://iant.kg",
+              "url": "https://iant.kg",
+              "telephone": "+996700188251",
+              "priceRange": "$$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Бишкек",
+                "addressLocality": "Бишкек",
+                "addressRegion": "Чуй",
+                "postalCode": "720000",
+                "addressCountry": "KG"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 42.87,
+                "longitude": 74.59
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "sameAs": [
+                "https://www.facebook.com/iant.kg",
+                "https://www.instagram.com/iant.kg"
+              ] 
             }
           `}
         </Script>

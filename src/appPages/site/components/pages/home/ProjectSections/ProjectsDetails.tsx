@@ -54,12 +54,11 @@ const ProjectsDetails = () => {
 
           <div className={styles.right}>
             <div className={styles.descriptionBlock}>
-              <h4>{project.title}</h4>
               <p>{project.about}</p>
             </div>
 
             <div className={styles.functionalityBlock}>
-              <h4>Main Functionality</h4>
+              <h4>Основные функции</h4>
               <p>{project.description}</p>
             </div>
 
@@ -69,13 +68,13 @@ const ProjectsDetails = () => {
               rel="noopener noreferrer"
               className={styles.linkButton}
             >
-              Link to the site.
+              Перейти на сайт  
             </a>
           </div>
         </div>
 
         <section className={styles.techStack}>
-          <h3>Technologies Used</h3>
+          <h3>Технологии</h3>
           <div className={styles.iconsContainer}>
             {/* <div className={styles.iconBlock}>
               <project.tech />

@@ -1,7 +1,7 @@
 "use client";
-import { FC, ReactNode, useEffect, useState } from "react";
+import { FC, ReactNode} from "react";
 import scss from "./LayoutSite.module.scss";
-import Loader from "../loader/Loader";
+
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import { ToastContainer } from "react-toastify";
@@ -12,17 +12,17 @@ interface LayoutSiteProps {
   children: ReactNode;
 }
 const LayoutSite: FC<LayoutSiteProps> = ({ children }) => {
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  // const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1600);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1600);
+  // }, []);
 
-  if (isLoading) {
-    return <Loader />;
-  }
+  // if (isLoading) {
+  //   return <Loader />;
+  // }
 
   return (
     <div className={scss.LayoutSite}>
