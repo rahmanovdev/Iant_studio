@@ -10,18 +10,18 @@ const notoSans = Noto_Sans({ subsets: ["latin", "cyrillic"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://iant.kg"),
   title: {
-    default: "iAnt - Заказать сайт в Кыргызстане | Разработка сайтов",
-    template: "%s | iAnt",
+    default: "iant - Разработка сайтов в Кыргызстане | Веб-студия",
+    template: "%s | iant",
   },
   description:
-    "iAnt - профессиональная веб-студия в Кыргызстане. Создание современных сайтов, интернет-магазинов и веб-приложений под ключ. Качественная разработка для вашего бизнеса.",
+    "Профессиональная веб-студия iant: разработка современных сайтов, интернет-магазинов и веб-приложений в Кыргызстане. Качественные решения для вашего бизнеса.",
   keywords: [
     "разработка сайтов",
     "создание сайтов",
     "веб студия",
     "сайт жасоо",
     "веб разработка",
-    "iAnt",
+    "iant",
     "разработка сайтов Кыргызстан",
     "разработка сайтов Бишкек",
     "верстка сайтов",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     "вебсайт",
     "заказать сайт",
   ],
-  authors: [{ name: "iAnt" }],
-  creator: "iAnt",
-  publisher: "iAnt",
+  authors: [{ name: "iant" }],
+  creator: "iant",
+  publisher: "iant",
   formatDetection: {
     email: false,
     address: false,
@@ -43,9 +43,17 @@ export const metadata: Metadata = {
     locale: "ru_KG",
     alternateLocale: "ky_KG",
     url: "https://iant.kg",
-    siteName: "iAnt",
+    siteName: "iant",
     description:
       "Профессиональная разработка сайтов в Кыргызстане. Создание современных веб-сайтов и приложений под ключ.",
+    images: [
+      {
+        url: "https://iant.kg/og-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Разработка сайтов в Кыргызстане - iant",
+      }
+    ]
   },
   robots: {
     index: true,
@@ -58,7 +66,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
   icons: {
     icon: "/favicon.ico",
   },
@@ -72,12 +79,13 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
+        <link rel="canonical" href="https://iant.kg" />
         <Script id="schema-markup" type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "iAnt",
+              "name": "iant",
               "url": "https://iant.kg",
               "logo": "https://iant.kg/logo.png",
               "description": "Профессиональная веб-студия в Кыргызстане. Создание современных сайтов, интернет-магазинов и веб-приложений под ключ.",
@@ -103,7 +111,7 @@ export default function RootLayout({
             {
               "@context": "https://schema.org",
               "@type": "WebDesign",
-              "name": "iAnt - Разработка сайтов в Кыргызстане",
+              "name": "iant - Разработка сайтов в Кыргызстане",
               "image": "https://iant.kg/logo.png",
               "@id": "https://iant.kg",
               "url": "https://iant.kg",

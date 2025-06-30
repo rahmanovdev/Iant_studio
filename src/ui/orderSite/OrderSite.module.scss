@@ -80,58 +80,66 @@
 
         .button {
             margin-top: 30px;
-            button {
-                font-family: "Circle", Arial, sans-serif;
-                --black: #000000;
-                --ch-black: #2a2a2a;
-                --eer-black: #1b1b1b;
-                --night-rider: #2e2e2e;
-                --white: #ffffff;
-                --af-white: #f3f3f3;
-                --ch-white: #e1e1e1;
-                border-radius: 30px;
-                width: 180px;
-            height: 50px;
-            display: flex;
+            
+            .whatsappButton {
+                display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                gap: 10px;
-                padding: 0px 15px;
-                background: transparent;
-            border: none;
-            color: white;
-                position: relative;
-                cursor: pointer;
-                font-weight: 700;
-                transition-duration: 0.2s;
-                background-color: var(--ch-black);
-            
-                &:before,
-                &:after {
-                    content: "";
-                    position: absolute;
-            background: transparent;
-            left: -2px;
-                top: -2px;
+                padding: 12px 30px;
                 border-radius: 30px;
-                background: linear-gradient(45deg,
-                        var(--ch-black),
-                        var(--eer-black),
-                        var(--night-rider),
-                        var(--ch-white),
-                        var(--night-rider),
-                        var(--eer-black),
-                        var(--ch-black),
-                        var(--ch-black));
-                background-size: 400%;
-                width: calc(100% + 4px);
-                height: calc(100% + 4px);
-                z-index: -1;
-                animation: steam 20s linear infinite;
-            }
-                                &:after {
-                                    filter: blur(50px);
-            }
+                background: #7f25d3;
+                color: white;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 16px;
+                transition: all 0.3s ease;
+                border: none;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                min-width: 200px;
+                height: 50px;
+                
+                &:hover {
+                    background: #4d128c;
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(118, 37, 211, 0.249);
+                }
+                
+                &:active {
+                    transform: translateY(0);
+                }
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.1);
+                    z-index: -1;
+                    transition: all 0.3s ease;
+                    opacity: 0;
+                }
+                
+                &:hover::before {
+                    opacity: 1;
+                }
+                
+                /* Иконка WhatsApp */
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M17.498 14.382l-2.5-1.5c-1.5-.9-1.5-.9-2.4.3l-.6.9c-.3.3-.6.3-1.2 0-1.5-1.5-1.5-1.5-1.5-2.4 0-.6.3-.9.6-1.2l.6-.6c.6-.6.9-1.5.6-2.1 0-.6-.6-1.5-1.2-1.8l-2.4-1.5c-.9-.6-1.8-.3-2.1.6l-1.2 2.4c-1.2 2.4 0 5.4 2.1 7.5 2.7 2.7 6.3 3.3 8.1 1.5l1.5-1.5c.9-.6.9-1.8.3-2.4zm-2.1 1.8c-1.2 1.2-4.2.9-6.6-1.5-2.4-2.4-2.7-5.4-1.5-6.6l.9-.9c.3-.3.3-.6 0-.9l-1.5-1.2c-.3-.3-.6-.3-.9 0l-1.2 2.4c-.3.6 0 1.2.3 1.8.6.9 1.5 2.1 1.8 2.4.3.3 1.2 1.5 2.1 1.8.6.3 1.2.3 1.8 0l2.1-1.2c.3-.3.6-.3.9 0l1.2 1.2c.3.3.3.6 0 .9l-.9.9z'/%3E%3C/svg%3E");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                }
         }
     }
 }
@@ -139,20 +147,17 @@
 
 @keyframes steam {
     0% {
-      background-position: 0 0;
+        background-position: 0 0;
     }
     50% {
-      background-position: 400% 0;
+        background-position: 400% 0;
     }
     100% {
-      background-position: 0 0;
+        background-position: 0 0;
     }
-  }}
+}
 
-
-
-
-@media(max-width: 580px) {
+@media (max-width: 580px) {
     .Main {
         .content {
             margin: 50px 0;
@@ -178,7 +183,6 @@
                 font-weight: 400;
                 color: rgba(255, 255, 255, 0.759);
             }
-    
     
             .orderBlock {
                 display: flex;
@@ -238,60 +242,69 @@
     
             .button {
                 margin-top: 20px;
-                button {
-                    font-family: "Circle", Arial, sans-serif;
-                    --black: #000000;
-                    --ch-black: #2a2a2a;
-                    --eer-black: #1b1b1b;
-                    --night-rider: #2e2e2e;
-                    --white: #ffffff;
-                    --af-white: #f3f3f3;
-                    --ch-white: #e1e1e1;
-                    border-radius: 30px;
-                    width: 180px;
-                height: 50px;
-                display: flex;
+                
+                .whatsappButton {
+                    display: inline-flex;
                     align-items: center;
                     justify-content: center;
-                    gap: 10px;
-                    padding: 0px 15px;
-                    background: transparent;
-                border: none;
-                color: white;
-                    position: relative;
-                    cursor: pointer;
-                    font-weight: 700;
-                    transition-duration: 0.2s;
-                    background-color: var(--ch-black);
-                
-                    &:before,
-                    &:after {
-                        content: "";
-                        position: absolute;
-                background: transparent;
-                left: -2px;
-                    top: -2px;
+                    padding: 12px 30px;
                     border-radius: 30px;
-                    background: linear-gradient(45deg,
-                            var(--ch-black),
-                            var(--eer-black),
-                            var(--night-rider),
-                            var(--ch-white),
-                            var(--night-rider),
-                            var(--eer-black),
-                            var(--ch-black),
-                            var(--ch-black));
-                    background-size: 400%;
-                    width: calc(100% + 4px);
-                    height: calc(100% + 4px);
-                    z-index: -1;
-                    animation: steam 20s linear infinite;
-                }
-                                    &:after {
-                                        filter: blur(50px);
+                    background: #25D366;
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                    border: none;
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    min-width: 200px;
+                    height: 50px;
+                    
+                    &:hover {
+                        background: #128C7E;
+                        transform: translateY(-2px);
+                        box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+                    }
+                    
+                    &:active {
+                        transform: translateY(0);
+                    }
+                    
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(255, 255, 255, 0.1);
+                        z-index: -1;
+                        transition: all 0.3s ease;
+                        opacity: 0;
+                    }
+                    
+                    &:hover::before {
+                        opacity: 1;
+                    }
+                    
+                    /* Иконка WhatsApp */
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 10px;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M17.498 14.382l-2.5-1.5c-1.5-.9-1.5-.9-2.4.3l-.6.9c-.3.3-.6.3-1.2 0-1.5-1.5-1.5-1.5-1.5-2.4 0-.6.3-.9.6-1.2l.6-.6c.6-.6.9-1.5.6-2.1 0-.6-.6-1.5-1.2-1.8l-2.4-1.5c-.9-.6-1.8-.3-2.1.6l-1.2 2.4c-1.2 2.4 0 5.4 2.1 7.5 2.7 2.7 6.3 3.3 8.1 1.5l1.5-1.5c.9-.6.9-1.8.3-2.4zm-2.1 1.8c-1.2 1.2-4.2.9-6.6-1.5-2.4-2.4-2.7-5.4-1.5-6.6l.9-.9c.3-.3.3-.6 0-.9l-1.5-1.2c-.3-.3-.6-.3-.9 0l-1.2 2.4c-.3.6 0 1.2.3 1.8.6.9 1.5 2.1 1.8 2.4.3.3 1.2 1.5 2.1 1.8.6.3 1.2.3 1.8 0l2.1-1.2c.3-.3.6-.3.9 0l1.2 1.2c.3.3.3.6 0 .9l-.9.9z'/%3E%3C/svg%3E");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        vertical-align: middle;
+                    }
                 }
             }
         }
     }
-    }
+}
 }

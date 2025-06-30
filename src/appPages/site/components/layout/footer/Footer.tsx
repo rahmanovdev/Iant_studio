@@ -22,7 +22,7 @@ interface IContact {
 const Footer = () => {
   const { register, handleSubmit, reset } = useForm<IContact>();
   function telegram() {
-    window.open("https://t.me/c/2305441839/285");
+    window.open("https://t.me/jumadil");
   }
   function instagram() {
     window.open(
@@ -30,10 +30,10 @@ const Footer = () => {
     );
   }
   function linkedin() {
-    window.open("");
+    window.open("https://www.linkedin.com/company/i-ant-it-company/posts/?feedView=all");
   }
   function tiktok() {
-    window.open("");
+    window.open("https://www.tiktok.com/@iantstudio");
   }
 
   const onOrder: SubmitHandler<IContact> = (contact) => {
@@ -114,7 +114,7 @@ const Footer = () => {
           <div className={scss.block}>
             <h3>Контакты</h3>
             <a>Кыргызстан, г. Бишкек</a>
-            <a>+996 999 999 999</a>
+            <a>+996 700 188 251</a>
             <a>Соц сети:</a>
             <div className={scss.web}>
               <a onClick={() => instagram()}>
@@ -133,7 +133,7 @@ const Footer = () => {
           </div>
         </div>
         <h6>
-          <FaRegCopyright /> iANT 2024. Все права защищены
+          <FaRegCopyright /> iANT 2025. Все права защищены
         </h6>
         <ToastContainer />
       </div>

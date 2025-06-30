@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
 import scss from "./OrderSite.module.scss";
-import { useRouter } from "next/navigation";
+
 const OrderSite = () => {
-  const router = useRouter();
 
   const orderInfo = {
     title: "Хотите заказать",
@@ -31,15 +30,14 @@ const OrderSite = () => {
           </div>
 
           <div className={scss.button}>
-            <button
-              onClick={() => {
-                router.push(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSeRPLQrk_FIUW6Obg9ZK1ST7R5qsy2xo_AbNWkwf8SM5wZzsA/viewform"
-                );
-              }}
+            <a
+              href="https://wa.me/996700188251"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={scss.whatsappButton}
             >
               УЗНАТЬ ЦЕНЫ
-            </button>
+            </a>
           </div>
         </div>
       </div>
