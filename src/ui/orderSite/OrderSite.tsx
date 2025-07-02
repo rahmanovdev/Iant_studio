@@ -3,7 +3,6 @@ import React from "react";
 import scss from "./OrderSite.module.scss";
 
 const OrderSite = () => {
-
   const orderInfo = {
     title: "Хотите заказать",
     description:

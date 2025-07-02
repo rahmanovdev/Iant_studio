@@ -23,7 +23,6 @@
             color: rgba(255, 255, 255, 0.759);
         }
 
-
         .orderBlock {
             display: flex;
             align-items: center;
@@ -140,6 +139,7 @@
                     background-repeat: no-repeat;
                     vertical-align: middle;
                 }
+            }
         }
     }
 }
@@ -249,7 +249,7 @@
                     justify-content: center;
                     padding: 12px 30px;
                     border-radius: 30px;
-                    background: #25D366;
+                    background: #7b0aaf;
                     color: white;
                     text-decoration: none;
                     font-weight: 700;
@@ -264,7 +264,7 @@
                     height: 50px;
                     
                     &:hover {
-                        background: #128C7E;
+                        background: #45128c;
                         transform: translateY(-2px);
                         box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
                     }
@@ -306,5 +306,4 @@
             }
         }
     }
-}
 }
