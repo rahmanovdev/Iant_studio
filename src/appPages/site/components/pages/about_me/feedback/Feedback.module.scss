@@ -3,12 +3,17 @@
 
     .content {
         display: flex;
-        align-items: center;
-        gap: 20px;
+        align-items: stretch;
+        gap: 40px;
         justify-content: space-between;
 
-
         .left {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
             h5 {
                 font-size: 15px;
                 font-weight: 300;
@@ -16,73 +21,81 @@
                 margin-bottom: 10px;
             }
             h1 {
-                font-size: 40px;
-                font-weight: 300;
-                margin-bottom: 30px;
+                font-size: 36px;
+                font-weight: 400;
+                margin: 0 0 20px 0;
+                line-height: 1.2;
 
                 span {
-                    color: blueviolet;
+                    color: #8a2be2;
                 }
             }
             p {
-                font-size: 17px;
+                font-size: 16px;
                 font-weight: 300;
-                color: rgba(255, 255, 255, 0.732);
-                line-height: 27px;
+                color: rgba(255, 255, 255, 0.8);
+                line-height: 1.4;
+                margin: 0 0 20px 0;
             }
-
             .number_info_block {
                 display: flex;
                 align-items: center;
-                margin: 55px 0;
+                margin: 30px 0;
                 gap: 20px;
                 p {
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 300;
                     color: white;
+                    margin: 0;
                 }
 
                 .line {
                     width: 2px;
-                    height: 26px;
-                    background: rgba(255, 255, 255, 0.71);
+                    height: 20px;
+                    background: rgba(255, 255, 255, 0.4);
                 }
 
                 span {
-                    font-size: 20px;
+                    font-size: 16px;
                     font-weight: 300;
-                    color: rgba(255, 255, 255, 0.593);
+                    color: rgba(255, 255, 255, 0.6);
                 }
             }
 
             .addres_info_block {
-                margin-bottom: 30px;
+                margin: 30px 0;
+                padding: 20px 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
                 span {
-                    color: rgba(255, 255, 255, 0.716);
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 8px;
                 }
 
                 p {
                     color: white;
+                    font-size: 16px;
+                    margin: 0;
+                    line-height: 1.5;
                 }
             }
-
 
             .social_block {
                 display: flex;
                 align-items: center;
                 gap: 15px;
                 svg {
-                    width: 40px;
-                    height: 40px;
-                    background: rgba(255, 255, 255, 0.126);
+                    width: 37px;
+                    height: 37px;
+                    background: rgba(255, 255, 255, 0.577);
                     padding: 7px 7px;
                     border-radius: 50%;
                 }
             }
         }
-
-
     }
 
 
@@ -129,10 +142,13 @@
     .Main {
         .content {
             display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
             flex-direction: column;
-            gap: 60px;
+            gap: 40px;
+            
+            .left, .right {
+                width: 100%;
+                max-width: 100%;
+            }
         }
     }
 }

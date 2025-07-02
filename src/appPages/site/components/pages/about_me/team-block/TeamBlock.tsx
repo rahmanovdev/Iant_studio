@@ -12,7 +12,6 @@ import Jumadil from '../../../../../../../public/mans/Jumadil.jpg';
 import Adylbek from '../../../../../../../public/mans/Adyl.jpg';
 import Belek from '../../../../../../../public/mans/Belek.jpg';
 
-// Команда мүчөлөрүнүн маалыматы
 const TEAM_MEMBERS = [
 	{
 		name: 'Жумадил Рахмонов',

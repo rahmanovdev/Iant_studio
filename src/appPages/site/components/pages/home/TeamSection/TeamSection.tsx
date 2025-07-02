@@ -38,19 +38,19 @@ const teamMembers: TeamMember[] = [
 ];
 
 const TeamMemberCard = ({ member }: { member: TeamMember }) => (
-	<div className={scss.user}>
-		<Image
-			src={member.img}
-			alt={`${member.name} - ${member.work}`}
-			width={700}
-			height={500}
-			quality={90}
-		/>
-		<div className={scss.text}>
-			<h3>{member.name}</h3>
-			<h5>{member.work}</h5>
-		</div>
-	</div>
+  <div className={scss.user}>
+    <Image
+      src={member.img}
+      alt={`${member.name} - ${member.work}`}
+      width={700}
+      height={500}
+      quality={90}
+    />
+    <div className={scss.text}>
+      <h3>{member.name}</h3>
+      <h5>{member.work}</h5>
+    </div>
+  </div>
 );
 
 const TeamSection = () => {
@@ -73,10 +73,10 @@ const TeamSection = () => {
 					</div>
 
 					<div className={scss.teamUsers}>
-						{teamMembers.map((member, idx) => (
-							<TeamMemberCard key={`${member.name}-${idx}`} member={member} />
-						))}
-					</div>
+            {teamMembers.map((member, idx) => (
+              <TeamMemberCard key={`${member.name}-${idx}`} member={member} />
+            ))}
+          </div>
 
 					<button
 						onClick={scrollToSection}
