@@ -19,10 +19,10 @@ const TeamBlock = dynamic(() => import('./team-block/TeamBlock'), {
 	ssr: false
 });
 
-const TeamBlockForMob = dynamic(() => import('./team-block/TeamBlockForMob'), {
-	loading: () => <div className={scss.placeholder}></div>,
-	ssr: false
-});
+// const TeamBlockForMob = dynamic(() => import('./team-block/TeamBlockForMob'), {
+// 	loading: () => <div className={scss.placeholder}></div>,
+// 	ssr: false
+// });
 
 const CliComments = dynamic(() => import('./cli-comments/CliComments'), {
 	loading: () => <div className={scss.placeholder}></div>,
@@ -39,7 +39,7 @@ const COMPONENTS = [
 	MissionBlock,
 	AboutBlock,
 	TeamBlock,
-	TeamBlockForMob,
+	// TeamBlockForMob,
 	CliComments
 ];
 
